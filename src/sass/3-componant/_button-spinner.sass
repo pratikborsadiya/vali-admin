@@ -1,0 +1,21 @@
+// Componant: Button Loader
+
+.btn-spinner
+	display: inline-block
+	z-index: 2000
+	width: 15px
+	height: 15px
+	position: relative
+	top: 2px
+	margin-right: 5px
+	border: solid 2px transparent
+	border-top-color: #fff
+	border-left-color: #fff
+	border-radius: 10px
+	animation: bSpinner 0.8s linear infinite
+
+@keyframes bSpinner
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)

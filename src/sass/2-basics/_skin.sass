@@ -1,0 +1,110 @@
+::selection
+	color: $white
+	background-color: darken($primary-color,10%)
+
+.main-header
+	.navbar
+		background-color: $primary-color
+		.top-nav
+			> li > a
+				color: $white
+				&:hover, &:active, &:focus
+					background: rgba(0, 0, 0, 0.1)
+					color: #f6f6f6
+			.open > a
+				background: rgba(0, 0, 0, 0.1)
+				color: #f6f6f6
+				&:hover, &:focus
+					background: rgba(0, 0, 0, 0.1)
+					color: #f6f6f6
+			> .active > a
+				background: rgba(0, 0, 0, 0.1)
+				color: #f6f6f6
+		.sidebar-toggle
+			color: $white
+			&:hover
+				color: #f6f6f6
+				background-color: darken($primary-color, 5)
+	.logo
+		@if $sidebar-accent == dark
+			background-color: darken( $primary-color, 5% )
+		@if $sidebar-accent == light
+			background-color: lighten( $primary-color, 5% )
+		color: $white
+		border-bottom: 0 solid transparent
+
+.main-sidebar
+	background-color: $sidebar-color
+
+.user-panel > .info
+	@if $sidebar-accent == dark
+		color: $sidebar-dark-color
+	@if $sidebar-accent == light
+		color: $sidebar-light-color
+	> a
+		@if $sidebar-accent == dark
+			color: $sidebar-dark-link-color
+		@if $sidebar-accent == light
+			color: $sidebar-light-link-color
+
+.sidebar-menu
+	> li
+		> a
+			@if $sidebar-accent == dark
+				color: $sidebar-dark-link-color
+			@if $sidebar-accent == light
+				color: $sidebar-light-link-color
+			&:hover
+				@if $sidebar-accent == dark
+					color: $sidebar-dark-link-color
+				@if $sidebar-accent == light
+					color: $primary-color
+
+		&:hover > a,
+		&.active > a
+			@if $sidebar-accent == dark
+				color: $sidebar-dark-color
+			@if $sidebar-accent == light
+				color: $primary-color
+			
+			background: darken($sidebar-color, 10)
+			border-color: $primary-color !important
+
+	.treeview-menu
+		margin: 0 1px
+		@if $sidebar-accent == dark
+			background: lighten($sidebar-color, 4)
+		@if $sidebar-accent == light
+			background: darken($sidebar-color, 4)
+
+		> li
+			> a
+				@if $sidebar-accent == dark
+					color: $sidebar-dark-link-color
+				@if $sidebar-accent == light
+					color: $sidebar-light-link-color
+				&:hover
+					@if $sidebar-accent == dark
+						color: $sidebar-dark-color
+					@if $sidebar-accent == light
+						color: $primary-color
+
+			&.active > a,
+				color: $white
+
+.only-sidebar
+	&.sidebar-collapse
+		.sidebar .logo .sidebar-toggle
+			color: $primary-color
+	.sidebar
+		.logo
+			color: $white
+			background-color: $primary-color
+			.sidebar-toggle
+				color: $white
+
+		.user-panel:after
+			@if $sidebar-accent == dark
+				color: $white
+			@if $sidebar-accent == light
+				color: $primary-color

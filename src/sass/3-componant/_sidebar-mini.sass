@@ -1,0 +1,52 @@
+// Componant: Sidebar Mini
+
+@media (min-width: 768px)
+	.sidebar-mini.sidebar-collapse
+		.content-wrapper, .main-footer
+			margin-left: 50px !important
+			z-index: 840
+		.main-sidebar
+			transform: translate(0, 0)
+			width: 50px !important
+			z-index: 850
+		.sidebar-menu > li
+			position: relative
+			> a
+				margin-right: 0
+				position: relative
+				transition: none
+				>.fa-angle-right
+					display: none
+				> span
+					border-top-right-radius: 4px
+			&:not(.treeview) > a > span
+				border-bottom-right-radius: 4px
+			> .treeview-menu
+				padding-top: 5px
+				padding-bottom: 5px
+				border-bottom-right-radius: 4px
+			&:hover >
+				a > span:not(.pull-right), .treeview-menu
+					display: block !important
+					position: absolute
+					width: 180px
+					left: 50px
+				a > span
+					top: 0
+					margin-left: -3px
+					padding: 12px 5px 12px 20px
+					background-color: inherit
+				.treeview-menu
+					top: 46px
+					margin-left: 0
+		.main-sidebar .user-panel > .info
+			display: none !important
+			transform: translateZ(0)
+		.sidebar-menu
+			> li >
+				a > span, .treeview-menu, a > .pull-right
+					display: none !important
+					transform: translateZ(0)
+			li.header
+				display: none !important
+				transform: translateZ(0)

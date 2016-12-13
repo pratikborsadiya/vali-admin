@@ -1,0 +1,164 @@
+extends layouts/_layout.pug
+
+block content
+	.page-title
+		div
+			h1
+				i.fa.fa-edit
+				|  Custom Form Elements
+			p Customized form elements
+
+		div
+			ul.breadcrumb
+				li
+					i.fa.fa-home.fa-lg
+				li
+					| Forms
+				li
+					a(href="#") Custom Componants
+
+	.row
+		.col-md-6
+			.card
+				h3.card-title Animated Checkbox and Radio Buttons
+
+				//Radio Button Markup
+				.animated-radio-button
+					label
+						input(type="radio")
+						span.label-text Radio Button
+
+				//Checkbox Markup
+				.animated-checkbox
+					label
+						input(type="checkbox")
+						span.label-text Checkbox
+
+				h4 Disabled state
+
+				.animated-radio-button
+					label
+						input(type="radio", disabled="")
+						span.label-text Radio Button
+
+				.animated-checkbox
+					label
+						input(type="checkbox", disabled="")
+						span.label-text Checkbox
+
+		.col-md-6
+			.card
+				h3.card-title Animated Toggle Button
+
+				.row
+					.col-md-6
+						p: b Toggle Button
+
+						.toggle
+							label
+								input(type="checkbox")
+								span.button-indecator
+
+						.toggle.lg
+							label
+								input(type="checkbox")
+								span.button-indecator
+
+						h5 Disabled state
+
+						.toggle
+							label
+								input(type="checkbox", disabled="")
+								span.button-indecator
+
+					.col-md-6
+
+						p: b Fliping Toggle Button
+
+						.toggle-flip
+							label
+								input(type="checkbox")
+								span.flip-indecator(data-toggle-on="ON", data-toggle-off="OFF")
+
+						h5 Disabled state
+
+						.toggle-flip
+							label
+								input(type="checkbox", disabled="")
+								span.flip-indecator(data-toggle-on="ON", data-toggle-off="OFF")
+
+		.clearfix
+
+		.col-md-6
+			.card
+				.card-title-w-btn
+						h3.title Select2
+						p
+							a.btn.btn-primary.icon-btn(href="https://select2.github.io/examples.html",target="_blank")
+								i.fa.fa-file
+								| Docs
+
+				.card-body
+					p This plugin can be used to convert select element into advanced componant.
+					h4 Demo
+					select.form-control#demoSelect()
+						optgroup(label="Select Cities")
+							option Ahmedabad
+							option Surat
+							option Vadodara
+							option Rajkot
+							option Bhavnagar
+							option Jamnagar
+							option Gandhinagar
+							option Nadiad
+							option Morvi
+							option Surendranagar
+							option Junagadh
+							option Gandhidham
+							option Veraval
+							option Ghatlodiya
+							option Bharuch
+							option Anand
+							option Porbandar
+							option Godhra
+							option Navsari
+							option Dahod
+							option Botad
+							option Kapadwanj
+
+		.col-md-6
+			.card
+				.card-title-w-btn
+						h3.title Date Picker
+						p
+							a.btn.btn-primary.icon-btn(href="http://bootstrap-datepicker.readthedocs.org/en/stable/options.html",target="_blank")
+								i.fa.fa-file
+								| Docs
+
+				.card-body
+					p This plugin can be used to let the user select the date in a convinient way.
+					h4 Demo
+					input.form-control#demoDate(type="text",placeholder="Select Date")
+
+block specific-js
+	script(type='text/javascript', src="js/plugins/bootstrap-datepicker.min.js")
+	script(type='text/javascript', src="js/plugins/select2.min.js")
+	script(type='text/javascript', src="js/plugins/bootstrap-datepicker.min.js")
+	script(type="text/javascript").
+		$('#sl').click(function(){
+			$('#tl').loadingBtn();
+			$('#tb').loadingBtn({ text : "Signing In"});
+		});
+
+		$('#el').click(function(){
+			$('#tl').loadingBtnComplete();
+			$('#tb').loadingBtnComplete({ html : "Sign In"});
+		});
+
+		$('#demoDate').datepicker({
+			format: "dd/mm/yyyy",
+			autoclose: true,
+			todayHighlight: true
+		});
+
+		$('#demoSelect').select2();

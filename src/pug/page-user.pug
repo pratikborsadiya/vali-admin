@@ -1,0 +1,124 @@
+extends layouts/_layout.pug
+
+block content
+
+	.row.user
+		.col-md-12
+			.profile
+				.info
+					img.user-img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg")
+					h4 John Doe
+					p FrontEnd Developer
+				.cover-image
+
+		.col-md-3
+			.card.p-0
+				ul.nav.nav-tabs.nav-stacked.user-tabs
+					li.active
+						a(href='#user-timeline' data-toggle='tab') Timeline
+
+					li
+						a(href='#user-settings' data-toggle='tab') Settings
+
+		.col-md-9
+			.tab-content
+				#user-timeline.tab-pane.active
+					.timeline
+						.post
+							.post-media
+								a(href="#")
+									img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+								.content
+									h5
+										a(href="#") John Doe
+									p.text-muted
+										small 2 January at 9:30
+							.post-content
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							
+							ul.post-utility
+								li.likes
+									a(href="#")
+										i.fa.fa-fw.fa-lg.fa-thumbs-o-up
+										| Like
+
+								li.shares
+									a(href="#")
+										i.fa.fa-fw.fa-lg.fa-share
+										| Share
+
+								li.comments
+									i.fa.fa-fw.fa-lg.fa-comment-o
+									|  5 Comments
+
+						.post
+							.post-media
+								a(href="#")
+									img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+								.content
+									h5
+										a(href="#") John Doe
+									p.text-muted
+										small 2 January at 9:30
+							.post-content
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							
+							ul.post-utility
+								li.likes
+									a(href="#")
+										i.fa.fa-fw.fa-lg.fa-thumbs-o-up
+										| Like
+
+								li.shares
+									a(href="#")
+										i.fa.fa-fw.fa-lg.fa-share
+										| Share
+
+								li.comments
+									i.fa.fa-fw.fa-lg.fa-comment-o
+									|  5 Comments
+
+				#user-settings.tab-pane.fade
+					.card.user-settings
+						h4.line-head Settings
+
+						form
+							.row.mb-20
+								.col-md-4
+									label First Name
+									input.form-control(type="text")
+
+								.col-md-4
+									label Last Name
+									input.form-control(type="text")
+
+							.row
+								.col-md-8.mb-20
+									label Email
+									input.form-control(type="text")
+
+								.clearfix
+
+								.col-md-8.mb-20
+									label Mobile No
+									input.form-control(type="text")
+
+								.clearfix
+
+								.col-md-8.mb-20
+									label Office Phone
+									input.form-control(type="text")
+
+								.clearfix
+								
+								.col-md-8.mb-20
+									label Home Phone
+									input.form-control(type="text")
+
+							.row.mb-10
+								.col-md-12
+									button.btn.btn-primary(type="button")
+										i.fa.fa-fw.fa-lg.fa-check-circle
+										|  Save
+
+

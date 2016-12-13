@@ -1,0 +1,15 @@
+// Layout: Fixed
+
+.fixed
+	.main-header, .main-sidebar, .left-side
+		position: fixed
+	.main-header
+		top: 0
+		right: 0
+		left: 0
+	.content-wrapper
+		margin-top: 50px
+
+@media (max-width: 767px)
+	.fixed .content-wrapper
+		margin-top: 100px

@@ -1,0 +1,31 @@
+// Componant: Dropdown Menu
+
+.dropdown-menu
+	right: 0
+	left: auto
+	margin-top: 0
+	border-radius: 0
+	box-shadow:  0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+	border: 0
+	padding: 0
+	li a
+		position: relative
+		padding: 8px 20px
+		i
+			width: 20px
+			font-size: 18px
+			vertical-align: middle
+
+.open > .dropdown-menu
+	animation-name: scaleDrop
+	animation-duration: 0.3s
+	animation-fill-mode: both
+	transform-origin: 100% 0
+
+@keyframes scaleDrop
+	0%
+		opacity: 0
+		transform: scale(0)
+	100%
+		opacity: 1
+		transform: scale(1)

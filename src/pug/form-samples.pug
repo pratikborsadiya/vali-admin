@@ -1,0 +1,144 @@
+extends layouts/_layout.pug
+
+block content
+	.page-title
+		div
+			h1
+				i.fa.fa-edit
+				|  Form Samples
+			p Sample forms
+
+		div
+			ul.breadcrumb
+				li
+					i.fa.fa-home.fa-lg
+				li
+					| Forms
+				li
+					a(href="#") Sample Forms
+
+	.row
+		.col-md-6
+			.card
+				h3.card-title Register
+				.card-body
+					form
+						.form-group
+							label.control-label Name
+							input.form-control(type="text", placeholder="Enter full name")
+
+						.form-group
+							label.control-label Email
+							input.form-control(type="email", placeholder="Enter email address")
+
+						.form-group
+							label.control-label Address
+							textarea.form-control(rows="4", placeholder="Enter your address")
+
+						.form-group
+							label.control-label Gender
+							.radio
+								label
+									input(type='radio', name="gender")
+									| Male
+							.radio
+								label
+									input(type='radio', name="gender")
+									| Female
+
+						.form-group
+							label.control-label Identity Proof
+							input.form-control(type="file")
+
+						.form-group
+							.checkbox
+								label
+									input(type='checkbox')
+									| I accept the terms and conditions
+
+				.card-footer
+					button.btn.btn-primary.icon-btn(type="button")
+						i.fa.fa-fw.fa-lg.fa-check-circle
+						| Register
+					| &nbsp;&nbsp;&nbsp;
+					a.btn.btn-default.icon-btn(href="#")
+						i.fa.fa-fw.fa-lg.fa-times-circle
+						| Cancel
+
+		.col-md-6
+			.card
+				h3.card-title Register
+				.card-body
+					form.form-horizontal
+						.form-group
+							label.control-label.col-md-3 Name
+							.col-md-8
+								input.form-control(type="text", placeholder="Enter full name")
+
+						.form-group
+							label.control-label.col-md-3 Email
+							.col-md-8
+								input.form-control.col-md-8(type="email", placeholder="Enter email address")
+
+						.form-group
+							label.control-label.col-md-3 Address
+							.col-md-8
+								textarea.form-control(rows="4", placeholder="Enter your address")
+
+						.form-group
+							label.control-label.col-md-3 Gender
+							.col-md-9
+								.radio-inline
+									label
+										input(type='radio', name="gender")
+										| Male
+								.radio-inline
+									label
+										input(type='radio', name="gender")
+										| Female
+
+						.form-group
+							label.control-label.col-md-3 Identity Proof
+							.col-md-8
+								input.form-control(type="file")
+
+						.form-group
+							.col-md-8.col-md-offset-3
+								.checkbox
+									label
+										input(type='checkbox')
+										| I accept the terms and conditions
+
+				.card-footer
+					.row
+						.col-md-8.col-md-offset-3
+							button.btn.btn-primary.icon-btn(type="button")
+								i.fa.fa-fw.fa-lg.fa-check-circle
+								| Register
+							| &nbsp;&nbsp;&nbsp;
+							a.btn.btn-default.icon-btn(href="#")
+								i.fa.fa-fw.fa-lg.fa-times-circle
+								| Cancel
+		.clearix
+
+		.col-md-12
+			.card
+				h3.card-title Subscribe
+
+				.card-body3
+
+					form.form-inline
+
+						.form-group
+							label.control-label Name
+							input.form-control(type="text", placeholder="Enter your name")
+
+						.form-group
+							label.control-label Email
+							input.form-control(type="text", placeholder="Enter your email")
+
+						.form-group
+							button.btn.btn-primary.icon-btn(type="button")
+								i.fa.fa-fw.fa-lg.fa-check-circle
+								| Subscribe
+

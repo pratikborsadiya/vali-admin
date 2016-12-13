@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		include ../includes/_head.pug
+
+	body.sidebar-mini.fixed
+		.wrapper
+			// Navbar
+			include ../includes/_navbar.pug
+
+			// Side-Nav
+			include ../includes/_sidebar.pug
+
+			.content-wrapper
+				block content
+
+		// Javascripts
+		include ../includes/_javascript.pug
+		block specific-js

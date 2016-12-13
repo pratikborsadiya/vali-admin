@@ -1,0 +1,143 @@
+extends layouts/_layout.pug
+
+block content
+	.page-title
+		div
+			h1
+				i.fa.fa-archive
+				|  Widgets
+			p Widgets to interactively display data
+
+		div
+			ul.breadcrumb
+				li
+					i.fa.fa-home.fa-lg
+				li
+					| UI
+				li
+					a(href='#') Widgets
+
+	.row
+		.col-md-3
+			.widget-small.primary
+				i.icon.fa.fa-users.fa-3x
+				div.info
+					h4 Users
+					p
+						b 5
+
+		.col-md-3
+			.widget-small.info
+				i.icon.fa.fa-thumbs-o-up.fa-3x
+				div.info
+					h4 Likes
+					p
+						b 25
+
+		.col-md-3
+			.widget-small.warning
+				i.icon.fa.fa-files-o.fa-3x
+				div.info
+					h4 Uploades
+					p
+						b 10
+
+		.col-md-3
+			.widget-small.danger
+				i.icon.fa.fa-star.fa-3x
+				div.info
+					h4 Stars
+					p
+						b 500
+
+	.row
+		.col-md-3
+			.widget-small.primary.coloured-icon
+				i.icon.fa.fa-users.fa-3x
+				div.info
+					h4 Users
+					p
+						b 5
+
+		.col-md-3
+			.widget-small.info.coloured-icon
+				i.icon.fa.fa-thumbs-o-up.fa-3x
+				div.info
+					h4 Likes
+					p
+						b 25
+
+		.col-md-3
+			.widget-small.warning.coloured-icon
+				i.icon.fa.fa-files-o.fa-3x
+				div.info
+					h4 Uploades
+					p
+						b 10
+
+		.col-md-3
+			.widget-small.danger.coloured-icon
+				i.icon.fa.fa-star.fa-3x
+				div.info
+					h4 Stars
+					p
+						b 500
+
+	.row
+		.col-md-6
+			.card
+				h3.card-title Chat
+				.messanger
+					.messages
+						.message
+							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/tonypeterson/48.jpg")
+							p.info Hello there!
+								br
+								| Good Morning
+
+						.message.me
+							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+							p.info Hi
+								br
+								| Good Morning
+
+						.message
+							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/tonypeterson/48.jpg")
+							p.info How are you?
+
+						.message.me
+							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+							p.info I'm Fine.
+
+					.sender
+						input(type="text",placeholder="Send Message")
+						button.btn.btn-primary(type="button")
+							i.fa.fa-lg.fa-fw.fa-paper-plane
+
+		.col-md-6
+			.card
+				h3.card-title Vector Map
+				.card-body
+					#demo-map(style="height: 400px")
+
+block specific-js
+	script(type='text/javascript', src="js/plugins/jquery.vmap.min.js")
+	script(type='text/javascript', src="js/plugins/jquery.vmap.world.js")
+	script(type='text/javascript', src="js/plugins/jquery.vmap.sampledata.js")
+	script(type="text/javascript").
+		$(document).ready(function(){
+
+			var map = $('#demo-map');
+			map.vectorMap({
+				map: 'world_en',
+				backgroundColor: '#fff',
+				color: '#333',
+				hoverOpacity: 0.7,
+				selectedColor: '#666666',
+				enableZoom: true,
+				showTooltip: true,
+				scaleColors: ['#C8EEFF', '#006491'],
+				values: sample_data,
+				normalizeFunction: 'polynomial'
+			});
+		});

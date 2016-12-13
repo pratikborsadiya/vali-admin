@@ -1,0 +1,64 @@
+// Componant: Widget
+
+.widget-small
+	display: flex
+	border-radius: 4px
+	color: $white
+	margin-bottom: 10px
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+	.icon
+		display: flex
+		min-width: 85px
+		align-items: center
+		justify-content: center
+		padding: 20px
+		background-color: rgba(0,0,0,0.2)
+		border-radius: 4px 0 0 4px
+	.info
+		flex: 1
+		padding-left: 20px
+		align-self: center
+		h4
+			text-transform: uppercase
+			margin: 0
+			margin-bottom: 5px
+			font-weight: 400
+		p
+			margin: 0
+			font-size: 16px
+
+	&.primary
+		background-color: $primary-color
+		&.coloured-icon
+			background-color: #fff
+			color: #2a2a2a
+			.icon
+				background-color: $primary-color
+				color: #fff
+
+	&.info
+		background-color: $brand-info
+		&.coloured-icon
+			background-color: #fff
+			color: #2a2a2a
+			.icon
+				background-color: $brand-info
+				color: #fff
+
+	&.warning
+		background-color: $brand-warning
+		&.coloured-icon
+			background-color: #fff
+			color: #2a2a2a
+			.icon
+				background-color: $brand-warning
+				color: #fff
+
+	&.danger
+		background-color: $brand-danger
+		&.coloured-icon
+			background-color: #fff
+			color: #2a2a2a
+			.icon
+				background-color: $brand-danger
+				color: #fff

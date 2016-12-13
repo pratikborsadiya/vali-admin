@@ -1,0 +1,103 @@
+// Componant: Top Navigation Bar
+ 
+.main-header
+	position: relative
+	max-height: 100px
+	z-index: 1030
+	> .navbar
+		margin-bottom: 0
+		margin-left: 230px
+		border: none
+		max-height: 50px
+		border-radius: 0
+	.sidebar-toggle
+		float: left
+		background-color: transparent
+		background-image: none
+		padding: 11px 15px
+		font-family: fontAwesome
+		position: relative
+		transition: all 0.3s ease
+		max-height: 50px
+		&:before
+			content: "\f0c9"
+			font-size: 21px
+		&:focus, &:active
+			background: transparent
+	.logo
+		display: block
+		width: 230px
+		height: 50px
+		font-family: 'Niconne'
+		font-size: 26px
+		font-weight: 400
+		line-height: 50px
+		text-align: center
+		padding: 0 15px
+		float: left
+		overflow: hidden
+	.navbar-brand
+		color: #fff
+		
+	.top-nav
+		list-style: none
+		padding-left: 0
+		display: inline-block
+		float: right
+		margin-bottom: 0
+		margin-right: 50px
+
+		> li
+			display: inline-block
+			position: relative
+
+			> a
+				display: block
+				padding: 10px 15px
+				padding-top: 15px
+				padding-bottom: 15px
+				line-height: 20px
+		.settings-menu
+			li a
+				font-weight: 500
+				text-transform: uppercase
+		.notification-menu
+			.dropdown-menu
+				min-width: 230px
+				i
+					width: auto
+				.fa-stack
+					text-align: center
+				.fa-stack-1x, .fa-stack-2x
+					width: 100%
+				.fa-stack-2x
+					font-size: 2em
+			.media
+				display: block
+				border-bottom: 1px solid #ddd
+				.block:not(.text-muted)
+					font-weight: 500
+			.not-head
+				padding: 8px 20px
+				text-align: center
+				font-weight: 500
+				background-color: transparentize($primary-color, 0.6)
+				color: #333
+			.not-footer
+				text-align: center
+				background-color: #eee
+
+@media (max-width: 767px)
+	.main-header
+		position: relative
+		.logo
+			width: 100%
+			float: none
+		.navbar
+			width: 100%
+			float: none
+			margin: 0
+
+@media (max-width: 768px)
+	.main-header .top-nav
+		margin-right: 20px

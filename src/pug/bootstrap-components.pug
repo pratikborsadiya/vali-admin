@@ -1,0 +1,608 @@
+extends layouts/_layout.pug
+
+block content
+    .page-title
+        .div
+            h1
+                i.fa.fa-laptop
+                |  Bootstrap Elements
+            p Bootstrap Components
+
+        .div
+            ul.breadcrumb
+                li
+                    i.fa.fa-home.fa-lg
+                li
+                    a(href='#') Bootstrap Elements
+
+    .row
+        .col-md-12
+            .card
+
+                //
+                    Buttons
+                    ==================================================
+                .bs-element-section
+                    .page-header
+                        .row
+                            .col-lg-12
+                                h1#buttons Buttons
+                    .row
+                        .col-lg-7
+                            p.bs-component
+                                a.btn.btn-default(href='#') Default
+                                | &nbsp;
+                                a.btn.btn-primary(href='#') Primary
+                                | &nbsp;
+                                a.btn.btn-success(href='#') Success
+                                | &nbsp;
+                                a.btn.btn-info(href='#') Info
+                                | &nbsp;
+                                a.btn.btn-warning(href='#') Warning
+                                | &nbsp;
+                                a.btn.btn-danger(href='#') Danger
+
+                            p.bs-component
+                                a.btn.btn-default.disabled(href='#') Default
+                                | &nbsp;
+                                a.btn.btn-primary.disabled(href='#') Primary
+                                | &nbsp;
+                                a.btn.btn-success.disabled(href='#') Success
+                                | &nbsp;
+                                a.btn.btn-info.disabled(href='#') Info
+                                | &nbsp;
+                                a.btn.btn-warning.disabled(href='#') Warning
+                                | &nbsp;
+                                a.btn.btn-danger.disabled(href='#') Danger
+
+                            div(style='margin-bottom: 15px;')
+                                .btn-toolbar.bs-component(style='margin: 0;')
+                                    .btn-group
+                                        a.btn.btn-default.dropdown-toggle(href='#', data-toggle='dropdown')
+                                            | Default
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Action
+                                            li
+                                                a(href='#') Another action
+                                            li
+                                                a(href='#') Something else here
+                                            li.divider
+                                            li
+                                                a(href='#') Separated link
+                                    .btn-group
+                                        a.btn.btn-primary.dropdown-toggle(href='#', data-toggle='dropdown')
+                                            | Primary
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Action
+                                            li
+                                                a(href='#') Another action
+                                            li
+                                                a(href='#') Something else here
+                                            li.divider
+                                            li
+                                                a(href='#') Separated link
+                                    .btn-group
+                                        a.btn.btn-success.dropdown-toggle(href='#', data-toggle='dropdown')
+                                            | Success
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Action
+                                            li
+                                                a(href='#') Another action
+                                            li
+                                                a(href='#') Something else here
+                                            li.divider
+                                            li
+                                                a(href='#') Separated link
+                                    .btn-group
+                                        a.btn.btn-warning.dropdown-toggle(href='#', data-toggle='dropdown')
+                                            | Warning
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Action
+                                            li
+                                                a(href='#') Another action
+                                            li
+                                                a(href='#') Something else here
+                                            li.divider
+                                            li
+                                                a(href='#') Separated link
+                                    .btn-group
+                                        a.btn.btn-danger.dropdown-toggle(href='#', data-toggle='dropdown')
+                                            | Danger
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Action
+                                            li
+                                                a(href='#') Another action
+                                            li
+                                                a(href='#') Something else here
+                                            li.divider
+                                            li
+                                                a(href='#') Separated link
+                            p.bs-component
+                                a.btn.btn-primary.btn-lg(href='#') Large button
+                                | &nbsp;
+                                a.btn.btn-primary(href='#') Default button
+                                | &nbsp;
+                                a.btn.btn-primary.btn-sm(href='#') Small button
+                                | &nbsp;
+                                a.btn.btn-primary.btn-xs(href='#') Mini button
+                                | &nbsp;
+                        .col-lg-5
+                            p.bs-component
+                                a.btn.btn-default.btn-lg.btn-block(href='#') Block level button
+                            .bs-component(style='margin-bottom: 15px;')
+                                .btn-group.btn-group-justified
+                                    a.btn.btn-default(href='#') Left
+                                    a.btn.btn-default(href='#') Middle
+                                    a.btn.btn-default(href='#') Right
+                            .bs-component(style='margin-bottom: 15px;')
+                                .btn-toolbar
+                                    .btn-group
+                                        a.btn.btn-default(href='#') 1
+                                        a.btn.btn-default(href='#') 2
+                                        a.btn.btn-default(href='#') 3
+                                        a.btn.btn-default(href='#') 4
+                                    .btn-group
+                                        a.btn.btn-default(href='#') 5
+                                        .btn-group
+                                            a.btn.btn-default.dropdown-toggle(href='#', data-toggle='dropdown')
+                                                | Dropdown
+                                                span.caret
+                                            ul.dropdown-menu
+                                                li
+                                                    a(href='#') Dropdown link
+                                                li
+                                                    a(href='#') Dropdown link
+                                                li
+                                                    a(href='#') Dropdown link
+                            .bs-component
+                                .btn-group-vertical
+                                    a.btn.btn-default(href='#') Button
+                                    a.btn.btn-default(href='#') Button
+                                    a.btn.btn-default(href='#') Button
+                                    a.btn.btn-default(href='#') Button
+                //
+                    Typography
+                    ==================================================
+                .bs-element-section
+                    .row
+                        .col-lg-12
+                            .page-header
+                                h1#typography Typography
+                    // Headings
+                    .row
+                        .col-lg-4
+                            .bs-component
+                                h1 Heading 1
+                                h2 Heading 2
+                                h3 Heading 3
+                                h4 Heading 4
+                                h5 Heading 5
+                                h6 Heading 6
+                                p.lead Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                        .col-lg-4
+                            .bs-component
+                                h2 Example body text
+                                p
+                                    | Nullam quis risus eget
+                                    a(href='#') urna mollis ornare
+                                    |  vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+                                p
+                                    small This line of text is meant to be treated as fine print.
+                                p
+                                    | The following snippet of text is
+                                    strong rendered as bold text
+                                    | .
+                                p
+                                    | The following snippet of text is
+                                    em rendered as italicized text
+                                    | .
+                                p
+                                    | An abbreviation of the word attribute is
+                                    abbr(title='attribute') attr
+                                    | .
+                        .col-lg-4
+                            .bs-component
+                                h2 Emphasis classes
+                                p.text-muted Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+                                p.text-primary Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                p.text-warning Etiam porta sem malesuada magna mollis euismod.
+                                p.text-danger Donec ullamcorper nulla non metus auctor fringilla.
+                                p.text-success Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                p.text-info Maecenas sed diam eget risus varius blandit sit amet non magna.
+                    // Blockquotes
+                    .row
+                        .col-lg-12
+                            h2#type-blockquotes Blockquotes
+                    .row
+                        .col-lg-6
+                            .bs-component
+                                blockquote
+                                    p
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                    small
+                                        | Someone famous in
+                                        cite(title='Source Title') Source Title
+                        .col-lg-6
+                            .bs-component
+                                blockquote.blockquote-reverse
+                                    p
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                    small
+                                        | Someone famous in
+                                        cite(title='Source Title') Source Title
+
+                //
+                    Navs
+                    ==================================================
+                .bs-element-section
+                    .row
+                        .col-lg-12
+                            .page-header
+                                h1#navs Navs
+                    .row
+                        .col-lg-4
+                            h2#nav-tabs Tabs
+                            .bs-component
+                                ul.nav.nav-tabs
+                                    li.active
+                                        a(href='#home', data-toggle='tab') Home
+                                    li
+                                        a(href='#profile', data-toggle='tab') Profile
+                                    li.disabled
+                                        a Disabled
+                                    li.dropdown
+                                        a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                            | Dropdown
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#dropdown1', data-toggle='tab') Action
+                                            li.divider
+                                            li
+                                                a(href='#dropdown2', data-toggle='tab') Another action
+                                #myTabContent.tab-content
+                                    #home.tab-pane.fade.active.in
+                                        p
+                                            | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                    #profile.tab-pane.fade
+                                        p
+                                            | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+                                    #dropdown1.tab-pane.fade
+                                        p
+                                            | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+                                    #dropdown2.tab-pane.fade
+                                        p
+                                            | Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.
+                        .col-lg-4
+                            h2#nav-pills Pills
+                            .bs-component
+                                ul.nav.nav-pills
+                                    li.active
+                                        a(href='#') Home
+                                    li
+                                        a(href='#') Profile
+                                    li.disabled
+                                        a(href='#') Disabled
+                                    li.dropdown
+                                        a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                            | Dropdown
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Action
+                                            li
+                                                a(href='#') Another action
+                                            li
+                                                a(href='#') Something else here
+                                            li.divider
+                                            li
+                                                a(href='#') Separated link
+                            br
+                            .bs-component
+                                ul.nav.nav-pills.nav-stacked
+                                    li.active
+                                        a(href='#') Home
+                                    li
+                                        a(href='#') Profile
+                                    li.disabled
+                                        a(href='#') Disabled
+                                    li.dropdown
+                                        a.dropdown-toggle(data-toggle='dropdown', href='#')
+                                            | Dropdown
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='#') Action
+                                            li
+                                                a(href='#') Another action
+                                            li
+                                                a(href='#') Something else here
+                                            li.divider
+                                            li
+                                                a(href='#') Separated link
+                        .col-lg-4
+                            h2#nav-breadcrumbs Breadcrumbs
+                            .bs-component
+                                ul.breadcrumb
+                                    li.active Home
+                                ul.breadcrumb
+                                    li
+                                        a(href='#') Home
+                                    li.active Library
+                                ul.breadcrumb
+                                    li
+                                        a(href='#') Home
+                                    li
+                                        a(href='#') Library
+                                    li.active Data
+                    .row
+                        .col-lg-4
+                            h2#pagination Pagination
+                            .bs-component
+                                ul.pagination
+                                    li.disabled
+                                        a(href='#') «
+                                    li.active
+                                        a(href='#') 1
+                                    li
+                                        a(href='#') 2
+                                    li
+                                        a(href='#') 3
+                                    li
+                                        a(href='#') 4
+                                    li
+                                        a(href='#') 5
+                                    li
+                                        a(href='#') »
+                                ul.pagination.pagination-lg
+                                    li.disabled
+                                        a(href='#') «
+                                    li.active
+                                        a(href='#') 1
+                                    li
+                                        a(href='#') 2
+                                    li
+                                        a(href='#') 3
+                                    li
+                                        a(href='#') »
+                                ul.pagination.pagination-sm
+                                    li.disabled
+                                        a(href='#') «
+                                    li.active
+                                        a(href='#') 1
+                                    li
+                                        a(href='#') 2
+                                    li
+                                        a(href='#') 3
+                                    li
+                                        a(href='#') 4
+                                    li
+                                        a(href='#') 5
+                                    li
+                                        a(href='#') »
+                        .col-lg-4
+                            h2#pager Pager
+                            .bs-component
+                                ul.pager
+                                    li
+                                        a(href='#') Previous
+                                    li
+                                        a(href='#') Next
+                                ul.pager
+                                    li.previous.disabled
+                                        a(href='#') ← Older
+                                    li.next
+                                        a(href='#') Newer →
+                        .col-lg-4
+                //
+                    Indicators
+                    ==================================================
+                .bs-element-section
+                    .row
+                        .col-lg-12
+                            .page-header
+                                h1#indicators Indicators
+                    .row
+                        .col-lg-12
+                            h2 Alerts
+                            .bs-component
+                                .alert.alert-dismissible.alert-warning
+                                    button.close(type='button', data-dismiss='alert') ×
+                                    h4 Warning!
+                                    p
+                                        | Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna,
+                                        a.alert-link(href='#') vel scelerisque nisl consectetur et
+                                        | .
+                    .row
+                        .col-lg-4
+                            .bs-component
+                                .alert.alert-dismissible.alert-danger
+                                    button.close(type='button', data-dismiss='alert') ×
+                                    strong Oh snap!
+                                    a.alert-link(href='#') Change a few things up
+                                    |  and try submitting again.
+                        .col-lg-4
+                            .bs-component
+                                .alert.alert-dismissible.alert-success
+                                    button.close(type='button', data-dismiss='alert') ×
+                                    strong Well done!
+                                    |  You successfully read
+                                    a.alert-link(href='#') this important alert message
+                                    | .
+                        .col-lg-4
+                            .bs-component
+                                .alert.alert-dismissible.alert-info
+                                    button.close(type='button', data-dismiss='alert') ×
+                                    strong Heads up!
+                                    |  This
+                                    a.alert-link(href='#') alert needs your attention
+                                    | , but it's not super important.
+                    .row
+                        .col-lg-4
+                            h2 Labels
+                            .bs-component(style='margin-bottom: 40px;')
+                                span.label.label-default Default
+                                span.label.label-primary Primary
+                                span.label.label-success Success
+                                span.label.label-warning Warning
+                                span.label.label-danger Danger
+                                span.label.label-info Info
+                        .col-lg-4
+                            h2 Badges
+                            .bs-component
+                                ul.nav.nav-pills
+                                    li.active
+                                        a(href='#')
+                                            | Home
+                                            span.badge 42
+                                    li
+                                        a(href='#')
+                                            | Profile
+                                            span.badge
+                                    li
+                                        a(href='#')
+                                            | Messages
+                                            span.badge 3
+                //
+                    Progress bars
+                    ==================================================
+                .bs-element-section
+                    .row
+                        .col-lg-12
+                            .page-header
+                                h1#progress-bars Progress bars
+                            h3#progress-basic Basic
+                            .bs-component
+                                .progress
+                                    .progress-bar(style='width: 60%;')
+                            h3#progress-alternatives Contextual alternatives
+                            .bs-component
+                                .progress
+                                    .progress-bar.progress-bar-info(style='width: 20%')
+                                .progress
+                                    .progress-bar.progress-bar-success(style='width: 40%')
+                                .progress
+                                    .progress-bar.progress-bar-warning(style='width: 60%')
+                                .progress
+                                    .progress-bar.progress-bar-danger(style='width: 80%')
+                            h3#progress-striped Striped
+                            .bs-component
+                                .progress.progress-striped
+                                    .progress-bar.progress-bar-info(style='width: 20%')
+                                .progress.progress-striped
+                                    .progress-bar.progress-bar-success(style='width: 40%')
+                                .progress.progress-striped
+                                    .progress-bar.progress-bar-warning(style='width: 60%')
+                                .progress.progress-striped
+                                    .progress-bar.progress-bar-danger(style='width: 80%')
+                            h3#progress-animated Animated
+                            .bs-component
+                                .progress.progress-striped.active
+                                    .progress-bar(style='width: 45%')
+                            h3#progress-stacked Stacked
+                            .bs-component
+                                .progress
+                                    .progress-bar.progress-bar-success(style='width: 35%')
+                                    .progress-bar.progress-bar-warning(style='width: 20%')
+                                    .progress-bar.progress-bar-danger(style='width: 10%')
+                //
+                    Containers
+                    ==================================================
+                .bs-element-section
+                    .row
+                        .col-lg-12
+                            .page-header
+                                h1#containers Containers
+                    .row
+                        .col-lg-12
+                            h2 List groups
+                    .row
+                        .col-lg-4
+                            .bs-component
+                                ul.list-group
+                                    li.list-group-item
+                                        span.badge 14
+                                        |                   Cras justo odio
+                                    li.list-group-item
+                                        span.badge 2
+                                        |                   Dapibus ac facilisis in
+                                    li.list-group-item
+                                        span.badge 1
+                                        |                   Morbi leo risus
+                        .col-lg-4
+                            .bs-component
+                                .list-group
+                                    a.list-group-item.active(href='#')
+                                        | Cras justo odio
+                                    a.list-group-item(href='#')
+                                        | Dapibus ac facilisis in
+                                    a.list-group-item(href='#')
+                                        | Morbi leo risus
+                        .col-lg-4
+                            .bs-component
+                                .list-group
+                                    a.list-group-item(href='#')
+                                        h4.list-group-item-heading List group item heading
+                                        p.list-group-item-text
+                                            | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                                    a.list-group-item(href='#')
+                                        h4.list-group-item-heading List group item heading
+                                        p.list-group-item-text
+                                            | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                    .row
+                        .col-lg-12
+                            h2 Panels
+                    .row
+                        .col-lg-4
+                            .bs-component
+                                .panel.panel-default
+                                    .panel-body
+                                        | Basic panel
+                                .panel.panel-default
+                                    .panel-heading Panel heading
+                                    .panel-body
+                                        | Panel content
+                                .panel.panel-default
+                                    .panel-body
+                                        | Panel content
+                                    .panel-footer Panel footer
+                        .col-lg-4
+                            .bs-component
+                                .panel.panel-primary
+                                    .panel-heading
+                                        h3.panel-title Panel primary
+                                    .panel-body
+                                        | Panel content
+                                .panel.panel-success
+                                    .panel-heading
+                                        h3.panel-title Panel success
+                                    .panel-body
+                                        | Panel content
+                                .panel.panel-warning
+                                    .panel-heading
+                                        h3.panel-title Panel warning
+                                    .panel-body
+                                        | Panel content
+                        .col-lg-4
+                            .bs-component
+                                .panel.panel-danger
+                                    .panel-heading
+                                        h3.panel-title Panel danger
+                                    .panel-body
+                                        | Panel content
+                                .panel.panel-info
+                                    .panel-heading
+                                        h3.panel-title Panel info
+                                    .panel-body
+                                        | Panel content
+

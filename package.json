@@ -1,0 +1,15 @@
+{
+	"name": "Admin",
+	"description": "An admin theme built with sass and jade",
+	"author": "Pratik Borsadiya",
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-contrib-watch": "^1.0.0",
+		"grunt-contrib-pug": "^1.0.0",
+		"grunt-autoprefixer": "^3.0.4",
+		"grunt-sass": "^2.0.0"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	}
+}

@@ -1,0 +1,59 @@
+doctype html
+html
+	head
+		include includes/_head.pug
+
+	body
+		section.material-half-bg
+			.cover
+
+		section.login-content
+			.logo
+				h1 Vali
+
+			.login-box
+				form.login-form(action="index.html")
+					h3.login-head
+						i.fa.fa-lg.fa-fw.fa-user
+						| SIGN IN
+					.form-group
+						label.control-label USERNAME
+						input.form-control(type="text", placeholder="Email", autofocus)
+
+					.form-group
+						label.control-label PASSWORD
+						input.form-control(type="password", placeholder="Password")
+
+					.form-group
+						.utility
+							.animated-checkbox
+								label.semibold-text
+									input(type="checkbox")
+									span.label-text Stay Signed in
+							p.semibold-text.mb-0
+								a(data-toggle="flip") Forgot Password ?
+
+					.form-group.btn-container
+						button.btn.btn-primary.btn-block
+							| SIGN IN
+							i.fa.fa-sign-in.fa-lg
+
+				form.forget-form(action="index.html")
+					h3.login-head
+						i.fa.fa-lg.fa-fw.fa-lock
+						| Forgot Password ?
+					.form-group
+						label.control-label EMAIL
+						input.form-control(type="text", placeholder="Email")
+
+					.form-group.btn-container
+						button.btn.btn-primary.btn-block
+							| RESET
+							i.fa.fa-unlock.fa-lg
+
+					.form-group.mt-20
+						p.semibold-text.mb-0
+								a(data-toggle="flip") <i class="fa fa-angle-left fa-fw"></i> Back to Login
+
+	include includes/_javascript.pug
+

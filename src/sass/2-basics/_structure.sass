@@ -1,0 +1,35 @@
+// Page Structural CSS
+
+.wrapper
+	min-height: 100vh
+	position: static
+	overflow-x: hidden
+	&:before
+		content: " "
+		display: table
+	&:after
+		content: " "
+		clear: both
+
+.content-wrapper
+	height: 100%
+	z-index: 800
+	background-color: #E5E5E5
+	margin-left: 230px
+	z-index: 820
+	padding: 30px
+	transition: all 0.3s ease-in-out
+
+@media (min-width: 768px)
+	.sidebar-collapse .content-wrapper
+		margin-left: 0
+
+@media (max-width: 767px)
+	.content-wrapper
+			margin-left: 0
+	.sidebar-open .content-wrapper
+		transform: translate(230px, 0)
+
+@media (max-width: 480px)
+	.content-wrapper
+		padding: 10px

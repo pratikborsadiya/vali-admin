@@ -1,0 +1,21 @@
+.notify-alert
+	box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16)
+	border: 0 !important
+	max-width: 400px
+	color: $white
+
+	&.alert-success
+		background-color: $brand-success
+
+	&.alert-info
+		background-color: $brand-info
+
+	&.alert-warning
+		background-color: lighten($brand-warning, 10)
+
+	&.alert-danger
+		background-color: lighten($brand-danger, 5)
+
+	button[data-notify="dismiss"]
+		margin-left: 5px
+		outline: none !important

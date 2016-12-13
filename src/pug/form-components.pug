@@ -1,0 +1,112 @@
+extends layouts/_layout.pug
+
+block content
+	.page-title
+		div
+			h1
+				i.fa.fa-edit
+				|  Form Components
+			p Bootstrap default form components
+
+		div
+			ul.breadcrumb
+				li
+					i.fa.fa-home.fa-lg
+				li
+					| Forms
+				li
+					a(href="#") Form Components
+
+	.row
+		.col-md-12
+			.card
+				.row
+					.col-lg-6
+						.well.bs-component
+							form.form-horizontal
+								fieldset
+									legend Legend
+									.form-group
+										label.col-lg-2.control-label(for='inputEmail') Email
+										.col-lg-10
+											input#inputEmail.form-control(type='text', placeholder='Email')
+									.form-group
+										label.col-lg-2.control-label(for='inputPassword') Password
+										.col-lg-10
+											input#inputPassword.form-control(type='password', placeholder='Password')
+											.checkbox
+												label
+													input(type='checkbox')
+													| Checkbox
+									.form-group
+										label.col-lg-2.control-label(for='textArea') Textarea
+										.col-lg-10
+											textarea#textArea.form-control(rows='3')
+											span.help-block
+												| A longer block of help text that breaks onto a new line and may extend beyond one line.
+									.form-group
+										label.col-lg-2.control-label Radios
+										.col-lg-10
+											.radio
+												label
+													input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+													| Option one is this
+											.radio
+												label
+													input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+													| Option two can be something else
+									.form-group
+										label.col-lg-2.control-label(for='select') Selects
+										.col-lg-10
+											select#select.form-control
+												option 1
+												option 2
+												option 3
+												option 4
+												option 5
+											br
+											select.form-control(multiple='')
+												option 1
+												option 2
+												option 3
+												option 4
+												option 5
+									.form-group
+										.col-lg-10.col-lg-offset-2
+											button.btn.btn-default(type='reset') Cancel
+											button.btn.btn-primary(type='submit') Submit
+
+					.col-lg-4.col-lg-offset-1
+						form.bs-component
+							.form-group
+								label.control-label(for='focusedInput') Focused input
+								input#focusedInput.form-control(type='text', value='This is focused...')
+							.form-group
+								label.control-label(for='disabledInput') Disabled input
+								input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
+							.form-group.has-warning
+								label.control-label(for='inputWarning') Input warning
+								input#inputWarning.form-control(type='text')
+							.form-group.has-error
+								label.control-label(for='inputError') Input error
+								input#inputError.form-control(type='text')
+							.form-group.has-success
+								label.control-label(for='inputSuccess') Input success
+								input#inputSuccess.form-control(type='text')
+							.form-group
+								label.control-label(for='inputLarge') Large input
+								input#inputLarge.form-control.input-lg(type='text')
+							.form-group
+								label.control-label(for='inputDefault') Default input
+								input#inputDefault.form-control(type='text')
+							.form-group
+								label.control-label(for='inputSmall') Small input
+								input#inputSmall.form-control.input-sm(type='text')
+							.form-group
+								label.control-label Input addons
+								.input-group
+									span.input-group-addon $
+									input.form-control(type='text')
+									span.input-group-btn
+										button.btn.btn-default(type='button') Button
+

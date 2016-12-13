@@ -1,0 +1,132 @@
+// Componant: Sidebar Nav
+
+.main-sidebar
+	position: absolute
+	top: 0
+	left: 0
+	padding-top: 50px
+	min-height: 100vh
+	width: 230px
+	z-index: 810
+	box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2)
+	transition: transform 0.3s ease-in-out, width 0.3s ease-in-out
+
+@media (max-width: 767px)
+	.main-sidebar
+		padding-top: 100px
+		transform: translate(-230px, 0)
+	.sidebar-open
+		.main-sidebar
+			transform: translate(0, 0)
+
+@media (min-width: 768px)
+	.sidebar-collapse
+		.main-sidebar
+			transform: translate(-230px, 0)
+
+.sidebar
+	padding-bottom: 10px
+	font-family: $alt-font
+	font-size: 16px
+
+	.user-panel
+		position: relative
+		width: 100%
+		padding: 10px
+		margin-top: 20px
+		margin-bottom: 20px
+		overflow: hidden
+		white-space: nowrap
+		&:before
+			content: " "
+			display: table
+		&:after
+			content: " "
+			display: table
+			clear: both
+		>
+			.image > img
+				width: 100%
+				max-width: 45px
+				height: auto
+			.info
+				padding: 5px 5px 5px 15px
+				line-height: 1
+				position: absolute
+				left: 55px
+				>
+					p
+						margin-top: 2px
+						margin-bottom: 5px
+						font-family: $body-font
+						font-size: 17px
+					.designation
+						font-size: 13px
+
+.sidebar-menu
+	list-style: none
+	margin: 0
+	padding: 0
+	white-space: nowrap
+	overflow: hidden
+	&:hover
+		overflow: visible
+	> li
+		position: relative
+		margin: 0
+		padding: 0
+		> a
+			padding: 12px 5px 12px 15px
+			display: block
+			position: relative
+			border-left: 3px solid transparent
+			> .fa
+				width: 25px
+		.label, .badge
+			margin-top: 3px
+			margin-right: 5px
+	li
+		&.header
+			padding: 10px 25px 10px 15px
+			font-size: 12px
+			white-space: nowrap
+			overflow: hidden
+		> a > .fa-angle-right
+			width: auto
+			height: auto
+			position: absolute
+			right: 0
+			padding: 0
+			float: none
+			margin-right: 10px
+			margin-top: 3px
+			transition: all 0.3s ease
+		&.active >
+			a > .fa-angle-right
+				transform: rotate(90deg)
+				transform-origin: center
+			.treeview-menu
+				display: block
+	.treeview-menu
+		display: none
+		list-style: none
+		margin: 0
+		padding-left: 5px
+		padding-top: 5px
+		padding-bottom: 5px
+		.treeview-menu
+			padding-left: 20px
+		> li
+			margin: 0
+			> a
+				padding: 5px 5px 5px 15px
+				display: block
+				font-size: 14px
+				position: relative
+				>
+					.fa-angle-left, .fa-angle-down
+						width: auto
+				>
+					i
+						&:first-of-type
+							margin-right:  5px

@@ -1,0 +1,89 @@
+// Page: User Profile
+
+.user
+	.profile
+		margin: -30px -30px 0 -30px
+		display: flex
+		.info
+			padding: 30px 60px
+			text-align: center
+			background-color: #fff
+			white-space: nowrap
+			background-color: #404040
+			color: #fff
+			img
+				border-radius: 50%
+				max-width: 110px
+				margin-bottom: 20px
+				margin-top: 10px
+		.cover-image
+			flex: 1
+			background-image: url(http://placeimg.com/1200/300/nature)
+			background-size: cover
+			background-position: center
+
+	.user-tabs
+		margin-top: 20px
+		> li
+			&.active
+				> a
+					border-left: 3px solid $primary-color
+					border-bottom: 0
+					background-color: #eee !important
+			> a
+				border-left: 3px solid transparent
+				padding: 12px 15px
+				border-bottom: 0
+				font-size: 15px
+				&:hover,
+				&:active
+					background-color: #eee !important
+					border-bottom: 0
+
+	.tab-content
+		margin: 20px -10px -10px
+
+	.timeline
+		.post
+			background-color: #fff
+			padding: 20px
+			margin-bottom: 20px
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
+
+			.post-media
+				display: flex
+				align-items: flex-start
+				margin-bottom: 15px
+				img
+					margin-right: 10px
+				h5
+					margin-top: 0
+					margin-bottom: 3px
+					font-size: 15px
+			
+			.post-content
+				margin-bottom: 20px
+
+			.post-utility
+				display: flex
+				list-style: none
+				padding-left: 0
+				margin-bottom: 0
+				.likes,
+				.shares
+					margin-right: 10px
+					a
+						color: #555
+				.comments
+					color: #555
+					flex: 1
+					text-align: right
+
+	.user-settings
+		.line-head
+			font-size: 18px
+			margin-bottom: 30px
+			color: #2a2a2a
+		label
+			color: #666
+

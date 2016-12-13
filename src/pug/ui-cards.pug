@@ -1,0 +1,73 @@
+extends layouts/_layout.pug
+
+block content
+	.page-title
+		div
+			h1
+				i.fa.fa-laptop
+				|  Cards
+			p
+				| New Componant to replace pannels
+
+		div
+			ul.breadcrumb
+				li
+					i.fa.fa-home.fa-lg
+				li
+					| UI
+				li
+					a(href="#") Cards
+
+	.row
+		.col-md-6
+			.card
+				h3.card-title Card Title
+				.card-body.
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
+				.card-footer
+					a.btn.btn-primary(href="#") Link
+
+		.col-md-6
+			.card
+				.card-title-w-btn
+					h3.title All Items
+					p
+						a.btn.btn-primary.icon-btn(href="")
+							i.fa.fa-plus
+							| Add Item	
+				.card-body.
+					<b>Card with action button </b><br>
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
+
+
+		.clearfix
+
+		.col-md-6
+			.card
+				.card-title-w-btn
+					h3.title All Items
+					.btn-group
+						a.btn.btn-primary(href='#') <i class="fa fa-lg fa-plus"></i>
+						a.btn.btn-info(href='#') <i class="fa fa-lg fa-edit"></i>
+						a.btn.btn-warning(href='#') <i class="fa fa-lg fa-trash"></i>
+				.card-body.
+					<b>Card with button group </b><br>
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
+
+		.col-md-6
+			.card
+				.overlay
+					.m-loader.mr-20.
+						<svg class="m-circular" viewBox="25 25 50 50">
+							<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
+						</svg>
+					h3.l-text Loading
+				.card-title-w-btn
+					h3.title All Items
+					p
+						a.btn.btn-primary.icon-btn(href="")
+							i.fa.fa-plus
+							| Add Item	
+				.card-body.
+					<b>Card with action button </b><br>
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.

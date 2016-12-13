@@ -1,0 +1,66 @@
+header.main-header.hidden-print
+	a.logo(href='index.html')
+		| Vali
+
+	nav.navbar.navbar-static-top
+		// Sidebar toggle button
+		a.sidebar-toggle(href='#', data-toggle='offcanvas')
+
+		// Navbar Right Menu
+		.navbar-custom-menu
+			ul.top-nav
+
+				//Notification Menu
+				li.dropdown.notification-menu
+					a.dropdown-toggle(href='#', data-toggle='dropdown', aria-expanded='false')
+						i.fa.fa-bell-o.fa-lg
+					ul.dropdown-menu
+						li.not-head
+							| You have 4 new notifications.
+						li
+							a.media(href='javascript:;')
+								span.media-left.media-icon
+									span.fa-stack.fa-lg
+										i.fa.fa-circle.fa-stack-2x.text-primary
+										i.fa.fa-envelope.fa-stack-1x.fa-inverse
+								.media-body
+									span.block Lisa sent you a mail
+									span.text-muted.block 2min ago
+						li
+							a.media(href='javascript:;')
+								span.media-left.media-icon
+									span.fa-stack.fa-lg
+										i.fa.fa-circle.fa-stack-2x.text-danger
+										i.fa.fa-hdd-o.fa-stack-1x.fa-inverse
+								.media-body
+									span.block Server Not Working
+									span.text-muted.block 2min ago
+						li
+							a.media(href='javascript:;')
+								span.media-left.media-icon
+									span.fa-stack.fa-lg
+										i.fa.fa-circle.fa-stack-2x.text-success
+										i.fa.fa-money.fa-stack-1x.fa-inverse
+								.media-body
+									span.block Transaction xyz complete
+									span.text-muted.block 2min ago
+						li.not-footer
+							a(href='#') See all notifications.
+
+				// User Menu
+				li.dropdown
+					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+						i.fa.fa-user.fa-lg
+					ul.dropdown-menu.settings-menu
+						li
+							a(href='page-user.html')
+								i.fa.fa-cog.fa-lg
+								|  Settings
+						li
+							a(href='page-user.html')
+								i.fa.fa-user.fa-lg
+								|  Profile
+						li
+							a(href='page-login.html')
+								i.fa.fa-sign-out.fa-lg
+								|  Logout

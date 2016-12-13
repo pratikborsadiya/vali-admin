@@ -1,0 +1,114 @@
+extends layouts/_layout.pug
+
+block content
+	.page-title.hidden-print
+		div
+			h1
+				i.fa.fa-file-text-o
+				|  Invoice
+			p A Printable Invoice Format
+
+		div
+			ul.breadcrumb
+				li
+					i.fa.fa-home.fa-lg
+				li
+					a(href='#') Invoice
+
+	.row
+		.col-md-12
+			.card
+				section.invoice
+
+					.row
+						.col-xs-12
+							h2.page-header
+								i.fa.fa-globe
+								|  Vali
+								small.pull-right Date: 01/01/2016
+
+					.row.invoice-info
+						.col-xs-4
+							| From
+							address
+								strong Vali Ltd.
+								br
+								| 518 Akshar Avenue
+								br
+								| Gandhi Marg
+								br
+								| New Delhi
+								br
+								| Email: hello@vali.com
+
+						.col-xs-4
+							| To
+							address
+								strong John Doe
+								br
+								|             795 Folsom Ave, Suite 600
+								br
+								|             San Francisco, CA 94107
+								br
+								|             Phone: (555) 539-1037
+								br
+								|             Email: john.doe@example.com
+
+						.col-xs-4
+							b Invoice #007612
+							br
+							br
+							b Order ID:
+							|  4F3S8J
+							br
+							b Payment Due:
+							|  2/22/2014
+							br
+							b Account:
+							|  968-34567
+							
+					.row
+						.col-xs-12.table-responsive
+							table.table.table-striped
+								thead
+									tr
+										th Qty
+										th Product
+										th Serial #
+										th Description
+										th Subtotal
+								tbody
+									tr
+										td 1
+										td Call of Duty
+										td 455-981-221
+										td El snort testosterone trophy driving gloves handsome
+										td $64.50
+									tr
+										td 1
+										td Need for Speed IV
+										td 247-925-726
+										td Wes Anderson umami biodiesel
+										td $50.00
+									tr
+										td 1
+										td Monsters DVD
+										td 735-845-642
+										td Terry Richardson helvetica tousled street art master
+										td $10.70
+									tr
+										td 1
+										td Grown Ups Blue Ray
+										td 422-568-642
+										td Tousled lomo letterpress
+										td $25.99
+
+					.row.hidden-print.mt-20
+						.col-xs-12.text-right
+							a.btn.btn-primary(href='javascript:window.print();', target='_blank')
+								i.fa.fa-print
+								|  Print
+
+block specific-js
+	script(type="text/javascript").
+		$('body').removeClass("sidebar-mini").addClass("sidebar-collapse");

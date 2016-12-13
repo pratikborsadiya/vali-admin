@@ -1,0 +1,58 @@
+.pace {
+	pointer-events: none;
+	user-select: none
+}
+.pace-inactive {
+	display: none
+}
+.pace .pace-progress {
+	background: $complementry-color;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 2px
+}
+.pace .pace-progress-inner {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 100%;
+	box-shadow: 0 0 10px $complementry-color, 0 0 5px $complementry-color;
+	opacity: 1;
+	transform: rotate(3deg) translate(0px, -4px)
+}
+.pace .pace-activity {
+	display: block;
+	position: fixed;
+	z-index: 2000;
+	top: 15px;
+	right: 50%;
+	width: 14px;
+	height: 14px;
+	border: solid 2px transparent;
+	border-top-color: $complementry-color;
+	border-left-color: $complementry-color;
+	border-radius: 10px;
+	animation: pace-spinner 500ms linear infinite
+}
+@media (max-width: 767px) {
+	.pace .pace-activity {
+		top: 15px;
+		right: 15px;
+		width: 14px;
+		height: 14px
+	}
+}
+@keyframes pace-spinner {
+	0% {
+		transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}

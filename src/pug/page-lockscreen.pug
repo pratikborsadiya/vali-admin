@@ -1,0 +1,34 @@
+doctype html
+html
+	head
+		include includes/_head.pug
+
+	body
+		section.material-half-bg
+			.cover
+				
+		section.lockscreen-content
+			.logo
+				h1 Vali
+
+			.lock-box
+				img.img-circle.user-image(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg")
+
+				h4.text-center.user-name John Doe
+
+				p.text-center.text-muted Account Locked
+
+				form.unlock-form(action="index.html")
+					.form-group
+						label.control-label PASSWORD
+						input.form-control(type="password", placeholder="Password", autofocus)
+
+					.form-group.btn-container
+							button.btn.btn-primary.btn-block(type="submit")
+								| UNLOCK 
+								i.fa.fa-unlock.fa-lg
+
+				p
+					a(href="page-login.html") Not John ? Login Here.
+
+	include includes/_javascript.pug

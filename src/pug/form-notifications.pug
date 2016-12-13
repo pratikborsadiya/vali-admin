@@ -1,0 +1,75 @@
+extends layouts/_layout.pug
+
+block content
+	.page-title
+		div
+			h1
+				i.fa.fa-bell-o
+				|  Form Notifications
+			p Jquery Plugins to notify user status about some action.
+
+		div
+			ul.breadcrumb
+				li
+					i.fa.fa-home.fa-lg
+				li
+					a(href='#') Form Notifications
+
+	.row
+		.col-md-6
+			.card
+				.card-title-w-btn
+						h3.title Bootstrap Notify
+						p
+							a.btn.btn-primary.icon-btn(href="http://bootstrap-notify.remabledesigns.com/",target="_blank")
+								i.fa.fa-file
+								| Docs
+				.card-body
+					p This plugin can be used to notify user about status of some action which he has performed.
+					h4 Demo
+					a.btn.btn-info#demoNotify(href="#") Sample Notification
+
+		.col-md-6
+			.card
+				.card-title-w-btn
+						h3.title SweetAlert
+						p
+							a.btn.btn-primary.icon-btn(href="http://t4t5.github.io/sweetalert/",target="_blank")
+								i.fa.fa-file
+								| Docs
+				.card-body
+					p This plugin can be used as the replacement of native javascript alert, confirm and prompt functions.
+					h4 Demo
+					a.btn.btn-info#demoSwal(href="#") Sample Alert
+
+block specific-js
+	script(type='text/javascript', src="js/plugins/bootstrap-notify.min.js")
+	script(type='text/javascript', src="js/plugins/sweetalert.min.js")
+	script(type='text/javascript').
+		$('#demoNotify').click(function(){
+			$.notify({
+				title: "Update Complete : ",
+				message: "Something cool is just updated!",
+				icon: 'fa fa-check' 
+			},{
+				type: "info"
+			});
+		});
+		$('#demoSwal').click(function(){
+			swal({
+				title: "Are you sure?",
+				text: "You will not be able to recover this imaginary file!",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonText: "Yes, delete it!",
+				cancelButtonText: "No, cancel plx!",
+				closeOnConfirm: false,
+				closeOnCancel: false
+			}, function(isConfirm) {
+				if (isConfirm) {
+					swal("Deleted!", "Your imaginary file has been deleted.", "success");
+				} else {
+					swal("Cancelled", "Your imaginary file is safe :)", "error");
+				}
+			});
+		});

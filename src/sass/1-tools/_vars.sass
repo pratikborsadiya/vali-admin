@@ -1,43 +1,51 @@
 //
 // Application Variables
-//
+//-----------------------------------------------------
 
 // Primary font
 $body-font: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 
-// Sidebar font
-$alt-font: "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
-
-
 //
-// Skin Colors
+// Theme Colors
 //
 
 $white: #FFF
 
-// ***** Sample Primary Colors *****
-//
+// Primary color is the main color of the applicarion which is used 
+// for navbar, active links and primary button.
+
+// ------ Primary Colors from google material design color palette ------
 // Blue  : #2196F3
 // Teal  : #009688
 // Green : #4CAF50
 // Brown : #795548
 // Purple: #673AB7
-//
 
-$primary-color: #673AB7
+$primary-color: #009688
+
+// Complementry color is used to indecate the loading bar on the top
+// of the page with pace.js plugin
 $complementry-color: adjust_hue($primary-color, 180)
 
-// ***** Sample Sidebar Colors *****
-//
+// ------- Sidebar Colors --------
+
+// -- Suggested sidebar colors
 // dark  : #222d32
 // light : #f8f8f8
-//
 
+// Sidebar color is used as background color of sidebar
 $sidebar-color: #222d32
-$sidebar-accent: dark    // Allowed values are 'light' or 'dark'
 
+// Sidebar accent varible is used to determine the color of the links
+// in the sidebar the only Allowed values are 'light' or 'dark'
+$sidebar-accent: dark
+
+// The following varibles indecate sidebar link color
+// and link hover color when using a dark sidebar color
 $sidebar-dark-color: #fff
 $sidebar-dark-link-color: #fff
 
+// The following varibles indecate sidebar link color
+// and link hover color when using a light sidebar color
 $sidebar-light-color: #000
 $sidebar-light-link-color: #555

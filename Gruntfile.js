@@ -2,9 +2,12 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
+			options: {
+				livereload: true
+			},
 			scss: {
-				files: ['src/sass/**/*.sass', 'src/sass/**/*.sss'],
-				tasks: ['sass', 'autoprefixer'],
+				files: ['src/sass/**/*.sass', 'src/sass/**/*.scss'],
+				tasks: ['sass', 'postcss'],
 				options: {
 					interrupt: true
 				}
@@ -34,7 +37,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					outputStyle: 'compressed',
+					outputStyle: 'expanded',
 					sourceMap: true
 				},
 				files: [{
@@ -46,24 +49,25 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
-		autoprefixer: {
+		postcss: {
 			options: {
-				browsers: ['last 2 versions', '> 5%'],
-				safe: true,
-				map: false
+				map: false,
+				processors: [
+					require('autoprefixer')({browsers: 'last 3 versions'})
+				]
 			},
 			dist: {
-				src: ['dist/css/main.css']
+				src: ['dist/css/*.css']
 			}
 		}
 	});
 
 	// Load the Grunt plugins.
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-pug');
-	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-postcss');
+	grunt.loadNpmTasks('grunt-contrib-pug');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('build', ['pug','sass','autoprefixer']);
+	grunt.registerTask('default', ['watch']);grunt.loadNpmTasks('grunt-postcss');
+	grunt.registerTask('build', ['pug','sass','postcss']);
 };

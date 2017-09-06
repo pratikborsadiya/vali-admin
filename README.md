@@ -5,9 +5,11 @@
 Vali is a free, modular and easy to customize admin theme built using [Bootstrap](https://getbootstrap.com), [SASS](http://sass-lang.com) and [Pug.js](https://pugjs.org/language/attributes.html).
 
 ## Getting started
-Run a `npm install` command in project root directory to install and build dependencies. If you don't want to edit theme you can use the compiled files inside dist folder.
 
-Use `grunt watch` task to edit and compile source files. use `grunt build` task to compile all source files.
+Run a `npm install` command in project root directory to install and build dependencies. If you don't want to edit theme you can use the compiled files inside `dist` folder.
+
+Use `npm run dev` task to watch and compile source files.
+Use `npm run build` task to compile all source files.
 
 For more information about customizing theme please follow this [link](http://pratikborsadiya.in/blog/vali-admin/).
 

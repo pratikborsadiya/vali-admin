@@ -68,6 +68,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-pug');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['watch']);grunt.loadNpmTasks('grunt-postcss');
+	// Set task aliases
+	grunt.registerTask('default', ['watch']);
 	grunt.registerTask('build', ['pug','sass','postcss']);
 };

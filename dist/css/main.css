@@ -14530,6 +14530,12 @@ be a descendant of the grid when it is being dragged.
   padding-left: 0;
 }
 
+.card .card-title-w-btn .btn-group {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 .card .card-footer {
   border-top: 1px solid #ddd;
   padding: 20px 0 0 0;

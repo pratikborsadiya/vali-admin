@@ -3,7 +3,12 @@ extends layouts/_layout.pug
 block content
 	.page-title
 		div
-			h1 Data Table
+			h1
+				i.fa.fa-th-list
+				|  Data Table
+			p Table to display analytical data effectively
+
+		div
 			ul.breadcrumb.side
 				li
 					i.fa.fa-home.fa-lg
@@ -11,12 +16,6 @@ block content
 					| Tables
 				li.active
 					a(href="#") Data Table
-
-		div
-			a.btn.btn-primary.btn-flat(href='#') <i class="fa fa-lg fa-plus"></i>
-			a.btn.btn-info.btn-flat(href='#') <i class="fa fa-lg fa-refresh"></i>
-			a.btn.btn-warning.btn-flat(href='#') <i class="fa fa-lg fa-trash"></i>
-
 
 	.row
 		.col-md-12
@@ -433,6 +432,7 @@ block content
 								td $112,000
 
 block specific-js
+	// Data table plugin
 	script(type='text/javascript', src="js/plugins/jquery.dataTables.min.js")
 	script(type='text/javascript', src="js/plugins/dataTables.bootstrap.min.js")
 	script(type='text/javascript').

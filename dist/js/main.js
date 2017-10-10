@@ -123,4 +123,9 @@ $(function () {
 		color: "rgba(0,0,0,0.8)",
 		size: "3px"
 	});
+
+	if ( $('body').hasClass('fixed') && $('body').hasClass('sidebar-mini') && $('body').hasClass('sidebar-collapse')) {
+		$('.sidebar').css("overflow","visible");
+		$('.main-sidebar').find(".slimScrollDiv").css("overflow","visible");
+	}
 });

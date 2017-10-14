@@ -54,7 +54,7 @@
       <aside class="main-sidebar hidden-print">
         <section class="sidebar">
           <div class="user-panel">
-            <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
+            <div class="pull-left image"><img class="rounded-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
             <div class="pull-left info">
               <p>John Doe</p>
               <p class="designation">Frontend Developer</p>
@@ -127,16 +127,16 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">Line Chart</h3>
+            <div class="tile">
+              <h3 class="tile-title">Line Chart</h3>
               <div class="embed-responsive embed-responsive-16by9">
                 <canvas class="embed-responsive-item" id="lineChartDemo"></canvas>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">Bar Chart</h3>
+            <div class="tile">
+              <h3 class="tile-title">Bar Chart</h3>
               <div class="embed-responsive embed-responsive-16by9">
                 <canvas class="embed-responsive-item" id="barChartDemo"></canvas>
               </div>
@@ -144,16 +144,16 @@
           </div>
           <div class="clearfix"></div>
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">Radar Chart</h3>
+            <div class="tile">
+              <h3 class="tile-title">Radar Chart</h3>
               <div class="embed-responsive embed-responsive-16by9">
                 <canvas class="embed-responsive-item" id="radarChartDemo"></canvas>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">Polar Chart</h3>
+            <div class="tile">
+              <h3 class="tile-title">Polar Chart</h3>
               <div class="embed-responsive embed-responsive-16by9">
                 <canvas class="embed-responsive-item" id="polarChartDemo"></canvas>
               </div>
@@ -161,16 +161,16 @@
           </div>
           <div class="clearfix"></div>
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">Pie Chart</h3>
+            <div class="tile">
+              <h3 class="tile-title">Pie Chart</h3>
               <div class="embed-responsive embed-responsive-16by9">
                 <canvas class="embed-responsive-item" id="pieChartDemo"></canvas>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">Doughnut Chart</h3>
+            <div class="tile">
+              <h3 class="tile-title">Doughnut Chart</h3>
               <div class="embed-responsive embed-responsive-16by9">
                 <canvas class="embed-responsive-item" id="doughnutChartDemo"></canvas>
               </div>
@@ -180,10 +180,12 @@
       </div>
     </div>
     <!-- Javascripts-->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/pace.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
     <script type="text/javascript" src="js/plugins/chart.js"></script>
     <script type="text/javascript">
       var data = {

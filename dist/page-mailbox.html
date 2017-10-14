@@ -54,7 +54,7 @@
       <aside class="main-sidebar hidden-print">
         <section class="sidebar">
           <div class="user-panel">
-            <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
+            <div class="pull-left image"><img class="rounded-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
             <div class="pull-left info">
               <p>John Doe</p>
               <p class="designation">Frontend Developer</p>
@@ -126,9 +126,9 @@
         </div>
         <div class="row">
           <div class="col-md-3"><a class="mb-20 btn btn-primary btn-block" href="">Compose Mail</a>
-            <div class="card p-0">
-              <h4 class="card-title folder-head">Folders</h4>
-              <div class="card-body">
+            <div class="tile p-0">
+              <h4 class="tile-title folder-head">Folders</h4>
+              <div class="tile-body">
                 <ul class="nav nav-pills nav-stacked mail-nav">
                   <li class="active"><a href="#"><i class="fa fa-inbox fa-fw"></i> Inbox<span class="label label-primary pull-right">12</span></a></li>
                   <li><a href="#"><i class="fa fa-envelope-o fa-fw"></i> Sent</a></li>
@@ -140,7 +140,7 @@
             </div>
           </div>
           <div class="col-md-9">
-            <div class="card">
+            <div class="tile">
               <div class="mailbox-controls">
                 <div class="animated-checkbox">
                   <label>
@@ -284,9 +284,11 @@
       </div>
     </div>
     <!-- Javascripts-->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/pace.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
   </body>
 </html>

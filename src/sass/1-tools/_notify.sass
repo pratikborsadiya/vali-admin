@@ -5,16 +5,16 @@
 	color: $white
 
 	&.alert-success
-		background-color: $brand-success
+		background-color: theme-color("success");
 
 	&.alert-info
-		background-color: $brand-info
+		background-color: theme-color("info")
 
 	&.alert-warning
-		background-color: lighten($brand-warning, 10)
+		background-color: lighten(theme-color("warning"), 10)
 
 	&.alert-danger
-		background-color: lighten($brand-danger, 5)
+		background-color: lighten(theme-color("danger"), 5)
 
 	button[data-notify="dismiss"]
 		margin-left: 5px

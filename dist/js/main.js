@@ -100,6 +100,11 @@ $(function () {
 				e.preventDefault();
 			}
 		});
+
+		//open parent menus when child item is active
+		$(document).ready(function () {
+			$(menu).find('.treeview-menu li.active').parents('.treeview').addClass('active');
+       		 });
 	};
 
 	// Activate sidenav treemenu

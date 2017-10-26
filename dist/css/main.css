@@ -16192,6 +16192,7 @@ be a descendant of the grid when it is being dragged.
   padding-right: 0 !important;
 }
 
+/*----- Componant: Top Navigation Bar ----- */
 .main-header {
   position: relative;
   max-height: 100px;
@@ -16199,11 +16200,16 @@ be a descendant of the grid when it is being dragged.
 }
 
 .main-header > .navbar {
+  padding: 0;
   margin-bottom: 0;
   margin-left: 230px;
   border: none;
   max-height: 50px;
   border-radius: 0;
+}
+
+.main-header a:hover {
+  text-decoration: none;
 }
 
 .main-header .sidebar-toggle {
@@ -16252,7 +16258,7 @@ be a descendant of the grid when it is being dragged.
   display: inline-block;
   float: right;
   margin-bottom: 0;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .main-header .top-nav > li {
@@ -16266,6 +16272,10 @@ be a descendant of the grid when it is being dragged.
   padding-top: 15px;
   padding-bottom: 15px;
   line-height: 20px;
+}
+
+.main-header .top-nav .dropdown-toggle:after {
+  display: none;
 }
 
 .main-header .top-nav .settings-menu li a {
@@ -16351,6 +16361,10 @@ be a descendant of the grid when it is being dragged.
   -o-transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.main-sidebar a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
@@ -16706,6 +16720,7 @@ be a descendant of the grid when it is being dragged.
 .tile .tile-title {
   margin-top: 0;
   margin-bottom: 20px;
+  font-size: 1.50rem;
 }
 
 .tile .tile-title-w-btn {
@@ -17143,7 +17158,7 @@ be a descendant of the grid when it is being dragged.
   display: flex;
   border-radius: 4px;
   color: #FFF;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -17162,6 +17177,7 @@ be a descendant of the grid when it is being dragged.
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px 0 0 4px;
+  font-size: 2.5rem;
 }
 
 .widget-small .info {
@@ -17178,6 +17194,7 @@ be a descendant of the grid when it is being dragged.
   margin: 0;
   margin-bottom: 5px;
   font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .widget-small .info p {

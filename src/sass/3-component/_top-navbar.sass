@@ -1,15 +1,18 @@
-// Componant: Top Navigation Bar
+/*----- Componant: Top Navigation Bar ----- */
  
 .main-header
 	position: relative
 	max-height: 100px
 	z-index: 1030
 	> .navbar
+		padding: 0
 		margin-bottom: 0
 		margin-left: 230px
 		border: none
 		max-height: 50px
 		border-radius: 0
+	a:hover
+		text-decoration: none
 	.sidebar-toggle
 		float: left
 		background-color: transparent
@@ -45,7 +48,7 @@
 		display: inline-block
 		float: right
 		margin-bottom: 0
-		margin-right: 50px
+		margin-right: 30px
 
 		> li
 			display: inline-block
@@ -57,6 +60,10 @@
 				padding-top: 15px
 				padding-bottom: 15px
 				line-height: 20px
+
+		.dropdown-toggle:after
+			display: none
+
 		.settings-menu
 			li a
 				font-weight: 500

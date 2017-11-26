@@ -10,11 +10,11 @@ block content
 
 		div
 			ul.breadcrumb
-				li
+				li.breadcrumb-item
 					i.fa.fa-home.fa-lg
-				li
+				li.breadcrumb-item
 					| Tables
-				li.active
+				li.breadcrumb-item.active
 					a(href="#") Simple Tables
 
 	.row
@@ -131,7 +131,7 @@ block content
 		.col-md-6
 			.tile
 				h3.tile-title Condensed Table
-				table.table.table-condensed
+				table.table.table-sm
 					thead
 						tr
 							th #
@@ -176,22 +176,22 @@ block content
 							th Last Name
 							th Username
 					tbody
-						tr.info
+						tr.table-info
 							td 1
 							td Mark
 							td Otto
 							td @mdo
-						tr.success
+						tr.table-success
 							td 2
 							td Jacob
 							td Thornton
 							td @fat
-						tr.danger
+						tr.table-danger
 							td 3
 							td Larry
 							td the Bird
 							td @twitter
-						tr.warning
+						tr.table-warning
 							td 4
 							td Jacob
 							td Thornton

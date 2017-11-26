@@ -10,17 +10,17 @@ block content
 
 		div
 			ul.breadcrumb
-				li
+				li.breadcrumb-item
 					i.fa.fa-home.fa-lg
-				li
+				li.breadcrumb-item
 					| Forms
-				li
+				li.breadcrumb-item
 					a(href="#") Sample Forms
 
 	.row
 		.col-md-6
 			.tile
-				h3.tile-title Register
+				h3.tile-title Vertical Form
 				.tile-body
 					form
 						.form-group
@@ -37,13 +37,13 @@ block content
 
 						.form-group
 							label.control-label Gender
-							.radio
-								label
-									input(type='radio', name="gender")
+							.form-check
+								label.form-check-label
+									input.form-check-input(type='radio', name="gender")
 									| Male
-							.radio
-								label
-									input(type='radio', name="gender")
+							.form-check
+								label.form-check-label
+									input.form-check-input(type='radio', name="gender")
 									| Female
 
 						.form-group
@@ -51,17 +51,17 @@ block content
 							input.form-control(type="file")
 
 						.form-group
-							.checkbox
-								label
-									input(type='checkbox')
+							.form-check
+								label.form-check-label
+									input.form-check-input(type='checkbox')
 									| I accept the terms and conditions
 
 				.tile-footer
-					button.btn.btn-primary.icon-btn(type="button")
+					button.btn.btn-primary(type="button")
 						i.fa.fa-fw.fa-lg.fa-check-circle
 						| Register
 					| &nbsp;&nbsp;&nbsp;
-					a.btn.btn-default.icon-btn(href="#")
+					a.btn.btn-secondary(href="#")
 						i.fa.fa-fw.fa-lg.fa-times-circle
 						| Cancel
 
@@ -70,53 +70,53 @@ block content
 				h3.tile-title Register
 				.tile-body
 					form.form-horizontal
-						.form-group
+						.form-group.row
 							label.control-label.col-md-3 Name
 							.col-md-8
 								input.form-control(type="text", placeholder="Enter full name")
 
-						.form-group
+						.form-group.row
 							label.control-label.col-md-3 Email
 							.col-md-8
 								input.form-control.col-md-8(type="email", placeholder="Enter email address")
 
-						.form-group
+						.form-group.row
 							label.control-label.col-md-3 Address
 							.col-md-8
 								textarea.form-control(rows="4", placeholder="Enter your address")
 
-						.form-group
+						.form-group.row
 							label.control-label.col-md-3 Gender
 							.col-md-9
-								.radio-inline
-									label
-										input(type='radio', name="gender")
+								.form-check
+									label.form-check-label
+										input.form-check-input(type='radio', name="gender")
 										| Male
-								.radio-inline
-									label
-										input(type='radio', name="gender")
+								.form-check
+									label.form-check-label
+										input.form-check-input(type='radio', name="gender")
 										| Female
 
-						.form-group
+						.form-group.row
 							label.control-label.col-md-3 Identity Proof
 							.col-md-8
 								input.form-control(type="file")
 
-						.form-group
+						.form-group.row
 							.col-md-8.col-md-offset-3
-								.checkbox
-									label
-										input(type='checkbox')
+								.form-check
+									label.form-check-label
+										input.form-check-input(type='checkbox')
 										| I accept the terms and conditions
 
 				.tile-footer
 					.row
 						.col-md-8.col-md-offset-3
-							button.btn.btn-primary.icon-btn(type="button")
+							button.btn.btn-primary(type="button")
 								i.fa.fa-fw.fa-lg.fa-check-circle
 								| Register
 							| &nbsp;&nbsp;&nbsp;
-							a.btn.btn-default.icon-btn(href="#")
+							a.btn.btn-secondary(href="#")
 								i.fa.fa-fw.fa-lg.fa-times-circle
 								| Cancel
 		.clearix
@@ -127,18 +127,18 @@ block content
 
 				.tile-body
 
-					form.form-inline
+					form.row
 
-						.form-group
+						.form-group.col-md-3
 							label.control-label Name
 							input.form-control(type="text", placeholder="Enter your name")
 
-						.form-group
+						.form-group.col-md-3
 							label.control-label Email
 							input.form-control(type="text", placeholder="Enter your email")
 
-						.form-group
-							button.btn.btn-primary.icon-btn(type="button")
+						.form-group.col-md-4.align-self-end
+							button.btn.btn-primary(type="button")
 								i.fa.fa-fw.fa-lg.fa-check-circle
 								| Subscribe
 

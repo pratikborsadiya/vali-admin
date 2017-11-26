@@ -10,11 +10,11 @@ block content
 
 		div
 			ul.breadcrumb
-				li
+				li.breadcrumb-item
 					i.fa.fa-home.fa-lg
-				li
+				li.breadcrumb-item
 					| Forms
-				li
+				li.breadcrumb-item
 					a(href="#") Form Components
 
 	.row
@@ -22,91 +22,91 @@ block content
 			.tile
 				.row
 					.col-lg-6
-						.well.bs-component
-							form.form-horizontal
-								fieldset
-									legend Legend
-									.form-group
-										label.col-lg-2.control-label(for='inputEmail') Email
-										.col-lg-10
-											input#inputEmail.form-control(type='text', placeholder='Email')
-									.form-group
-										label.col-lg-2.control-label(for='inputPassword') Password
-										.col-lg-10
-											input#inputPassword.form-control(type='password', placeholder='Password')
-											.checkbox
-												label
-													input(type='checkbox')
-													| Checkbox
-									.form-group
-										label.col-lg-2.control-label(for='textArea') Textarea
-										.col-lg-10
-											textarea#textArea.form-control(rows='3')
-											span.help-block
-												| A longer block of help text that breaks onto a new line and may extend beyond one line.
-									.form-group
-										label.col-lg-2.control-label Radios
-										.col-lg-10
-											.radio
-												label
-													input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
-													| Option one is this
-											.radio
-												label
-													input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
-													| Option two can be something else
-									.form-group
-										label.col-lg-2.control-label(for='select') Selects
-										.col-lg-10
-											select#select.form-control
-												option 1
-												option 2
-												option 3
-												option 4
-												option 5
-											br
-											select.form-control(multiple='')
-												option 1
-												option 2
-												option 3
-												option 4
-												option 5
-									.form-group
-										.col-lg-10.col-lg-offset-2
-											button.btn.btn-default(type='reset') Cancel
-											button.btn.btn-primary(type='submit') Submit
+						form
+							.form-group
+								label(for='exampleInputEmail1') Email address
+								input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+								small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+							.form-group
+								label(for='exampleInputPassword1') Password
+								input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+							.form-group
+								label(for='exampleSelect1') Example select
+								select#exampleSelect1.form-control
+									option 1
+									option 2
+									option 3
+									option 4
+									option 5
+							.form-group
+								label(for='exampleSelect2') Example multiple select
+								select#exampleSelect2.form-control(multiple='')
+									option 1
+									option 2
+									option 3
+									option 4
+									option 5
+							.form-group
+								label(for='exampleTextarea') Example textarea
+								textarea#exampleTextarea.form-control(rows='3')
+							.form-group
+								label(for='exampleInputFile') File input
+								input#exampleInputFile.form-control-file(type='file', aria-describedby='fileHelp')
+								small#fileHelp.form-text.text-muted
+									| This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+							fieldset.form-group
+								legend Radio buttons
+								.form-check
+									label.form-check-label
+										input#optionsRadios1.form-check-input(type='radio', name='optionsRadios', value='option1', checked='')
+										| Option one is this and that—be sure to include why it's great
+								.form-check
+									label.form-check-label
+										input#optionsRadios2.form-check-input(type='radio', name='optionsRadios', value='option2')
+										| Option two can be something else and selecting it will deselect option one
+								.form-check.disabled
+									label.form-check-label
+										input#optionsRadios3.form-check-input(type='radio', name='optionsRadios', value='option3', disabled='')
+										| Option three is disabled
+							.form-check
+								label.form-check-label
+									input.form-check-input(type='checkbox')
+									| Check me out
 
-					.col-lg-4.col-lg-offset-1
-						form.bs-component
+					.col-lg-4.offset-lg-1
+						form
 							.form-group
-								label.control-label(for='focusedInput') Focused input
-								input#focusedInput.form-control(type='text', value='This is focused...')
+								fieldset(disabled='')
+									label.control-label(for='disabledInput') Disabled input
+									input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
 							.form-group
-								label.control-label(for='disabledInput') Disabled input
-								input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
-							.form-group.has-warning
-								label.control-label(for='inputWarning') Input warning
-								input#inputWarning.form-control(type='text')
-							.form-group.has-error
-								label.control-label(for='inputError') Input error
-								input#inputError.form-control(type='text')
+								fieldset
+									label.control-label(for='readOnlyInput') Readonly input
+									input#readOnlyInput.form-control(type='text', placeholder='Readonly input here…', readonly='')
 							.form-group.has-success
-								label.control-label(for='inputSuccess') Input success
-								input#inputSuccess.form-control(type='text')
+								label.form-control-label(for='inputSuccess1') Valid input
+								input#inputValid.form-control.is-valid(type='text')
+								.form-control-feedback Success! You've done it.
+							.form-group.has-danger
+								label.form-control-label(for='inputDanger1') Invalid input
+								input#inputInvalid.form-control.is-invalid(type='text')
+								.form-control-feedback Sorry, that username's taken. Try another?
 							.form-group
-								label.control-label(for='inputLarge') Large input
-								input#inputLarge.form-control.input-lg(type='text')
+								label.col-form-label.col-form-label-lg(for='inputLarge') Large input
+								input#inputLarge.form-control.form-control-lg(type='text')
 							.form-group
-								label.control-label(for='inputDefault') Default input
+								label.col-form-label(for='inputDefault') Default input
 								input#inputDefault.form-control(type='text')
 							.form-group
-								label.control-label(for='inputSmall') Small input
-								input#inputSmall.form-control.input-sm(type='text')
+								label.col-form-label.col-form-label-sm(for='inputSmall') Small input
+								input#inputSmall.form-control.form-control-sm(type='text')
 							.form-group
 								label.control-label Input addons
-								.input-group
-									span.input-group-addon $
-									input.form-control(type='text')
-									span.input-group-btn
-										button.btn.btn-default(type='button') Button
-
+								.form-group
+									label.sr-only(for='exampleInputAmount') Amount (in dollars)
+									.input-group
+										.input-group-addon $
+										input#exampleInputAmount.form-control(type='text', placeholder='Amount')
+										.input-group-addon .00
+				.tile-footer
+					button.btn.btn-primary(type='submit') Submit

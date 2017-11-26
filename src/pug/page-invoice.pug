@@ -1,7 +1,7 @@
 extends layouts/_layout.pug
 
 block content
-	.page-title.hidden-print
+	.page-title.d-print-none
 		div
 			h1
 				i.fa.fa-file-text-o
@@ -10,9 +10,9 @@ block content
 
 		div
 			ul.breadcrumb
-				li
+				li.breadcrumb-item
 					i.fa.fa-home.fa-lg
-				li
+				li.breadcrumb-item
 					a(href='#') Invoice
 
 	.row
@@ -21,14 +21,14 @@ block content
 				section.invoice
 
 					.row
-						.col-xs-12
+						.col-12
 							h2.page-header
 								i.fa.fa-globe
 								|  Vali
 								small.pull-right Date: 01/01/2016
 
 					.row.invoice-info
-						.col-xs-4
+						.col-4
 							| From
 							address
 								strong Vali Ltd.
@@ -41,20 +41,20 @@ block content
 								br
 								| Email: hello@vali.com
 
-						.col-xs-4
+						.col-4
 							| To
 							address
 								strong John Doe
 								br
-								|             795 Folsom Ave, Suite 600
+								| 795 Folsom Ave, Suite 600
 								br
-								|             San Francisco, CA 94107
+								| San Francisco, CA 94107
 								br
-								|             Phone: (555) 539-1037
+								| Phone: (555) 539-1037
 								br
-								|             Email: john.doe@example.com
+								| Email: john.doe@example.com
 
-						.col-xs-4
+						.col-4
 							b Invoice #007612
 							br
 							br
@@ -68,7 +68,7 @@ block content
 							|  968-34567
 							
 					.row
-						.col-xs-12.table-responsive
+						.col-12.table-responsive
 							table.table.table-striped
 								thead
 									tr
@@ -103,8 +103,8 @@ block content
 										td Tousled lomo letterpress
 										td $25.99
 
-					.row.hidden-print.mt-20
-						.col-xs-12.text-right
+					.row.d-print-none.mt-2
+						.col-12.text-right
 							a.btn.btn-primary(href='javascript:window.print();', target='_blank')
 								i.fa.fa-print
 								|  Print

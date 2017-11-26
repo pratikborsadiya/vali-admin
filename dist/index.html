@@ -19,7 +19,7 @@
   <body class="sidebar-mini fixed">
     <div class="wrapper">
       <!-- Navbar-->
-      <header class="main-header hidden-print"><a class="logo" href="index.html">Vali</a>
+      <header class="main-header d-print-none"><a class="logo" href="index.html">Vali</a>
         <nav class="navbar navbar-static-top">
           <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <!-- Navbar Right Menu-->
@@ -27,7 +27,7 @@
             <ul class="top-nav">
               <!--Notification Menu-->
               <li class="dropdown notification-menu"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell-o fa-lg"></i></a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-right">
                   <li class="not-head">You have 4 new notifications.</li>
                   <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
                       <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block">2min ago</span></div></a></li>
@@ -40,10 +40,10 @@
               </li>
               <!-- User Menu-->
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
-                <ul class="dropdown-menu settings-menu">
-                  <li><a href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-                  <li><a href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-                  <li><a href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+                  <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+                  <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                 </ul>
               </li>
             </ul>
@@ -51,7 +51,7 @@
         </nav>
       </header>
       <!-- Side-Nav-->
-      <aside class="main-sidebar hidden-print">
+      <aside class="main-sidebar d-print-none">
         <section class="sidebar">
           <div class="user-panel">
             <div class="pull-left image"><img class="rounded-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
@@ -120,8 +120,8 @@
           </div>
           <div>
             <ul class="breadcrumb">
-              <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -132,7 +132,7 @@
               <p>Vali is a free and responsive dashboard theme built with Bootstrap, Pug.js (templating) and SASS. It's fully customizable and modular. You don't need to add the code, you will not use.</p>
               <p>The issue with the most admin themes out there is that if you will see their source code there are a hell lot of external CSS and javascript files in there. And if you try to remove a CSS or Javascript file some things stops working.</p>
               <p>That's why I made Vali. Which is a light weight yet expendable and good looking theme. The theme has all the features required in a dashboard theme but this features are built like plug and play module. Take a look at the <a href="http://pratikborsadiya.in/blog/vali-admin" target="_blank">documentation</a> about customizing the theme.</p>
-              <p class="mt-40 mb-20"><a class="btn btn-primary icon-btn mr-10" href="http://pratikborsadiya.in/blog/vali-admin" target="_blank"><i class="fa fa-file"></i>Docs</a><a class="btn btn-info icon-btn mr-10" href="https://github.com/pratikborsadiya/vali-admin" target="_blank"><i class="fa fa-github"></i>GitHub</a><a class="btn btn-success icon-btn" href="https://github.com/pratikborsadiya/vali-admin/archive/master.zip" target="_blank"><i class="fa fa-download"></i>Download</a></p>
+              <p class="mt-4 mb-4"><a class="btn btn-primary icon-btn mr-2" href="http://pratikborsadiya.in/blog/vali-admin" target="_blank"><i class="fa fa-file"></i>Docs</a><a class="btn btn-info icon-btn mr-2" href="https://github.com/pratikborsadiya/vali-admin" target="_blank"><i class="fa fa-github"></i>GitHub</a><a class="btn btn-success icon-btn" href="https://github.com/pratikborsadiya/vali-admin/archive/master.zip" target="_blank"><i class="fa fa-download"></i>Download</a></p>
             </div>
           </div>
           <div class="col-md-6">

@@ -1,4 +1,4 @@
-header.main-header.hidden-print
+header.main-header.d-print-none
 	a.logo(href='index.html') Vali
 
 	nav.navbar.navbar-static-top
@@ -13,7 +13,7 @@ header.main-header.hidden-print
 				li.dropdown.notification-menu
 					a.dropdown-toggle(href='#', data-toggle='dropdown', aria-expanded='false')
 						i.fa.fa-bell-o.fa-lg
-					ul.dropdown-menu
+					ul.dropdown-menu.dropdown-menu-right
 						li.not-head
 							| You have 4 new notifications.
 						li
@@ -50,16 +50,16 @@ header.main-header.hidden-print
 				li.dropdown
 					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 						i.fa.fa-user.fa-lg
-					ul.dropdown-menu.settings-menu
+					ul.dropdown-menu.settings-menu.dropdown-menu-right
 						li
-							a(href='page-user.html')
+							a.dropdown-item(href='page-user.html')
 								i.fa.fa-cog.fa-lg
 								|  Settings
 						li
-							a(href='page-user.html')
+							a.dropdown-item(href='page-user.html')
 								i.fa.fa-user.fa-lg
 								|  Profile
 						li
-							a(href='page-login.html')
+							a.dropdown-item(href='page-login.html')
 								i.fa.fa-sign-out.fa-lg
 								|  Logout

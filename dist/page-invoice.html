@@ -19,7 +19,7 @@
   <body class="sidebar-mini fixed">
     <div class="wrapper">
       <!-- Navbar-->
-      <header class="main-header hidden-print"><a class="logo" href="index.html">Vali</a>
+      <header class="main-header d-print-none"><a class="logo" href="index.html">Vali</a>
         <nav class="navbar navbar-static-top">
           <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <!-- Navbar Right Menu-->
@@ -27,7 +27,7 @@
             <ul class="top-nav">
               <!--Notification Menu-->
               <li class="dropdown notification-menu"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell-o fa-lg"></i></a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-right">
                   <li class="not-head">You have 4 new notifications.</li>
                   <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
                       <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block">2min ago</span></div></a></li>
@@ -40,10 +40,10 @@
               </li>
               <!-- User Menu-->
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
-                <ul class="dropdown-menu settings-menu">
-                  <li><a href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-                  <li><a href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-                  <li><a href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+                  <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+                  <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                 </ul>
               </li>
             </ul>
@@ -51,7 +51,7 @@
         </nav>
       </header>
       <!-- Side-Nav-->
-      <aside class="main-sidebar hidden-print">
+      <aside class="main-sidebar d-print-none">
         <section class="sidebar">
           <div class="user-panel">
             <div class="pull-left image"><img class="rounded-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
@@ -113,15 +113,15 @@
         </section>
       </aside>
       <div class="content-wrapper">
-        <div class="page-title hidden-print">
+        <div class="page-title d-print-none">
           <div>
             <h1><i class="fa fa-file-text-o"></i> Invoice</h1>
             <p>A Printable Invoice Format</p>
           </div>
           <div>
             <ul class="breadcrumb">
-              <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="#">Invoice</a></li>
+              <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+              <li class="breadcrumb-item"><a href="#">Invoice</a></li>
             </ul>
           </div>
         </div>
@@ -130,21 +130,21 @@
             <div class="tile">
               <section class="invoice">
                 <div class="row">
-                  <div class="col-xs-12">
+                  <div class="col-12">
                     <h2 class="page-header"><i class="fa fa-globe"></i> Vali<small class="pull-right">Date: 01/01/2016</small></h2>
                   </div>
                 </div>
                 <div class="row invoice-info">
-                  <div class="col-xs-4">From
+                  <div class="col-4">From
                     <address><strong>Vali Ltd.</strong><br>518 Akshar Avenue<br>Gandhi Marg<br>New Delhi<br>Email: hello@vali.com</address>
                   </div>
-                  <div class="col-xs-4">To
-                    <address><strong>John Doe</strong><br>            795 Folsom Ave, Suite 600<br>            San Francisco, CA 94107<br>            Phone: (555) 539-1037<br>            Email: john.doe@example.com</address>
+                  <div class="col-4">To
+                    <address><strong>John Doe</strong><br>795 Folsom Ave, Suite 600<br>San Francisco, CA 94107<br>Phone: (555) 539-1037<br>Email: john.doe@example.com</address>
                   </div>
-                  <div class="col-xs-4"><b>Invoice #007612</b><br><br><b>Order ID:</b> 4F3S8J<br><b>Payment Due:</b> 2/22/2014<br><b>Account:</b> 968-34567</div>
+                  <div class="col-4"><b>Invoice #007612</b><br><br><b>Order ID:</b> 4F3S8J<br><b>Payment Due:</b> 2/22/2014<br><b>Account:</b> 968-34567</div>
                 </div>
                 <div class="row">
-                  <div class="col-xs-12 table-responsive">
+                  <div class="col-12 table-responsive">
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -188,8 +188,8 @@
                     </table>
                   </div>
                 </div>
-                <div class="row hidden-print mt-20">
-                  <div class="col-xs-12 text-right"><a class="btn btn-primary" href="javascript:window.print();" target="_blank"><i class="fa fa-print"></i> Print</a></div>
+                <div class="row d-print-none mt-2">
+                  <div class="col-12 text-right"><a class="btn btn-primary" href="javascript:window.print();" target="_blank"><i class="fa fa-print"></i> Print</a></div>
                 </div>
               </section>
             </div>

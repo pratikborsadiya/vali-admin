@@ -1,0 +1,13 @@
+// Componant: Dropdown
+// Updated styles for bootstrap dropdown
+
+.btn {
+	cursor: pointer;
+	&[disabled] { cursor: not-allowed; }
+	.icon,
+	.fa {
+		font-size: 14px;
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,9 @@
+// Componant: Dropdown
+// Updated styles for bootstrap dropdown
+
+.dropdown-menu {
+	&.dropdown-menu-right {
+		left: auto;
+		right: 0;
+	}
+}

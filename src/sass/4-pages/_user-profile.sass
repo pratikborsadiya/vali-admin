@@ -24,21 +24,19 @@
 
 	.user-tabs
 		margin-top: 20px
-		> li
+		.nav-link
+			border-left: 3px solid transparent
+			padding: 12px 15px
+			border-bottom: 0
+			font-size: 15px
+			border-radius: 0
 			&.active
-				> a
-					border-left: 3px solid $primary-color
-					border-bottom: 0
-					background-color: #eee !important
-			> a
-				border-left: 3px solid transparent
-				padding: 12px 15px
+				border-left-color: $primary-color
 				border-bottom: 0
-				font-size: 15px
-				&:hover,
-				&:active
-					background-color: #eee !important
-					border-bottom: 0
+			&:hover,
+			&:active
+				background-color: #eee !important
+				border-bottom: 0
 
 	.tab-content
 		margin: 20px -10px -10px

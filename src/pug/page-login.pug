@@ -8,8 +8,7 @@ html
 			.cover
 
 		section.login-content
-			.logo
-				h1 Vali
+			.logo: h1 Vali
 
 			.login-box
 				form.login-form(action="index.html")
@@ -27,11 +26,11 @@ html
 					.form-group
 						.utility
 							.animated-checkbox
-								label.semibold-text
+								label
 									input(type="checkbox")
 									span.label-text Stay Signed in
-							p.semibold-text.mb-0
-								a(data-toggle="flip") Forgot Password ?
+							p.semibold-text.mb-2
+								a(href="#" data-toggle="flip") Forgot Password ?
 
 					.form-group.btn-container
 						button.btn.btn-primary.btn-block
@@ -51,9 +50,16 @@ html
 							i.fa.fa-unlock.fa-lg.fa-fw
 							| RESET
 
-					.form-group.mt-20
+					.form-group.mt-3
 						p.semibold-text.mb-0
-								a(data-toggle="flip") <i class="fa fa-angle-left fa-fw"></i> Back to Login
+							a(href="#" data-toggle="flip") <i class="fa fa-angle-left fa-fw"></i> Back to Login
 
 	include includes/_javascript.pug
 
+block specific-js
+	script(type="text/javascript").
+		// Login Page Flipbox control
+		$('.login-content [data-toggle="flip"]').click(function() {
+			$('.login-box').toggleClass('flipped');
+			return false;
+		});

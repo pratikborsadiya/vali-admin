@@ -1,146 +1,119 @@
-aside.main-sidebar.d-print-none
+aside.app-sidebar
 
-	section.sidebar
-		.user-panel
-			.pull-left.image
-				img.rounded-circle(src='https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg', alt='User Image')
-			.pull-left.info
-				p John Doe
-				p.designation Frontend Developer
+	.app-sidebar__user
+		img.app-sidebar__user-avatar(src='https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg', alt='User Image')
+		div
+			p.app-sidebar__user-name John Doe
+			p.app-sidebar__user-designation Frontend Developer
 
-		// Sidebar Menu
-		ul.sidebar-menu
-			li.active
-				a(href='index.html')
-					i.fa.fa-dashboard
-					span Dashboard
+	// Sidebar Menu
+	ul.app-menu
+		li
+			a.app-menu__item(href='index.html')
+				i.app-menu__icon.fa.fa-dashboard
+				span.app-menu__label Dashboard
 
-			li.treeview
-				a(href='#')
-					i.fa.fa-laptop
-					span UI Elements
-					i.fa.fa-angle-right
-				ul.treeview-menu
-					li
-						a(href='bootstrap-components.html')
-							i.fa.fa-circle-o
-							|  Bootstrap Elements
-					li
-						a(href='http://fontawesome.io/icons/', target="_blank")
-							i.fa.fa-circle-o
-							|  Font Icons
-					li
-						a(href='ui-cards.html')
-							i.fa.fa-circle-o
-							|  Cards
-					li
-						a(href='widgets.html')
-							i.fa.fa-circle-o
-							|  Widgets
+		li.treeview
+			a.app-menu__item(href='#', data-toggle='treeview')
+				i.app-menu__icon.fa.fa-laptop
+				span.app-menu__label UI Elements
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='bootstrap-components.html')
+						i.icon.fa.fa-circle-o
+						|  Bootstrap Elements
+				li
+					a.treeview-item(href='http://fontawesome.io/icons/', target="_blank")
+						i.icon.fa.fa-circle-o
+						|  Font Icons
+				li
+					a.treeview-item(href='ui-cards.html')
+						i.icon.fa.fa-circle-o
+						|  Cards
+				li
+					a.treeview-item(href='widgets.html')
+						i.icon.fa.fa-circle-o
+						|  Widgets
 
-			li
-				a(href='charts.html')
-					i.fa.fa-pie-chart
-					span Charts
+		li
+			a.app-menu__item(href='charts.html')
+				i.app-menu__icon.fa.fa-pie-chart
+				span.app-menu__label Charts
 
-			li.treeview
-				a(href='#')
-					i.fa.fa-edit
-					span Forms
-					i.fa.fa-angle-right
-				ul.treeview-menu
-					li
-						a(href='form-components.html')
-							i.fa.fa-circle-o
-							|  Form Components
-					li
-						a(href='form-custom.html')
-							i.fa.fa-circle-o
-							|  Custom Components
-					li
-						a(href='form-samples.html')
-							i.fa.fa-circle-o
-							|  Form Samples
-					li
-						a(href='form-notifications.html')
-							i.fa.fa-circle-o
-							|  Form Notifications
+		li.treeview
+			a.app-menu__item(href='#' data-toggle='treeview')
+				i.app-menu__icon.fa.fa-edit
+				span.app-menu__label Forms
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='form-components.html')
+						i.icon.fa.fa-circle-o
+						|  Form Components
+				li
+					a.treeview-item(href='form-custom.html')
+						i.icon.fa.fa-circle-o
+						|  Custom Components
+				li
+					a.treeview-item(href='form-samples.html')
+						i.icon.fa.fa-circle-o
+						|  Form Samples
+				li
+					a.treeview-item(href='form-notifications.html')
+						i.icon.fa.fa-circle-o
+						|  Form Notifications
 
-			li.treeview
-				a(href='#')
-					i.fa.fa-th-list
-					span Tables
-					i.fa.fa-angle-right
-				ul.treeview-menu
-					li
-						a(href='table-basic.html')
-							i.fa.fa-circle-o
-							|  Basic Tables
-					li
-						a(href='table-data-table.html')
-							i.fa.fa-circle-o
-							|  Data Tables
+		li.treeview
+			a.app-menu__item(href='#' data-toggle='treeview')
+				i.app-menu__icon.fa.fa-th-list
+				span.app-menu__label Tables
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='table-basic.html')
+						i.icon.fa.fa-circle-o
+						|  Basic Tables
+				li
+					a.treeview-item(href='table-data-table.html')
+						i.icon.fa.fa-circle-o
+						|  Data Tables
 
-			li.treeview
-				a(href='#')
-					i.fa.fa-file-text
-					span Pages
-					i.fa.fa-angle-right
-				ul.treeview-menu
-					li
-						a(href='blank-page.html')
-							i.fa.fa-circle-o
-							|  Blank Page
-					li
-						a(href='page-login.html')
-							i.fa.fa-circle-o
-							|  Login Page
-					li
-						a(href='page-lockscreen.html')
-							i.fa.fa-circle-o
-							|  Lockscreen Page
-					li
-						a(href='page-user.html')
-							i.fa.fa-circle-o
-							|  User Page
-					li
-						a(href='page-invoice.html')
-							i.fa.fa-circle-o
-							|  Invoice Page
-					li
-						a(href='page-calendar.html')
-							i.fa.fa-circle-o
-							|  Calendar Page
-					li
-						a(href='page-mailbox.html')
-							i.fa.fa-circle-o
-							|  Mailbox
-					li
-						a(href='page-error.html')
-							i.fa.fa-circle-o
-							|  Error Page
-
-			li.treeview
-				a(href='#')
-					i.fa.fa-share
-					span Multilevel Menu
-					i.fa.fa-angle-right
-				ul.treeview-menu
-					li
-						a(href='blank-page.html')
-							i.fa.fa-circle-o
-							|  Level One
-					li.treeview
-						a(href='#')
-							i.fa.fa-circle-o
-							span  Level One
-							i.fa.fa-angle-right
-						ul.treeview-menu
-							li
-								a(href='blank-page.html')
-									i.fa.fa-circle-o
-									|  Level Two
-							li
-								a(href='#')
-									i.fa.fa-circle-o
-									span  Level Two
+		li.treeview
+			a.app-menu__item(href='#' data-toggle='treeview')
+				i.app-menu__icon.fa.fa-file-text
+				span.app-menu__label Pages
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='blank-page.html')
+						i.icon.fa.fa-circle-o
+						|  Blank Page
+				li
+					a.treeview-item(href='page-login.html')
+						i.icon.fa.fa-circle-o
+						|  Login Page
+				li
+					a.treeview-item(href='page-lockscreen.html')
+						i.icon.fa.fa-circle-o
+						|  Lockscreen Page
+				li
+					a.treeview-item(href='page-user.html')
+						i.icon.fa.fa-circle-o
+						|  User Page
+				li
+					a.treeview-item(href='page-invoice.html')
+						i.icon.fa.fa-circle-o
+						|  Invoice Page
+				li
+					a.treeview-item(href='page-calendar.html')
+						i.icon.fa.fa-circle-o
+						|  Calendar Page
+				li
+					a.treeview-item(href='page-mailbox.html')
+						i.icon.fa.fa-circle-o
+						|  Mailbox
+				li
+					a.treeview-item(href='page-error.html')
+						i.icon.fa.fa-circle-o
+						|  Error Page

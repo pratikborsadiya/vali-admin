@@ -1,0 +1,26 @@
+// Page common styles
+
+::selection {
+	color: $white;
+	background-color: darken($primary-color,10%);
+}
+
+.app {
+	&.sidenav-closed {
+		.app-content { margin-left: 0; }
+		.app-sidebar { left: -$sidebar-width; }
+	}
+	&.sidebar-mini.sidenav-closed {
+		
+	}
+}
+
+.app-content {
+	min-height: calc(100vh - 50px);
+	margin-top: 50px;
+	margin-left: $sidebar-width;
+	padding: 30px;
+	background-color: #E5E5E5;
+	z-index: 820;
+	transition: margin-left 0.3s ease;
+}

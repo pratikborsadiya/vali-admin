@@ -1,0 +1,60 @@
+/*!
+ * Vali Admin
+ * Author: Pratik Borsadiya
+ * ================================*/
+
+// 1 - TOOLS
+//---------------------------------------------------
+
+// This files are essential for the theme
+@import '1-tools/fonts';
+@import '1-tools/vars';
+@import '1-tools/customize-bootstrap';
+@import '1-tools/bootstrap-source/bootstrap';
+
+// Vendor plugin files 
+// Can be excluded based on your needs
+@import '1-tools/dataTables.bootstrap';
+@import '1-tools/bootstrap-datepicker';
+@import '1-tools/sweetalert';
+@import '1-tools/notify';
+@import '1-tools/select2';
+@import '1-tools/pace';
+@import '1-tools/jqvmap';
+@import '1-tools/fullcalendar';
+
+// 2 - BASICS
+//---------------------------------------------------
+
+// This styles are essential for theme
+@import '2-basics/app';
+@import '2-basics/helpers';
+
+// 3 - Component
+//---------------------------------------------------
+
+@import '3-component/header';
+@import '3-component/sidebar';
+@import '3-component/sidebar-mini';
+// This styles are optional based on your preferance
+@import '3-component/dropdown';
+@import '3-component/button';
+@import '3-component/page-title';
+@import '3-component/tile';
+@import '3-component/custom-radio-n-checkbox';
+@import '3-component/toggle-button';
+@import '3-component/material-half-bg';
+@import '3-component/material-loader';
+@import '3-component/button-spinner';
+@import '3-component/widgets';
+@import '3-component/chat';
+
+// 4 -Pages
+//---------------------------------------------------
+
+// This styles are optional based on your preferance
+@import '4-pages/login-material';
+@import '4-pages/lockscreen-material';
+@import '4-pages/error-page';
+@import '4-pages/mailbox';
+@import '4-pages/user-profile';

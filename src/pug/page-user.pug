@@ -13,12 +13,11 @@ block content
 
 		.col-md-3
 			.tile.p-0
-				ul.nav.nav-tabs.nav-stacked.user-tabs
-					li.active
-						a(href='#user-timeline' data-toggle='tab') Timeline
-
-					li
-						a(href='#user-settings' data-toggle='tab') Settings
+				ul.nav.flex-column.nav-tabs.user-tabs
+					li.nav-item
+						a.nav-link.active(href='#user-timeline' data-toggle='tab') Timeline
+					li.nav-item
+						a.nav-link(href='#user-settings' data-toggle='tab') Settings
 
 		.col-md-9
 			.tab-content
@@ -29,8 +28,7 @@ block content
 								a(href="#")
 									img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
 								.content
-									h5
-										a(href="#") John Doe
+									h5: a(href="#") John Doe
 									p.text-muted
 										small 2 January at 9:30
 							.post-content
@@ -56,8 +54,7 @@ block content
 								a(href="#")
 									img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
 								.content
-									h5
-										a(href="#") John Doe
+									h5: a(href="#") John Doe
 									p.text-muted
 										small 2 January at 9:30
 							.post-content

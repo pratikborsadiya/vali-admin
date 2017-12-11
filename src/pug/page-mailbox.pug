@@ -22,27 +22,27 @@ block content
 			.tile.p-0
 				h4.tile-title.folder-head Folders
 				.tile-body
-					ul.nav.nav-pills.nav-stacked.mail-nav
-						li.active
-							a(href='#')
+					ul.nav.nav-pills.flex-column.mail-nav
+						li.nav-item.active
+							a.nav-link(href='#')
 								i.fa.fa-inbox.fa-fw
 								|  Inbox
-								span.label.label-primary.pull-right 12
-						li
-							a(href='#')
+								span.badge.badge-pill.badge-primary.float-right 12
+						li.nav-item
+							a.nav-link(href='#')
 								i.fa.fa-envelope-o.fa-fw
 								|  Sent
-						li
-							a(href='#')
+						li.nav-item
+							a.nav-link(href='#')
 								i.fa.fa-file-text-o.fa-fw
 								|  Drafts
-						li
-							a(href='#')
+						li.nav-item
+							a.nav-link(href='#')
 								i.fa.fa-filter.fa-fw
 								|  Junk 
-								span.label.label-warning.pull-right 65
-						li
-							a(href='#')
+								span.badge.badge-pill.badge-primary.float-right 8
+						li.nav-item
+							a.nav-link(href='#')
 								i.fa.fa-trash-o.fa-fw
 								|  Trash
 
@@ -203,8 +203,8 @@ block content
 								td 20 December
 							
 
-				.text-right.semibold-text
-					span.text-muted.mr-10 Showing 1-15 out of 60
+				.text-right
+					span.text-muted.mr-2 Showing 1-15 out of 60
 					.btn-group
 						button.btn.btn-primary.btn-sm(type='button')
 							i.fa.fa-chevron-left

@@ -87,9 +87,8 @@
           <p class="app-sidebar__user-designation">Frontend Developer</p>
         </div>
       </div>
-      <!-- Sidebar Menu-->
       <ul class="app-menu">
-        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li><a class="app-menu__item active" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
             <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
@@ -144,12 +143,12 @@
           <div class="tile p-0">
             <h4 class="tile-title folder-head">Folders</h4>
             <div class="tile-body">
-              <ul class="nav nav-pills nav-stacked mail-nav">
-                <li class="active"><a href="#"><i class="fa fa-inbox fa-fw"></i> Inbox<span class="label label-primary pull-right">12</span></a></li>
-                <li><a href="#"><i class="fa fa-envelope-o fa-fw"></i> Sent</a></li>
-                <li><a href="#"><i class="fa fa-file-text-o fa-fw"></i> Drafts</a></li>
-                <li><a href="#"><i class="fa fa-filter fa-fw"></i> Junk <span class="label label-warning pull-right">65</span></a></li>
-                <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Trash</a></li>
+              <ul class="nav nav-pills flex-column mail-nav">
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-inbox fa-fw"></i> Inbox<span class="badge badge-pill badge-primary float-right">12</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-envelope-o fa-fw"></i> Sent</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Drafts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-filter fa-fw"></i> Junk <span class="badge badge-pill badge-primary float-right">8</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-trash-o fa-fw"></i> Trash</a></li>
               </ul>
             </div>
           </div>
@@ -287,7 +286,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="text-right semibold-text"><span class="text-muted mr-10">Showing 1-15 out of 60</span>
+            <div class="text-right"><span class="text-muted mr-2">Showing 1-15 out of 60</span>
               <div class="btn-group">
                 <button class="btn btn-primary btn-sm" type="button"><i class="fa fa-chevron-left"></i></button>
                 <button class="btn btn-primary btn-sm" type="button"><i class="fa fa-chevron-right"></i></button>

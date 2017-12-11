@@ -9,12 +9,13 @@
 	display: flex;
 	background-color: $primary-color;
 	z-index: 1030;
+	@media(max-width: 768px) { flex-direction: column; }
 }
 
 .app-header__logo {
 	display: block;
 	flex: 0 0 auto;
-	width: 230px;
+	width: 100%;
 	font-family: 'Niconne';
 	font-size: 26px;
 	font-weight: 400;
@@ -22,6 +23,7 @@
 	text-align: center;
 	padding: 0 15px;
 	color: #fff;
+	@media(min-width: 768px) { width: 230px; }
 	@if $sidebar-accent == dark {
 		background-color: darken( $primary-color, 5% );
 	}
@@ -39,7 +41,8 @@
 	display: flex;
 	justify-content: space-between;
 	flex: 1 0 auto;
-	padding-right: 30px;
+	padding-right: 15px;
+	@media(min-width: 768px) { padding-right: 30px }
 }
 
 .app-sidebar__toggle {
@@ -86,6 +89,7 @@
 	align-self: center;
 	margin-right: 15px;
 	padding: 10px 0;
+	@media(max-width: 480px) { display: none; }
 }
 
 .app-search__input {
@@ -93,7 +97,6 @@
 	padding: 5px 10px;
 	padding-right: 30px;
 	border-radius: 2px;
-	min-width: 220px;
 	background-color: rgba(255,255,255,0.4);
 	transition: background-color 0.3s ease;
 	&::placeholder { color: rgba(0,0,0,0.4); }

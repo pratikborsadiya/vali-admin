@@ -10,9 +10,7 @@
 		.app-content { margin-left: 0; }
 		.app-sidebar { left: -$sidebar-width; }
 	}
-	&.sidebar-mini.sidenav-closed {
-		
-	}
+	@media(max-width: 768px) { overflow-x: hidden; }
 }
 
 .app-content {
@@ -23,4 +21,9 @@
 	background-color: #E5E5E5;
 	z-index: 820;
 	transition: margin-left 0.3s ease;
+	@media(max-width: 768px) {
+		margin-top: 100px;
+		min-width: 100%;
+	}
+	@media(max-width: 480px) { padding: 15px; }
 }

@@ -14,6 +14,7 @@
 	transition: left 0.3s ease,
 				width 0.3s ease;
 	a:hover { text-decoration: none }
+	@media(max-width: 768px) { padding-top: 120px; }
 	&::-webkit-scrollbar { width: 6px; }
 	&::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); }
 }
@@ -53,9 +54,9 @@
 }
 
 .app-menu__item {
+	position: relative;
 	display: flex;
 	align-items: center;
-	position: relative;
 	padding: 12px 15px;
 	font-size: 1.08em;
 	border-left: 3px solid transparent;
@@ -63,15 +64,13 @@
 				background-color 0.3s ease;
 	@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
 	@if $sidebar-accent == light { color: $sidebar-light-link-color }
-	.active,
+	&.active,
 	&:hover,
 	&:focus {
-		&:hover {
-			background: darken($sidebar-color, 10);
- 			border-left-color: $primary-color;
-			@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
-			@if $sidebar-accent == light { color: $primary-color }
-		}
+		background: darken($sidebar-color, 10);
+		border-left-color: $primary-color;
+		@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
+		@if $sidebar-accent == light { color: $primary-color }
 	}
 }
 

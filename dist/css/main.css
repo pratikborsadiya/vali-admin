@@ -12809,6 +12809,12 @@ be a descendant of the grid when it is being dragged.
   left: -230px;
 }
 
+@media (max-width: 768px) {
+  .app {
+    overflow-x: hidden;
+  }
+}
+
 .app-content {
   min-height: calc(100vh - 50px);
   margin-top: 50px;
@@ -12819,6 +12825,19 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    margin-top: 100px;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-content {
+    padding: 15px;
+  }
 }
 
 .light-text {
@@ -12848,12 +12867,21 @@ be a descendant of the grid when it is being dragged.
   z-index: 1030;
 }
 
+@media (max-width: 768px) {
+  .app-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .app-header__logo {
   display: block;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 230px;
+  width: 100%;
   font-family: 'Niconne';
   font-size: 26px;
   font-weight: 400;
@@ -12862,6 +12890,12 @@ be a descendant of the grid when it is being dragged.
   padding: 0 15px;
   color: #fff;
   background-color: #007d71;
+}
+
+@media (min-width: 768px) {
+  .app-header__logo {
+    width: 230px;
+  }
 }
 
 .app-header__logo:focus, .app-header__logo:hover {
@@ -12879,7 +12913,13 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  padding-right: 30px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .app-header__navbar {
+    padding-right: 30px;
+  }
 }
 
 .app-sidebar__toggle {
@@ -12937,12 +12977,17 @@ be a descendant of the grid when it is being dragged.
   padding: 10px 0;
 }
 
+@media (max-width: 480px) {
+  .app-search {
+    display: none;
+  }
+}
+
 .app-search__input {
   border: 0;
   padding: 5px 10px;
   padding-right: 30px;
   border-radius: 2px;
-  min-width: 220px;
   background-color: rgba(255, 255, 255, 0.4);
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
@@ -13067,6 +13112,12 @@ be a descendant of the grid when it is being dragged.
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .app-sidebar {
+    padding-top: 120px;
+  }
+}
+
 .app-sidebar::-webkit-scrollbar {
   width: 6px;
 }
@@ -13113,13 +13164,13 @@ be a descendant of the grid when it is being dragged.
 }
 
 .app-menu__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   padding: 12px 15px;
   font-size: 1.08em;
   border-left: 3px solid transparent;
@@ -13129,7 +13180,7 @@ be a descendant of the grid when it is being dragged.
   color: #fff;
 }
 
-.app-menu__item .active:hover, .app-menu__item:hover:hover, .app-menu__item:focus:hover {
+.app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus {
   background: #0d1214;
   border-left-color: #009688;
   color: #fff;
@@ -13206,71 +13257,82 @@ be a descendant of the grid when it is being dragged.
 }
 
 @media (min-width: 768px) {
-  .sidebar-mini.sidenav-closed .content-wrapper, .sidebar-mini.sidenav-closed .main-footer {
-    margin-left: 50px !important;
-    z-index: 840;
-  }
-  .sidebar-mini.sidenav-closed .main-sidebar {
-    -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
-    width: 50px !important;
-    z-index: 850;
-  }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li {
-    position: relative;
-  }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li > a {
-    margin-right: 0;
-    position: relative;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li > a > .fa-angle-right {
+  .sidebar-mini.sidenav-closed .app-sidebar__user-name,
+  .sidebar-mini.sidenav-closed .app-sidebar__user-designation,
+  .sidebar-mini.sidenav-closed .treeview-indicator {
     display: none;
   }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li > a > span {
-    border-top-right-radius: 4px;
+  .sidebar-mini.sidenav-closed .app-sidebar__user-avatar {
+    width: 30px;
+    height: 30px;
   }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li:not(.treeview) > a > span {
-    border-bottom-right-radius: 4px;
+  .sidebar-mini.sidenav-closed .app-content {
+    margin-left: 50px;
   }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li > .treeview-menu {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom-right-radius: 4px;
+  .sidebar-mini.sidenav-closed .app-sidebar {
+    left: 0;
+    width: 50px;
+    overflow: hidden;
   }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li:hover > a > span:not(.pull-right), .sidebar-mini.sidenav-closed .sidebar-menu > li:hover > .treeview-menu {
-    display: block !important;
+  .sidebar-mini.sidenav-closed .app-sidebar:hover {
+    overflow: visible;
+  }
+  .sidebar-mini.sidenav-closed .app-menu__item {
+    overflow: hidden;
+  }
+  .sidebar-mini.sidenav-closed .app-menu__item:hover {
+    overflow: visible;
+  }
+  .sidebar-mini.sidenav-closed .app-menu__item:hover .app-menu__label {
+    opacity: 1;
+  }
+  .sidebar-mini.sidenav-closed .app-menu__item:hover + .treeview-menu {
+    visibility: visible;
+  }
+  .sidebar-mini.sidenav-closed .app-menu__label {
+    display: block;
     position: absolute;
-    width: 180px;
-    left: 50px;
-  }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li:hover > a > span {
     top: 0;
-    margin-left: -3px;
+    left: 50px;
+    min-width: 180px;
     padding: 12px 5px 12px 20px;
-    background-color: inherit;
+    margin-left: -3px;
+    line-height: 1;
+    opacity: 0;
+    background: #0d1214;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li:hover > .treeview-menu {
-    top: 45px;
-    margin-left: 0;
+  .sidebar-mini.sidenav-closed .treeview:hover .app-menu__item {
+    overflow: visible;
+    background: #0d1214;
+    border-left-color: #009688;
+    color: #fff;
   }
-  .sidebar-mini.sidenav-closed .main-sidebar .user-panel > .info {
-    display: none !important;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+  .sidebar-mini.sidenav-closed .treeview:hover .app-menu__label {
+    opacity: 1;
   }
-  .sidebar-mini.sidenav-closed .sidebar-menu > li > a > span, .sidebar-mini.sidenav-closed .sidebar-menu > li > .treeview-menu, .sidebar-mini.sidenav-closed .sidebar-menu > li > a > .pull-right {
-    display: none !important;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+  .sidebar-mini.sidenav-closed .treeview:hover .treeview-menu {
+    max-height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
   }
-  .sidebar-mini.sidenav-closed .sidebar-menu li.header {
-    display: none !important;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+  .sidebar-mini.sidenav-closed .treeview .app-menu__label {
+    border-bottom-right-radius: 0;
+  }
+  .sidebar-mini.sidenav-closed .treeview-menu {
+    position: absolute;
+    left: 50px;
+    min-width: 180px;
+    padding: 12px 0;
+    opacity: 0;
+    border-bottom-right-radius: 4px;
+    z-index: 9;
+    visibility: hidden;
+    -webkit-transition: visibility 0.3s ease;
+    -o-transition: visibility 0.3s ease;
+    transition: visibility 0.3s ease;
   }
 }
 
@@ -13329,10 +13391,7 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #FFF;
-  margin-top: -30px;
-  margin-left: -30px;
-  margin-right: -30px;
-  margin-bottom: 30px;
+  margin: -30px -30px 30px;
   padding: 20px 30px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -13367,9 +13426,7 @@ be a descendant of the grid when it is being dragged.
 
 @media (max-width: 480px) {
   .page-title {
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: -15px -15px 15px;
     padding: 20px;
   }
 }
@@ -14298,15 +14355,16 @@ be a descendant of the grid when it is being dragged.
 }
 
 .mail-nav > li > a {
+  display: block;
   background-color: #fff;
   color: #2a2a2a;
-  border-radius: 0 !important;
+  border-radius: 0;
   font-weight: 500;
 }
 
 .mailbox-messages table tr td {
-  border: 0 !important;
-  padding: 5px !important;
+  border: 0;
+  padding: 5px;
 }
 
 .mailbox-messages .mail-subject {

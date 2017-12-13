@@ -14251,6 +14251,12 @@ be a descendant of the grid when it is being dragged.
   margin: 0;
 }
 
+.sidebar-menu .treeview-menu > li.active > a {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: -5px;
+  padding-left: 20px;
+}
+
 .sidebar-menu .treeview-menu > li > a {
   padding: 5px 5px 5px 15px;
   display: block;

@@ -26,4 +26,9 @@
 		min-width: 100%;
 	}
 	@media(max-width: 480px) { padding: 15px; }
+	@media print {
+		margin: 0;
+		padding: 0;
+		background-color: #fff;
+	}
 }

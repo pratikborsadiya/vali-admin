@@ -1,5 +1,9 @@
 extends layouts/_layout.pug
 
+block variables
+	- var activePage = 'dashboard'
+	- var activeGroup = 'none'
+
 block content
 	.page-title
 		div
@@ -25,13 +29,13 @@ block content
 				p Vali is is a light weight yet expendable and good looking theme. The theme has all the features required in a dashboard theme but this features are built like plug and play module. Take a look at the #[a(href="http://pratikborsadiya.in/blog/vali-admin", target="_blank") documentation] about customizing the theme.
 
 				p.mt-4.mb-4
-					a.btn.btn-primary.icon-btn.mr-2(href="http://pratikborsadiya.in/blog/vali-admin", target="_blank")
+					a.btn.btn-primary.mr-2.mb-2(href="http://pratikborsadiya.in/blog/vali-admin", target="_blank")
 						i.fa.fa-file
 						| Docs
-					a.btn.btn-info.icon-btn.mr-2(href="https://github.com/pratikborsadiya/vali-admin", target="_blank")
+					a.btn.btn-info.mr-2.mb-2(href="https://github.com/pratikborsadiya/vali-admin", target="_blank")
 						i.fa.fa-github
 						| GitHub
-					a.btn.btn-success.icon-btn(href="https://github.com/pratikborsadiya/vali-admin/archive/master.zip", target="_blank")
+					a.btn.btn-success.mb-2(href="https://github.com/pratikborsadiya/vali-admin/archive/master.zip", target="_blank")
 						i.fa.fa-download
 						| Download
 

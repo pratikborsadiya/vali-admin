@@ -10,6 +10,7 @@
 	background-color: $primary-color;
 	z-index: 1030;
 	@media(max-width: 768px) { flex-direction: column; }
+	@media print { display: none; }
 }
 
 .app-header__logo {

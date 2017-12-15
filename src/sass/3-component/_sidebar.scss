@@ -14,9 +14,10 @@
 	transition: left 0.3s ease,
 				width 0.3s ease;
 	a:hover { text-decoration: none }
-	@media(max-width: 768px) { padding-top: 120px; }
 	&::-webkit-scrollbar { width: 6px; }
 	&::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); }
+	@media(max-width: 768px) { padding-top: 120px; }
+	@media print { display: none; }
 }
 
 .app-sidebar__user {
@@ -115,13 +116,12 @@
 	font-size: 1em;
 	@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
 	@if $sidebar-accent == light { color: $sidebar-light-link-color }
+	&.active,
 	&:hover,
 	&:focus {
-		&:hover {
-			background: darken($sidebar-color, 3);
-			@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
-			@if $sidebar-accent == light { color: $primary-color }
-		}
+		background: darken($sidebar-color, 3);
+		@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
+		@if $sidebar-accent == light { color: $primary-color }
 	}
 	.icon { margin-right: 5px; }
 }

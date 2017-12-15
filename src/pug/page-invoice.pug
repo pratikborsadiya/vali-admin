@@ -1,7 +1,11 @@
 extends layouts/_layout.pug
 
+block variables
+	- var activePage = 'invoice-page'
+	- var activeGroup = 'pages'
+
 block content
-	.page-title.d-print-none
+	.page-title
 		div
 			h1
 				i.fa.fa-file-text-o
@@ -20,18 +24,19 @@ block content
 			.tile
 				section.invoice
 
-					.row
-						.col-12
+					.row.mb-4
+						.col-6
 							h2.page-header
 								i.fa.fa-globe
-								|  Vali
-								small.pull-right Date: 01/01/2016
+								|  Vali Inc
+						.col-6
+							h5.text-right Date: 01/01/2016
 
 					.row.invoice-info
 						.col-4
 							| From
 							address
-								strong Vali Ltd.
+								strong Vali Inc.
 								br
 								| 518 Akshar Avenue
 								br
@@ -80,28 +85,28 @@ block content
 								tbody
 									tr
 										td 1
-										td Call of Duty
+										td The Hunger Games
 										td 455-981-221
 										td El snort testosterone trophy driving gloves handsome
-										td $64.50
+										td $41.32
 									tr
 										td 1
-										td Need for Speed IV
+										td City of Bones
 										td 247-925-726
 										td Wes Anderson umami biodiesel
-										td $50.00
+										td $75.52
 									tr
 										td 1
-										td Monsters DVD
-										td 735-845-642
+										td The Maze Runner
+										td 545-457-47
 										td Terry Richardson helvetica tousled street art master
-										td $10.70
+										td $15.25
 									tr
 										td 1
-										td Grown Ups Blue Ray
-										td 422-568-642
+										td The Fault in Our Stars
+										td 757-855-857
 										td Tousled lomo letterpress
-										td $25.99
+										td $03.44
 
 					.row.d-print-none.mt-2
 						.col-12.text-right

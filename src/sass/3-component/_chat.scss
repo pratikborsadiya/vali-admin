@@ -1,0 +1,91 @@
+// Componant: ChatBox
+
+.messanger {
+	display: flex;
+	flex-direction: column;
+
+	.messages {
+		flex: 1;
+		margin: 10px 0;
+		padding: 0 10px;
+		max-height: 260px;
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		.message {
+			display: flex;
+			margin-bottom: 15px;
+			align-items: flex-start;
+
+			&.me {
+				flex-direction: row-reverse;
+
+				img {
+					margin-right: 0;
+					margin-left: 15px;
+				}
+
+				.info {
+					background-color: $primary-color;
+					color: $white;
+
+					&:before {
+						display: none;
+					}
+
+					&:after {
+						position: absolute;
+						right: -13px;
+						top: 0;
+						content: "";
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 0 16px 16px 0;
+						border-color: transparent $primary-color transparent transparent;
+						transform: rotate(270deg);
+					}
+				}
+			}
+
+			img {
+				border-radius: 50%;
+				margin-right: 15px;
+			}
+
+			.info {
+				margin: 0;
+				background-color: #ddd;
+				padding: 5px 10px;
+				border-radius: 3px;
+				position: relative;
+				align-self: flex-start;
+
+				&:before {
+					position: absolute;
+					left: -14px;
+					top: 0;
+					content: "";
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 16px 16px 0;
+					border-color: transparent #ddd transparent transparent;
+				}
+			}
+		}
+	}
+
+	.sender {
+		display: flex;
+
+		input[type="text"] {
+			flex: 1;
+			border: 1px solid $primary-color;
+			outline: none;
+			padding: 5px 10px;
+		}
+
+		button { border-radius: 0; }
+	}
+}

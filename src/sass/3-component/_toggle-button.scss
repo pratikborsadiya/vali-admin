@@ -1,0 +1,120 @@
+// Componant: Toggle Button
+
+.toggle {
+	&.lg {
+		input[type="checkbox"] + .button-indecator:before {
+			font-size: 30px;
+		}
+	}
+
+	input[type="checkbox"] {
+		display: none;
+
+		+ .button-indecator {
+			cursor: pointer;
+			display: block;
+			user-select: none;
+
+			&:before {
+				content: "";
+				font-family: "FontAwesome";
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				font-size: 25px;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				margin-right: 5px;
+				vertical-align: -2px;
+			}
+		}
+
+		&:checked + .button-indecator:before {
+			content: "";
+			color: $primary-color;
+			animation: toggleBtn 0.3s ease-in-out;
+		}
+
+		&:disabled + .button-indecator {
+			cursor: not-allowed !important;
+
+			&:before {
+				color: #ccc;
+			}
+		}
+	}
+}
+
+.toggle-flip {
+	input[type="checkbox"] {
+		display: none;
+
+		+ .flip-indecator {
+			position: relative;
+			width: 60px;
+			height: 30px;
+			display: block;
+			cursor: pointer;
+			user-select: none;
+			perspective: 90px;
+
+			&:before, &:after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: inline-block;
+				width: 100%;
+				line-height: 30px;
+				backface-visibility: hidden;
+				text-align: center;
+				border-radius: 3px;
+				transition: all 0.5s ease;
+			}
+
+			&:before {
+				content: attr(data-toggle-off);
+				background-color: #ddd;
+			}
+
+			&:after {
+				content: attr(data-toggle-on);
+				background-color: $primary-color;
+				color: #fff;
+				transform: rotateY(-180deg);
+			}
+		}
+
+		&:checked {
+			+ .flip-indecator {
+				&:before {
+					transform: rotateY(180deg);
+				}
+
+				&:after {
+					transform: rotateY(0deg);
+				}
+			}
+		}
+
+		&:disabled + .flip-indecator {
+			cursor: not-allowed !important;
+			color: #ccc;
+		}
+	}
+}
+
+// Slide the toggle button
+@keyframes toggleBtn {
+	0% {
+		opacity: 0;
+		transform: translateX(-1px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

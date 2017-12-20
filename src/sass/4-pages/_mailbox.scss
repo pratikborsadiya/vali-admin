@@ -1,0 +1,52 @@
+// Page: Mailbox
+
+.folder-head {
+	padding: 10px;
+	margin-bottom: 0 !important;
+	border-bottom: 1px solid #ddd;
+}
+
+.mailbox-controls {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 10px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.animated-checkbox {
+		.label-text:before {
+			vertical-align: (-7px) !important;
+		}
+	}
+}
+
+.mail-nav {
+	> li {
+		> a {
+			display: block;
+			background-color: #fff;
+			color: #2a2a2a;
+			border-radius: 0;
+			font-weight: 500;
+		}
+	}
+}
+
+.mailbox-messages {
+	table {
+		tr {
+			td {
+				border: 0;
+				padding: 5px;
+			}
+		}
+	}
+
+	.mail-subject {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: 500px;
+	}
+}

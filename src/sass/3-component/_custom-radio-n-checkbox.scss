@@ -1,0 +1,102 @@
+/* Custom Checkbox and Radio Buttons */
+
+.animated-checkbox {
+	input[type="checkbox"] {
+		display: none;
+
+		+ .label-text {
+			cursor: pointer !important;
+			user-select: none;
+
+			&:before {
+				content: "";
+				font-family: "FontAwesome";
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				font-size: 18px;
+				-webkit-font-smoothing: antialiased;
+				width: 1em;
+				display: inline-block;
+				margin-right: 2px;
+				vertical-align: -2px;
+			}
+		}
+
+		&:checked + .label-text:before {
+			content: "";
+			color: $primary-color;
+			animation: tick 180ms ease-in;
+		}
+
+		&:disabled + .label-text {
+			cursor: not-allowed !important;
+
+			&:before {
+				content: "";
+				color: #ccc;
+			}
+		}
+	}
+}
+
+.animated-radio-button {
+	input[type="radio"] {
+		display: none;
+
+		+ .label-text {
+			cursor: pointer !important;
+			user-select: none;
+
+			&:before {
+				content: "";
+				font-family: "FontAwesome";
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				font-size: 18px;
+				-webkit-font-smoothing: antialiased;
+				width: 1em;
+				display: inline-block;
+				margin-right: 2px;
+				vertical-align: -2px;
+			}
+		}
+
+		&:checked + .label-text:before {
+			content: "";
+			color: $primary-color;
+			animation: tick 180ms ease-in;
+		}
+
+		&:disabled + .label-text {
+			cursor: not-allowed !important;
+
+			&:before {
+				content: "";
+				color: #ccc;
+			}
+		}
+	}
+}
+
+// Bounce the checked checkbox and radio button
+@keyframes tick {
+	0% {
+		transform: scale(0);
+	}
+
+	90% {
+		transform: scale(1.4);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

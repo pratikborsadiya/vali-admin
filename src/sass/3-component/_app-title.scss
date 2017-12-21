@@ -1,6 +1,6 @@
 // Componant: Page Title
 
-.page-title {
+.app-title {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -14,6 +14,8 @@
 	@media (max-width: 480px) {
 		margin: (-15px) -15px 15px;
 		padding: 20px;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	h1 {
@@ -25,21 +27,19 @@
 	p {
 		margin-bottom: 0;
 		font-style: italic;
+		@media (max-width: 480px) { display: none; }
 	}
+}
 
-	.breadcrumb {
-		margin-bottom: 0;
-		text-align: right;
-		font-weight: 500;
-		font-size: 13px;
-		text-transform: capitalize;
-		padding: 0;
-		background-color: transparent;
-
-		&.side {
-			margin-top: 10px;
-			text-align: left;
-			padding: 0;
-		}
-	}
+.app-breadcrumb {
+	margin-bottom: 0;
+	text-align: right;
+	font-weight: 500;
+	font-size: 13px;
+	text-transform: capitalize;
+	padding: 0;
+	text-align: left;
+	padding: 0;
+	background-color: transparent;
+	@media (max-width: 480px) { margin-top: 10px; }
 }

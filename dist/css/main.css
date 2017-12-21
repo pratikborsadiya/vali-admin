@@ -13407,7 +13407,7 @@ be a descendant of the grid when it is being dragged.
   vertical-align: middle;
 }
 
-.page-title {
+.app-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13429,43 +13429,58 @@ be a descendant of the grid when it is being dragged.
 }
 
 @media print {
-  .page-title {
+  .app-title {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .page-title {
+  .app-title {
     margin: -15px -15px 15px;
     padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
-.page-title h1 {
+.app-title h1 {
   margin: 0;
   font-size: 24px;
   font-weight: 400;
 }
 
-.page-title p {
+.app-title p {
   margin-bottom: 0;
   font-style: italic;
 }
 
-.page-title .breadcrumb {
+@media (max-width: 480px) {
+  .app-title p {
+    display: none;
+  }
+}
+
+.app-breadcrumb {
   margin-bottom: 0;
   text-align: right;
   font-weight: 500;
   font-size: 13px;
   text-transform: capitalize;
   padding: 0;
+  text-align: left;
+  padding: 0;
   background-color: transparent;
 }
 
-.page-title .breadcrumb.side {
-  margin-top: 10px;
-  text-align: left;
-  padding: 0;
+@media (max-width: 480px) {
+  .app-breadcrumb {
+    margin-top: 10px;
+  }
 }
 
 .tile {

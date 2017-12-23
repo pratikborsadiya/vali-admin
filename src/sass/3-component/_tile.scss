@@ -13,9 +13,7 @@
 		border: 1px solid #ddd;
 	}
 
-	&.small {
-		padding: 0;
-	}
+	&.small { padding: 0; }
 
 	.overlay {
 		position: absolute;
@@ -49,22 +47,16 @@
 		align-items: center;
 		margin-bottom: 20px;
 
-		p {
-			margin: 0;
-		}
+		p { margin: 0; }
 
-		.title {
-			margin: 0;
-		}
+		.title { margin: 0; }
 
 		.side {
 			margin-bottom: 0;
 			padding-left: 0;
 		}
 
-		.btn-group {
-			flex: 0 0 auto;
-		}
+		.btn-group { flex: 0 0 auto; }
 	}
 
 	.tile-footer {

@@ -14492,7 +14492,7 @@ be a descendant of the grid when it is being dragged.
   margin: 20px -10px -10px;
 }
 
-.user .timeline .post {
+.user .timeline-post {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
@@ -14500,7 +14500,7 @@ be a descendant of the grid when it is being dragged.
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-.user .timeline .post .post-media {
+.user .timeline-post .post-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14510,21 +14510,21 @@ be a descendant of the grid when it is being dragged.
   margin-bottom: 15px;
 }
 
-.user .timeline .post .post-media img {
+.user .timeline-post .post-media img {
   margin-right: 10px;
 }
 
-.user .timeline .post .post-media h5 {
+.user .timeline-post .post-media h5 {
   margin-top: 0;
   margin-bottom: 3px;
   font-size: 15px;
 }
 
-.user .timeline .post .post-content {
+.user .timeline-post .post-content {
   margin-bottom: 20px;
 }
 
-.user .timeline .post .post-utility {
+.user .timeline-post .post-utility {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14533,17 +14533,17 @@ be a descendant of the grid when it is being dragged.
   margin-bottom: 0;
 }
 
-.user .timeline .post .post-utility .likes,
-.user .timeline .post .post-utility .shares {
+.user .timeline-post .post-utility .likes,
+.user .timeline-post .post-utility .shares {
   margin-right: 10px;
 }
 
-.user .timeline .post .post-utility .likes a,
-.user .timeline .post .post-utility .shares a {
+.user .timeline-post .post-utility .likes a,
+.user .timeline-post .post-utility .shares a {
   color: #555;
 }
 
-.user .timeline .post .post-utility .comments {
+.user .timeline-post .post-utility .comments {
   color: #555;
   -webkit-box-flex: 1;
       -ms-flex: 1;

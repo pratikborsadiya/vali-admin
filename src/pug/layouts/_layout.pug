@@ -1,12 +1,29 @@
 doctype html
 html(lang="en")
+
+	//- Variables to set active page in sidebar
 	block variables
 		- var activePage = 'dashboard'
 		- var activeGroup = 'none'
+
 	head
+		meta(name="description", content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.")
+
+		// Twitter meta
+		meta(property="twitter:card", content="summary")
+		meta(property="twitter:site", content="@pratikborsadiya")
+		meta(property="twitter:creator", content="@pratikborsadiya")
+
+		// Open Graph Meta
+		meta(property="og:type", content="website")
+		meta(property="og:site_name", content="Vali Admin")
+		meta(property="og:title", content="Vali - Free Bootstrap 4 admin theme")
+		meta(property="og:description", content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.")
+
 		include ../includes/_head.pug
 
 	body.app.sidebar-mini
+
 		// Navbar
 		include ../includes/_header.pug
 
@@ -19,4 +36,5 @@ html(lang="en")
 
 		// Javascripts
 		include ../includes/_javascript.pug
+		// Page specific javascripts
 		block specific-js

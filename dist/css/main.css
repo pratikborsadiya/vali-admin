@@ -12825,13 +12825,18 @@ be a descendant of the grid when it is being dragged.
   position: relative;
   min-height: calc(100vh - 50px);
   margin-top: 50px;
-  margin-left: 230px;
   padding: 30px;
   background-color: #E5E5E5;
-  z-index: 820;
+  z-index: 1;
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .app-content {
+    margin-left: 230px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -13119,7 +13124,7 @@ be a descendant of the grid when it is being dragged.
   padding-top: 70px;
   width: 230px;
   overflow: auto;
-  z-index: 810;
+  z-index: 10;
   background-color: #222d32;
   -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
@@ -13265,7 +13270,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .treeview-item.active, .treeview-item:hover, .treeview-item:focus {
-  background: #1c2529;
+  background: #0d1214;
   text-decoration: none;
   color: #fff;
 }
@@ -13974,7 +13979,7 @@ be a descendant of the grid when it is being dragged.
   display: flex;
   border-radius: 4px;
   color: #FFF;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }

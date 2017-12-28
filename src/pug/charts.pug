@@ -31,8 +31,6 @@ block content
 				.embed-responsive.embed-responsive-16by9
 					canvas.embed-responsive-item(id="barChartDemo")
 
-		.clearfix
-
 		.col-md-6
 			.tile
 				h3.tile-title Radar Chart
@@ -44,8 +42,6 @@ block content
 				h3.tile-title Polar Chart
 				.embed-responsive.embed-responsive-16by9
 					canvas.embed-responsive-item(id="polarChartDemo")
-
-		.clearfix
 
 		.col-md-6
 			.tile
@@ -116,13 +112,13 @@ block specific-js
 		var barChart = new Chart(ctxb).Bar(data);
 
 		var ctxr = $("#radarChartDemo").get(0).getContext("2d");
-		var barChart = new Chart(ctxr).Radar(data);
+		var radarChart = new Chart(ctxr).Radar(data);
 
 		var ctxpo = $("#polarChartDemo").get(0).getContext("2d");
-		var barChart = new Chart(ctxpo).PolarArea(pdata);
+		var polarChart = new Chart(ctxpo).PolarArea(pdata);
 
 		var ctxp = $("#pieChartDemo").get(0).getContext("2d");
-		var barChart = new Chart(ctxp).Pie(pdata);
+		var pieChart = new Chart(ctxp).Pie(pdata);
 
 		var ctxd = $("#doughnutChartDemo").get(0).getContext("2d");
-		var barChart = new Chart(ctxd).Doughnut(pdata);
+		var doughnutChart = new Chart(ctxd).Doughnut(pdata);

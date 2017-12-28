@@ -19,13 +19,70 @@ block content
 				a(href='#') Dashboard
 
 	.row
+		.col-md-6.col-lg-3
+			.widget-small.primary.coloured-icon
+				i.icon.fa.fa-users.fa-3x
+				div.info
+					h4 Users
+					p
+						b 5
+
+		.col-md-6.col-lg-3
+			.widget-small.info.coloured-icon
+				i.icon.fa.fa-thumbs-o-up.fa-3x
+				div.info
+					h4 Likes
+					p
+						b 25
+
+		.col-md-6.col-lg-3
+			.widget-small.warning.coloured-icon
+				i.icon.fa.fa-files-o.fa-3x
+				div.info
+					h4 Uploades
+					p
+						b 10
+
+		.col-md-6.col-lg-3
+			.widget-small.danger.coloured-icon
+				i.icon.fa.fa-star.fa-3x
+				div.info
+					h4 Stars
+					p
+						b 500
+	.row
+		.col-md-6
+			.tile
+				h3.tile-title Monthly Sales
+				.embed-responsive.embed-responsive-16by9
+					canvas.embed-responsive-item(id="lineChartDemo")
 
 		.col-md-6
 			.tile
-				h3.tile-title Getting Started
-				p Vali is a free and responsive dashboard theme built with Bootstrap 4, Pug.js (templating) and SASS. It's fully customizable and modular. You don't need to add the code, you will not use.
+				h3.tile-title Support Requests
+				.embed-responsive.embed-responsive-16by9
+					canvas.embed-responsive-item(id="pieChartDemo")
 
-				p Vali is is a light weight yet expendable and good looking theme. The theme has all the features required in a dashboard theme but this features are built like plug and play module. Take a look at the #[a(href="http://pratikborsadiya.in/blog/vali-admin", target="_blank") documentation] about customizing the theme.
+	.row
+
+		.col-md-6
+			.tile
+				h3.tile-title Features
+
+				ul
+					li Built with Bootstrap 4, SASS and PUG.js
+					li Fully responsive and modular code
+					li Seven pages including login, user profile and print friendly invoice page
+					li Smart integration of forgot password on login page
+					li Chart.js integration to display responsive charts
+					li Widgets to effectively display statistics
+					li Data tables with sort, search and paginate functionality
+					li Custom form elements like toggle buttons, auto-complete, tags and date-picker
+					li A inbuilt toast library for providing meaningful response messages to user's actions
+
+				p Vali is a free and responsive admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.
+
+				p Vali is is light-weight, expendable and good looking theme. The theme has all the features required in a dashboard theme but this features are built like plug and play module. Take a look at the #[a(href="http://pratikborsadiya.in/blog/vali-admin", target="_blank") documentation] about customizing the theme colors and functionality.
 
 				p.mt-4.mb-4
 					a.btn.btn-primary.mr-2.mb-2(href="http://pratikborsadiya.in/blog/vali-admin", target="_blank")
@@ -38,6 +95,7 @@ block content
 						i.fa.fa-download
 						| Download
 
+
 		.col-md-6
 			.tile
 				h3.tile-title Compatibility with frameworks
@@ -46,3 +104,52 @@ block content
 				p Go to #[a(href="http://pratikborsadiya.in/blog/vali-admin", target="_blank") documentation] for more details about integrating this theme with various frameworks.
 
 				p The source code is available on GitHub. If anything is missing or weird please report it as an issue on #[a(href="https://github.com/pratikborsadiya/vali-admin", target="_blank") GitHub]. If you want to contribute to this theme pull requests are always welcome.
+
+block specific-js
+	script(type='text/javascript', src="js/plugins/chart.js")
+	script(type='text/javascript').
+		var data = {
+			labels: ["January", "February", "March", "April", "May"],
+			datasets: [
+				{
+					label: "My First dataset",
+					fillColor: "rgba(220,220,220,0.2)",
+					strokeColor: "rgba(220,220,220,1)",
+					pointColor: "rgba(220,220,220,1)",
+					pointStrokeColor: "#fff",
+					pointHighlightFill: "#fff",
+					pointHighlightStroke: "rgba(220,220,220,1)",
+					data: [65, 59, 80, 81, 56]
+				},
+				{
+					label: "My Second dataset",
+					fillColor: "rgba(151,187,205,0.2)",
+					strokeColor: "rgba(151,187,205,1)",
+					pointColor: "rgba(151,187,205,1)",
+					pointStrokeColor: "#fff",
+					pointHighlightFill: "#fff",
+					pointHighlightStroke: "rgba(151,187,205,1)",
+					data: [28, 48, 40, 19, 86]
+				}
+			]
+		};
+		var pdata = [
+			{
+				value: 300,
+				color: "#46BFBD",
+				highlight: "#5AD3D1",
+				label: "Complete"
+			},
+			{
+				value: 50,
+				color:"#F7464A",
+				highlight: "#FF5A5E",
+				label: "In-Progress"
+			}
+		]
+
+		var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+		var lineChart = new Chart(ctxl).Line(data);
+
+		var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+		var pieChart = new Chart(ctxp).Pie(pdata);

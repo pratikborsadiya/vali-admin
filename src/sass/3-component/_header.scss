@@ -9,27 +9,30 @@
 	display: flex;
 	background-color: $primary-color;
 	z-index: 1030;
-	@media(max-width: 768px) { flex-direction: column; }
+	padding-right: 15px;
+	@media(min-width: 768px) { padding-right: 30px }
 	@media print { display: none; }
 }
 
 .app-header__logo {
-	display: block;
-	flex: 0 0 auto;
-	width: 100%;
+	flex: 1 0 auto;
+	color: #fff;
+	text-align: center;
 	font-family: 'Niconne';
+	padding: 0 15px;
 	font-size: 26px;
 	font-weight: 400;
 	line-height: 50px;
-	text-align: center;
-	padding: 0 15px;
-	color: #fff;
-	@media(min-width: 768px) { width: 230px; }
-	@if $sidebar-accent == dark {
-		background-color: darken( $primary-color, 5% );
-	}
-	@if $sidebar-accent == light {
-		background-color: lighten( $primary-color, 5% );
+	@media(min-width: 768px) {
+		flex: 0 0 auto;
+		display: block;
+		width: 230px;
+		@if $sidebar-accent == dark {
+			background-color: darken( $primary-color, 5% );
+		}
+		@if $sidebar-accent == light {
+			background-color: lighten( $primary-color, 5% );
+		}
 	}
 	&:focus,
 	&:hover {
@@ -38,21 +41,13 @@
 	}
 }
 
-.app-header__navbar {
-	display: flex;
-	justify-content: space-between;
-	flex: 1 0 auto;
-	padding-right: 15px;
-	@media(min-width: 768px) { padding-right: 30px }
-}
-
 .app-sidebar__toggle {
-	float: left;
 	padding: 0 15px;
 	font-family: fontAwesome;
 	color: #fff;
 	line-height: 2.4;
 	transition: background-color 0.3s ease;
+	@media(max-width: 768px) { order: -1; }
 	&:before {
 		content: "\f0c9";
 		font-size: 21px;
@@ -69,6 +64,8 @@
 	@extend .list-unstyled;
 	display: flex;
 	margin-bottom: 0;
+	justify-content: flex-end;
+	@media(min-width: 768px) { flex: 1 0 auto; }
 }
 
 .app-nav__item {

@@ -1,23 +1,53 @@
 header.app-header
 	a.app-header__logo(href='index.html') Vali
 
-	nav.app-header__navbar
-		// Sidebar toggle button
-		a.app-sidebar__toggle(href='#', data-toggle='sidebar')
+	// Sidebar toggle button
+	a.app-sidebar__toggle(href='#', data-toggle='sidebar')
 
-		// Navbar Right Menu
-		ul.app-nav
+	// Navbar Right Menu
+	ul.app-nav
 
-			li.app-search
-				input.app-search__input(type="search", placeholder="Search")
-				button.app-search__button: i.fa.fa-search
+		li.app-search
+			input.app-search__input(type="search", placeholder="Search")
+			button.app-search__button: i.fa.fa-search
 
-			//Notification Menu
-			li.dropdown
-				a.app-nav__item(href='#', data-toggle='dropdown')
-					i.fa.fa-bell-o.fa-lg
-				ul.app-notification.dropdown-menu.dropdown-menu-right
-					li.app-notification__title You have 4 new notifications.
+		//Notification Menu
+		li.dropdown
+			a.app-nav__item(href='#', data-toggle='dropdown')
+				i.fa.fa-bell-o.fa-lg
+			ul.app-notification.dropdown-menu.dropdown-menu-right
+				li.app-notification__title You have 4 new notifications.
+				.app-notification__content
+					li
+						a.app-notification__item(href='javascript:;')
+							span.app-notification__icon
+								span.fa-stack.fa-lg
+									i.fa.fa-circle.fa-stack-2x.text-primary
+									i.fa.fa-envelope.fa-stack-1x.fa-inverse
+							div
+								p.app-notification__message Lisa sent you a mail
+								p.app-notification__meta 2 min ago
+
+					li
+						a.app-notification__item(href='javascript:;')
+							span.app-notification__icon
+								span.fa-stack.fa-lg
+									i.fa.fa-circle.fa-stack-2x.text-danger
+									i.fa.fa-hdd-o.fa-stack-1x.fa-inverse
+							div
+								p.app-notification__message Mail server not working
+								p.app-notification__meta 5 min ago
+
+					li
+						a.app-notification__item(href='javascript:;')
+							span.app-notification__icon
+								span.fa-stack.fa-lg
+									i.fa.fa-circle.fa-stack-2x.text-success
+									i.fa.fa-money.fa-stack-1x.fa-inverse
+							div
+								p.app-notification__message Transaction complete
+								p.app-notification__meta 2 days ago
+
 					.app-notification__content
 						li
 							a.app-notification__item(href='javascript:;')
@@ -49,54 +79,23 @@ header.app-header
 									p.app-notification__message Transaction complete
 									p.app-notification__meta 2 days ago
 
-						.app-notification__content
-							li
-								a.app-notification__item(href='javascript:;')
-									span.app-notification__icon
-										span.fa-stack.fa-lg
-											i.fa.fa-circle.fa-stack-2x.text-primary
-											i.fa.fa-envelope.fa-stack-1x.fa-inverse
-									div
-										p.app-notification__message Lisa sent you a mail
-										p.app-notification__meta 2 min ago
+				li.app-notification__footer
+					a(href='#') See all notifications.
 
-							li
-								a.app-notification__item(href='javascript:;')
-									span.app-notification__icon
-										span.fa-stack.fa-lg
-											i.fa.fa-circle.fa-stack-2x.text-danger
-											i.fa.fa-hdd-o.fa-stack-1x.fa-inverse
-									div
-										p.app-notification__message Mail server not working
-										p.app-notification__meta 5 min ago
-
-							li
-								a.app-notification__item(href='javascript:;')
-									span.app-notification__icon
-										span.fa-stack.fa-lg
-											i.fa.fa-circle.fa-stack-2x.text-success
-											i.fa.fa-money.fa-stack-1x.fa-inverse
-									div
-										p.app-notification__message Transaction complete
-										p.app-notification__meta 2 days ago
-
-					li.app-notification__footer
-						a(href='#') See all notifications.
-
-			// User Menu
-			li.dropdown
-				a.app-nav__item(href='#', data-toggle='dropdown')
-					i.fa.fa-user.fa-lg
-				ul.dropdown-menu.settings-menu.dropdown-menu-right
-					li
-						a.dropdown-item(href='page-user.html')
-							i.fa.fa-cog.fa-lg
-							|  Settings
-					li
-						a.dropdown-item(href='page-user.html')
-							i.fa.fa-user.fa-lg
-							|  Profile
-					li
-						a.dropdown-item(href='page-login.html')
-							i.fa.fa-sign-out.fa-lg
-							|  Logout
+		// User Menu
+		li.dropdown
+			a.app-nav__item(href='#', data-toggle='dropdown')
+				i.fa.fa-user.fa-lg
+			ul.dropdown-menu.settings-menu.dropdown-menu-right
+				li
+					a.dropdown-item(href='page-user.html')
+						i.fa.fa-cog.fa-lg
+						|  Settings
+				li
+					a.dropdown-item(href='page-user.html')
+						i.fa.fa-user.fa-lg
+						|  Profile
+				li
+					a.dropdown-item(href='page-login.html')
+						i.fa.fa-sign-out.fa-lg
+						|  Logout

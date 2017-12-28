@@ -13,11 +13,20 @@
 	box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
 	transition: left 0.3s ease,
 				width 0.3s ease;
-	a:hover { text-decoration: none }
 	&::-webkit-scrollbar { width: 6px; }
 	&::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); }
-	@media(max-width: 768px) { padding-top: 120px; }
 	@media print { display: none; }
+}
+
+.app-sidebar__overlay {
+	@media(max-width: 768px) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 999999;
+	}
 }
 
 .app-sidebar__user {
@@ -70,6 +79,7 @@
 	&:focus {
 		background: darken($sidebar-color, 10);
 		border-left-color: $primary-color;
+		text-decoration: none;
 		@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
 		@if $sidebar-accent == light { color: $primary-color }
 	}
@@ -120,6 +130,7 @@
 	&:hover,
 	&:focus {
 		background: darken($sidebar-color, 3);
+		text-decoration: none;
 		@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
 		@if $sidebar-accent == light { color: $primary-color }
 	}

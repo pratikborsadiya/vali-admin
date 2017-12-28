@@ -9,11 +9,13 @@
 	&.sidenav-closed {
 		.app-content { margin-left: 0; }
 		.app-sidebar { left: -$sidebar-width; }
+		.app-sidebar__overlay { visibility: hidden; }
 	}
 	@media(max-width: 768px) { overflow-x: hidden; }
 }
 
 .app-content {
+	position: relative;
 	min-height: calc(100vh - 50px);
 	margin-top: 50px;
 	margin-left: $sidebar-width;
@@ -22,7 +24,7 @@
 	z-index: 820;
 	transition: margin-left 0.3s ease;
 	@media(max-width: 768px) {
-		margin-top: 100px;
+		margin-top: 50px;
 		min-width: 100%;
 	}
 	@media(max-width: 480px) { padding: 15px; }

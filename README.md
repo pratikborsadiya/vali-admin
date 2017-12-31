@@ -2,7 +2,7 @@
 
 ![vali-admin](http://pratikborsadiya.in/blog/vali-admin/vali-admin-banner.gif)
 
-Vali is a free, modular and easy to customize admin theme built using [Bootstrap](https://getbootstrap.com), [SASS](http://sass-lang.com) and [Pug.js](https://pugjs.org/language/attributes.html).
+Vali is a free, modular and easy to customize admin theme built using [Bootstrap 4](https://getbootstrap.com), [SASS](http://sass-lang.com) and [Pug.js](https://pugjs.org/language/attributes.html).
 
 ## Getting started
 

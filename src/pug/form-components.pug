@@ -108,8 +108,10 @@ block content
 								.form-group
 									label.sr-only(for='exampleInputAmount') Amount (in dollars)
 									.input-group
-										.input-group-addon $
+										.input-group-prepend
+											span.input-group-text $
 										input#exampleInputAmount.form-control(type='text', placeholder='Amount')
-										.input-group-addon .00
+										.input-group-append
+											span.input-group-text .00
 				.tile-footer
 					button.btn.btn-primary(type='submit') Submit

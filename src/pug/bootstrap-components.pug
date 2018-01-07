@@ -86,27 +86,28 @@ block content
 				p.bs-component
 					button.btn.btn-primary.btn-lg.btn-block(type='button') Block level button
 				.bs-component(style='margin-bottom: 15px;')
-					.btn-group(data-toggle='buttons')
+					.btn-group.btn-group-toggle(data-toggle="buttons")
 						label.btn.btn-primary.active
-							input(type='checkbox', checked='')
-							|  Checkbox 1
+							input(type="checkbox" checked="" autocomplete="off")
+							|  Active
 						label.btn.btn-primary
-							input(type='checkbox')
-							|  Checkbox 2
+							input(type="checkbox" autocomplete="off")
+							|  Check
 						label.btn.btn-primary
-							input(type='checkbox')
-							|  Checkbox 3
+							input(type="checkbox" autocomplete="off")
+							|  Check
+
 				.bs-component(style='margin-bottom: 15px;')
-					.btn-group(data-toggle='buttons')
+					.btn-group.btn-group-toggle(data-toggle="buttons")
 						label.btn.btn-primary.active
-							input#option1(type='radio', name='options', checked='')
-							|  Radio 1
+							input#option1(type="radio" name="options" autocomplete="off" checked="")
+							|  Active
 						label.btn.btn-primary
-							input#option2(type='radio', name='options')
-							|  Radio 2
+							input#option2(type="radio" name="options" autocomplete="off")
+							|  Radio
 						label.btn.btn-primary
-							input#option3(type='radio', name='options')
-							|  Radio 3
+							input#option3(type="radio" name="options" autocomplete="off")
+							|  Radio
 				.bs-component(style='margin-bottom: 15px;')
 					.btn-group-vertical(data-toggle='buttons')
 						button.btn.btn-primary(type='button') Button

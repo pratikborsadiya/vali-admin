@@ -1,6 +1,3 @@
 node_modules/
-<<<<<<< HEAD
 dist/local.js
-=======
 */local.js
->>>>>>> WIP: Transition to Boostrap 4

@@ -220,28 +220,28 @@
               <button class="btn btn-primary btn-lg btn-block" type="button">Block level button</button>
             </p>
             <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group" data-toggle="buttons">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-primary active">
-                  <input type="checkbox" checked=""> Checkbox 1
+                  <input type="checkbox" checked="" autocomplete="off"> Active
                 </label>
                 <label class="btn btn-primary">
-                  <input type="checkbox"> Checkbox 2
+                  <input type="checkbox" autocomplete="off"> Check
                 </label>
                 <label class="btn btn-primary">
-                  <input type="checkbox"> Checkbox 3
+                  <input type="checkbox" autocomplete="off"> Check
                 </label>
               </div>
             </div>
             <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group" data-toggle="buttons">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-primary active">
-                  <input id="option1" type="radio" name="options" checked=""> Radio 1
+                  <input id="option1" type="radio" name="options" autocomplete="off" checked=""> Active
                 </label>
                 <label class="btn btn-primary">
-                  <input id="option2" type="radio" name="options"> Radio 2
+                  <input id="option2" type="radio" name="options" autocomplete="off"> Radio
                 </label>
                 <label class="btn btn-primary">
-                  <input id="option3" type="radio" name="options"> Radio 3
+                  <input id="option3" type="radio" name="options" autocomplete="off"> Radio
                 </label>
               </div>
             </div>
@@ -870,6 +870,7 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-72504830-1', 'auto');
       ga('send', 'pageview');
+      
     </script>
     <!-- Javascripts-->
     <!-- Essential javascripts for application to work-->

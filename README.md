@@ -2,22 +2,22 @@
 
 ![vali-admin](http://pratikborsadiya.in/blog/vali-admin/vali-admin-banner.gif)
 
-Vali is a free, modular and easy to customize admin theme built using [Bootstrap 4](https://getbootstrap.com), [SASS](http://sass-lang.com) and [Pug.js](https://pugjs.org/language/attributes.html).
+Vali is a free, modular and easy to customize admin theme built using [Bootstrap 4](https://getbootstrap.com), [SASS](http://sass-lang.com) and [Pug.js](https://pugjs.org).
 
 ## Getting started
 
-Run a `npm install` command in project root directory to install and build dependencies. If you don't want to edit theme you can use the compiled files inside `dist` folder.
+Run a `npm install` command in project root directory to install and build dependencies. If you don't want to edit theme you can use the compiled files inside `docs` folder.
 
 Use `npm run dev` task to watch and compile source files.
 Use `npm run build` task to compile all source files.
 
 For more information about customizing theme please follow this [link](http://pratikborsadiya.in/blog/vali-admin/).
 
-## Authors
+## Contributors
 
 * **[Pratik Borsadiya](http://pratikborsadiya.in)** - *Project Author*
 
-See also the list of [contributors](https://github.com/pratikborsadiya/vali-admin/graphs/contributors) who participated in this project.
+See the list of [contributors](https://github.com/pratikborsadiya/vali-admin/graphs/contributors) who participated in this project.
 
 ## License
 

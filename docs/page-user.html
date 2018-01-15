@@ -93,11 +93,11 @@
       </div>
       <ul class="app-menu">
         <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
             <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
             <li><a class="treeview-item" href="http://fontawesome.io/icons/" target="_blank"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-            <li><a class="treeview-item active" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
+            <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
             <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
           </ul>
         </li>
@@ -116,12 +116,12 @@
             <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
           </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
             <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
             <li><a class="treeview-item" href="page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
             <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-            <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
+            <li><a class="treeview-item active" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
             <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
             <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
             <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
@@ -132,76 +132,107 @@
     </aside>
     <main class="app-content">
       <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-      <div class="app-title">
-        <div>
-          <h1><i class="fa fa-laptop"></i> Cards</h1>
-          <p>Material design inspired cards</p>
-        </div>
-        <ul class="app-breadcrumb breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item">UI</li>
-          <li class="breadcrumb-item"><a href="#">Cards</a></li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="tile">
-            <h3 class="tile-title">Card Title</h3>
-            <div class="tile-body">Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.</div>
-            <div class="tile-footer"><a class="btn btn-primary" href="#">Link</a></div>
+      <div class="row user">
+        <div class="col-md-12">
+          <div class="profile">
+            <div class="info"><img class="user-img" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
+              <h4>John Doe</h4>
+              <p>FrontEnd Developer</p>
+            </div>
+            <div class="cover-image"></div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="tile">
-            <div class="tile-title-w-btn">
-              <h3 class="title">All Items</h3>
-              <p><a class="btn btn-primary icon-btn" href=""><i class="fa fa-plus"></i>Add Item	</a></p>
-            </div>
-            <div class="tile-body">
-              <b>Card with action button </b><br>
-              Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
-              
-              
-            </div>
+        <div class="col-md-3">
+          <div class="tile p-0">
+            <ul class="nav flex-column nav-tabs user-tabs">
+              <li class="nav-item"><a class="nav-link active" href="#user-timeline" data-toggle="tab">Timeline</a></li>
+              <li class="nav-item"><a class="nav-link" href="#user-settings" data-toggle="tab">Settings</a></li>
+            </ul>
           </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="col-md-6">
-          <div class="tile">
-            <div class="tile-title-w-btn">
-              <h3 class="title">All Items</h3>
-              <div class="btn-group"><a class="btn btn-primary" href="#"><i class="fa fa-lg fa-plus"></i></a><a class="btn btn-primary" href="#"><i class="fa fa-lg fa-edit"></i></a><a class="btn btn-primary" href="#"><i class="fa fa-lg fa-trash"></i></a></div>
-            </div>
-            <div class="tile-body">
-              <b>Card with button group </b><br>
-              Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="tile">
-            <div class="overlay">
-              <div class="m-loader mr-4">
-                <svg class="m-circular" viewBox="25 25 50 50">
-                	<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
-                </svg>
+        <div class="col-md-9">
+          <div class="tab-content">
+            <div class="tab-pane active" id="user-timeline">
+              <div class="timeline-post">
+                <div class="post-media"><a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg"></a>
+                  <div class="content">
+                    <h5><a href="#">John Doe</a></h5>
+                    <p class="text-muted"><small>2 January at 9:30</small></p>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <ul class="post-utility">
+                  <li class="likes"><a href="#"><i class="fa fa-fw fa-lg fa-thumbs-o-up"></i>Like</a></li>
+                  <li class="shares"><a href="#"><i class="fa fa-fw fa-lg fa-share"></i>Share</a></li>
+                  <li class="comments"><i class="fa fa-fw fa-lg fa-comment-o"></i> 5 Comments</li>
+                </ul>
               </div>
-              <h3 class="l-text">Loading</h3>
+              <div class="timeline-post">
+                <div class="post-media"><a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg"></a>
+                  <div class="content">
+                    <h5><a href="#">John Doe</a></h5>
+                    <p class="text-muted"><small>2 January at 9:30</small></p>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <ul class="post-utility">
+                  <li class="likes"><a href="#"><i class="fa fa-fw fa-lg fa-thumbs-o-up"></i>Like</a></li>
+                  <li class="shares"><a href="#"><i class="fa fa-fw fa-lg fa-share"></i>Share</a></li>
+                  <li class="comments"><i class="fa fa-fw fa-lg fa-comment-o"></i> 5 Comments</li>
+                </ul>
+              </div>
             </div>
-            <div class="tile-title-w-btn">
-              <h3 class="title">All Items</h3>
-              <p><a class="btn btn-primary icon-btn" href=""><i class="fa fa-plus"></i>Add Item	</a></p>
-            </div>
-            <div class="tile-body">
-              <b>Card with action button </b><br>
-              Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
+            <div class="tab-pane fade" id="user-settings">
+              <div class="tile user-settings">
+                <h4 class="line-head">Settings</h4>
+                <form>
+                  <div class="row mb-4">
+                    <div class="col-md-4">
+                      <label>First Name</label>
+                      <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4">
+                      <label>Last Name</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 mb-4">
+                      <label>Email</label>
+                      <input class="form-control" type="text">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-8 mb-4">
+                      <label>Mobile No</label>
+                      <input class="form-control" type="text">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-8 mb-4">
+                      <label>Office Phone</label>
+                      <input class="form-control" type="text">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-8 mb-4">
+                      <label>Home Phone</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="row mb-10">
+                    <div class="col-md-12">
+                      <button class="btn btn-primary" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i> Save</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <!-- Javascripts-->
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -210,5 +241,16 @@
     <!-- The javascript plugin to display page loading on top-->
     <script src="js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
+    <!-- Google analytics script-->
+    <script type="text/javascript">
+      if(document.location.hostname == 'pratikborsadiya.in') {
+      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      	ga('create', 'UA-72504830-1', 'auto');
+      	ga('send', 'pageview');
+      }
+    </script>
   </body>
 </html>

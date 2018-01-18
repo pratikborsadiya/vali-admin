@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					outputStyle: 'expanded',
-					sourceMap: true
+					sourceMap: false
 				},
 				files: [{
 					expand: true,

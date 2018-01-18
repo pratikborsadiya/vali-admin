@@ -15,12 +15,10 @@
 }
 
 .app-content {
-	position: relative;
 	min-height: calc(100vh - 50px);
 	margin-top: 50px;
 	padding: 30px;
 	background-color: #E5E5E5;
-	z-index: 1;
 	transition: margin-left 0.3s ease;
 	@media(min-width: 768px) { margin-left: $sidebar-width; }
 	@media(max-width: 768px) {

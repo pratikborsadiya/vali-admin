@@ -13308,12 +13308,12 @@ be a descendant of the grid when it is being dragged.
 
 @media (max-width: 768px) {
   .app-sidebar__overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 999999;
+    z-index: 9;
   }
 }
 

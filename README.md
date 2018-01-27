@@ -11,7 +11,8 @@ Run a `npm install` command in project root directory to install and build depen
 Use `npm run dev` task to watch and compile source files.
 Use `npm run build` task to compile all source files.
 
-For more information about customizing theme please follow this [link](http://pratikborsadiya.in/blog/vali-admin/).
+## Customiztion
+For more information about customizing theme colors please follow this [guide](http://pratikborsadiya.in/blog/vali-admin/).
 
 ## Contributors
 

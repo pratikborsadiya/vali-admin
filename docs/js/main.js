@@ -6,7 +6,7 @@
 	// Toggle Sidebar
 	$('[data-toggle="sidebar"]').click(function(event) {
 		event.preventDefault();
-		$('.app').toggleClass('sidenav-closed');
+		$('.app').toggleClass('sidenav-toggled');
 	});
 
 	// Activate sidebar treeview toggle

@@ -13041,21 +13041,36 @@ be a descendant of the grid when it is being dragged.
   background-color: #00635a;
 }
 
-.app.sidenav-closed .app-content {
-  margin-left: 0;
-}
-
-.app.sidenav-closed .app-sidebar {
-  left: -230px;
-}
-
-.app.sidenav-closed .app-sidebar__overlay {
-  visibility: hidden;
+@media (min-width: 768px) {
+  .app.sidenav-toggled .app-content {
+    margin-left: 0;
+  }
+  .app.sidenav-toggled .app-sidebar {
+    left: -230px;
+  }
+  .app.sidenav-toggled .app-sidebar__overlay {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 768px) {
   .app {
     overflow-x: hidden;
+  }
+  .app .app-sidebar {
+    left: -230px;
+  }
+  .app .app-sidebar__overlay {
+    visibility: hidden;
+  }
+  .app.sidenav-toggled .app-content {
+    margin-left: 0;
+  }
+  .app.sidenav-toggled .app-sidebar {
+    left: 0;
+  }
+  .app.sidenav-toggled .app-sidebar__overlay {
+    visibility: visible;
   }
 }
 
@@ -13527,39 +13542,39 @@ be a descendant of the grid when it is being dragged.
 }
 
 @media (min-width: 768px) {
-  .sidebar-mini.sidenav-closed .app-sidebar__user-name,
-  .sidebar-mini.sidenav-closed .app-sidebar__user-designation,
-  .sidebar-mini.sidenav-closed .treeview-indicator {
+  .sidebar-mini.sidenav-toggled .app-sidebar__user-name,
+  .sidebar-mini.sidenav-toggled .app-sidebar__user-designation,
+  .sidebar-mini.sidenav-toggled .treeview-indicator {
     display: none;
   }
-  .sidebar-mini.sidenav-closed .app-sidebar__user-avatar {
+  .sidebar-mini.sidenav-toggled .app-sidebar__user-avatar {
     width: 30px;
     height: 30px;
   }
-  .sidebar-mini.sidenav-closed .app-content {
+  .sidebar-mini.sidenav-toggled .app-content {
     margin-left: 50px;
   }
-  .sidebar-mini.sidenav-closed .app-sidebar {
+  .sidebar-mini.sidenav-toggled .app-sidebar {
     left: 0;
     width: 50px;
     overflow: hidden;
   }
-  .sidebar-mini.sidenav-closed .app-sidebar:hover {
+  .sidebar-mini.sidenav-toggled .app-sidebar:hover {
     overflow: visible;
   }
-  .sidebar-mini.sidenav-closed .app-menu__item {
+  .sidebar-mini.sidenav-toggled .app-menu__item {
     overflow: hidden;
   }
-  .sidebar-mini.sidenav-closed .app-menu__item:hover {
+  .sidebar-mini.sidenav-toggled .app-menu__item:hover {
     overflow: visible;
   }
-  .sidebar-mini.sidenav-closed .app-menu__item:hover .app-menu__label {
+  .sidebar-mini.sidenav-toggled .app-menu__item:hover .app-menu__label {
     opacity: 1;
   }
-  .sidebar-mini.sidenav-closed .app-menu__item:hover + .treeview-menu {
+  .sidebar-mini.sidenav-toggled .app-menu__item:hover + .treeview-menu {
     visibility: visible;
   }
-  .sidebar-mini.sidenav-closed .app-menu__label {
+  .sidebar-mini.sidenav-toggled .app-menu__label {
     display: block;
     position: absolute;
     top: 0;
@@ -13573,25 +13588,25 @@ be a descendant of the grid when it is being dragged.
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
-  .sidebar-mini.sidenav-closed .treeview:hover .app-menu__item {
+  .sidebar-mini.sidenav-toggled .treeview:hover .app-menu__item {
     overflow: visible;
     background: #0d1214;
     border-left-color: #009688;
     color: #fff;
   }
-  .sidebar-mini.sidenav-closed .treeview:hover .app-menu__label {
+  .sidebar-mini.sidenav-toggled .treeview:hover .app-menu__label {
     opacity: 1;
   }
-  .sidebar-mini.sidenav-closed .treeview:hover .treeview-menu {
+  .sidebar-mini.sidenav-toggled .treeview:hover .treeview-menu {
     max-height: 100vh;
     opacity: 1;
     visibility: visible;
     z-index: 10;
   }
-  .sidebar-mini.sidenav-closed .treeview .app-menu__label {
+  .sidebar-mini.sidenav-toggled .treeview .app-menu__label {
     border-bottom-right-radius: 0;
   }
-  .sidebar-mini.sidenav-closed .treeview-menu {
+  .sidebar-mini.sidenav-toggled .treeview-menu {
     position: absolute;
     left: 50px;
     min-width: 180px;

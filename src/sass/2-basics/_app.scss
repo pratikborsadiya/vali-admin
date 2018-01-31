@@ -6,12 +6,27 @@
 }
 
 .app {
-	&.sidenav-closed {
-		.app-content { margin-left: 0; }
+	// On large devices make sidebar visible by default
+	// adding sidenav-toggled class will close sidebar
+	@media(min-width: 768px) {
+		&.sidenav-toggled {
+			.app-content { margin-left: 0; }
+			.app-sidebar { left: -$sidebar-width; }
+			.app-sidebar__overlay { visibility: hidden; }
+		}
+	}
+	// On small devices make sidebar collapsed by default
+	// adding sidenav-toggled class will open sidebar
+	@media(max-width: 768px) {
+		overflow-x: hidden;
 		.app-sidebar { left: -$sidebar-width; }
 		.app-sidebar__overlay { visibility: hidden; }
+		&.sidenav-toggled {
+			.app-content { margin-left: 0; }
+			.app-sidebar { left: 0; }
+			.app-sidebar__overlay { visibility: visible; }
+		}
 	}
-	@media(max-width: 768px) { overflow-x: hidden; }
 }
 
 .app-content {

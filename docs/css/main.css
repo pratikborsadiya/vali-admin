@@ -13264,7 +13264,7 @@ be a descendant of the grid when it is being dragged.
   padding: 5px 10px;
   padding-right: 30px;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -13286,14 +13286,6 @@ be a descendant of the grid when it is being dragged.
   color: rgba(0, 0, 0, 0.4);
 }
 
-.app-search__input:focus {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.app-search__input:focus + .app-search__button {
-  color: rgba(0, 0, 0, 0.8);
-}
-
 .app-search__button {
   position: absolute;
   right: 0;
@@ -13301,7 +13293,7 @@ be a descendant of the grid when it is being dragged.
   bottom: 10px;
   padding: 0 10px;
   border: 0;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.8);
   background: none;
   cursor: pointer;
 }

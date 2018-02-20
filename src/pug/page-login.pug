@@ -54,12 +54,11 @@ html
 						p.semibold-text.mb-0
 							a(href="#" data-toggle="flip") <i class="fa fa-angle-left fa-fw"></i> Back to Login
 
-	include includes/_javascript.pug
+		include includes/_javascript.pug
 
-block specific-js
-	script(type="text/javascript").
-		// Login Page Flipbox control
-		$('.login-content [data-toggle="flip"]').click(function() {
-			$('.login-box').toggleClass('flipped');
-			return false;
-		});
+		script(type="text/javascript").
+			// Login Page Flipbox control
+			$('.login-content [data-toggle="flip"]').click(function() {
+				$('.login-box').toggleClass('flipped');
+				return false;
+			});

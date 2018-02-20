@@ -2,7 +2,7 @@ header.app-header
 	a.app-header__logo(href='index.html') Vali
 
 	// Sidebar toggle button
-	a.app-sidebar__toggle(href='#', data-toggle='sidebar')
+	a.app-sidebar__toggle(href='#', data-toggle='sidebar', aria-label="Hide Sidebar")
 
 	// Navbar Right Menu
 	ul.app-nav
@@ -13,7 +13,7 @@ header.app-header
 
 		//Notification Menu
 		li.dropdown
-			a.app-nav__item(href='#', data-toggle='dropdown')
+			a.app-nav__item(href='#', data-toggle='dropdown' aria-label="Show notifications")
 				i.fa.fa-bell-o.fa-lg
 			ul.app-notification.dropdown-menu.dropdown-menu-right
 				li.app-notification__title You have 4 new notifications.
@@ -84,7 +84,7 @@ header.app-header
 
 		// User Menu
 		li.dropdown
-			a.app-nav__item(href='#', data-toggle='dropdown')
+			a.app-nav__item(href='#', data-toggle='dropdown' aria-label="Open Profile Menu")
 				i.fa.fa-user.fa-lg
 			ul.dropdown-menu.settings-menu.dropdown-menu-right
 				li

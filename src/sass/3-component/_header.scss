@@ -95,13 +95,9 @@
 	padding: 5px 10px;
 	padding-right: 30px;
 	border-radius: 2px;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.8);
 	transition: background-color 0.3s ease;
 	&::placeholder { color: rgba(0,0,0,0.4); }
-	&:focus {
-		background-color: rgba(255,255,255,0.8);
-		& + .app-search__button { color: rgba(0,0,0,0.8); }
-	}
 }
 .app-search__button {
 	position: absolute;
@@ -110,7 +106,7 @@
 	bottom: 10px;
 	padding: 0 10px;
 	border: 0;
-	color: rgba(0,0,0,0.4);
+	color: rgba(0,0,0,0.8);
 	background: none;
 	cursor: pointer;
 }

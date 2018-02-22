@@ -36,6 +36,7 @@
 @import '3-component/header';
 @import '3-component/sidebar';
 @import '3-component/sidebar-mini';
+
 // This styles are optional based on your preferance
 @import '3-component/dropdown';
 @import '3-component/button';
@@ -48,6 +49,11 @@
 @import '3-component/button-spinner';
 @import '3-component/widgets';
 @import '3-component/chat';
+
+// Include the following style if you need RTL support
+// Also you will need to add dir="rtl" attribute to HTML tag
+
+//@import '3-component/rtl';
 
 // 4 -Pages
 //---------------------------------------------------

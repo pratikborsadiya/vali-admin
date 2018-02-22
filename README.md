@@ -14,6 +14,9 @@ Use `npm run build` task to compile all source files.
 ## Customiztion
 For more information about customizing theme colors please follow this [guide](http://pratikborsadiya.in/blog/vali-admin/).
 
+## RTL Support
+Please follow this [guide](http://pratikborsadiya.in/blog/vali-admin/) to enable RTL support.
+
 ## Contributors
 
 * **[Pratik Borsadiya](http://pratikborsadiya.in)** - *Project Author*

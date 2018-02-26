@@ -24,7 +24,7 @@ aside.app-sidebar
 						i.icon.fa.fa-circle-o
 						|  Bootstrap Elements
 				li
-					a.treeview-item(href='http://fontawesome.io/icons/', target="_blank")
+					a.treeview-item(href='http://fontawesome.io/icons/', target="_blank", rel="noopener")
 						i.icon.fa.fa-circle-o
 						|  Font Icons
 				li
@@ -114,6 +114,6 @@ aside.app-sidebar
 						i.icon.fa.fa-circle-o
 						|  Mailbox
 				li
-					a.treeview-item(href='page-error.html')
+					a.treeview-item(href='page-error.html' class={'active': activePage == 'error-page'})
 						i.icon.fa.fa-circle-o
 						|  Error Page

@@ -14624,7 +14624,8 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 110px);
+  margin-bottom: 0;
 }
 
 .page-error h1 {

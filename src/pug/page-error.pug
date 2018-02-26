@@ -1,15 +1,16 @@
-doctype html
-html
-	head
-		include includes/_head.pug
+extends layouts/_layout.pug
 
-	body
-		.page-error
-			h1
-				i.fa.fa-exclamation-circle
-				|  Error 404
-			p The page you have requested is not found.
-			p
-				a(href="javascript:window.history.back();") Go back to previous page
-					
-		include includes/_javascript.pug
+block variables
+	- var activePage = 'error-page'
+	- var activeGroup = 'pages'
+
+block title
+	title Error Page - Vali Admin
+
+block content
+	.page-error.tile
+		h1
+			i.fa.fa-exclamation-circle
+			|  Error 404: Page not found
+		p The page you have requested is not found.
+		p: a.btn.btn-primary(href="javascript:window.history.back();") Go Back

@@ -1,6 +1,6 @@
 {
   "name": "vali-admin",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "An admin theme built with Bootstrap, sass and PugJs",
   "devDependencies": {
     "autoprefixer": "^7.1.0",

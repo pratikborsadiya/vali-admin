@@ -17,7 +17,7 @@
 	}
 	// On small devices make sidebar collapsed by default
 	// adding sidenav-toggled class will open sidebar
-	@media(max-width: 768px) {
+	@media(max-width: 767px) {
 		overflow-x: hidden;
 		.app-sidebar { left: -$sidebar-width; }
 		.app-sidebar__overlay { visibility: hidden; }
@@ -36,7 +36,7 @@
 	background-color: #E5E5E5;
 	transition: margin-left 0.3s ease;
 	@media(min-width: 768px) { margin-left: $sidebar-width; }
-	@media(max-width: 768px) {
+	@media(max-width: 767px) {
 		margin-top: 50px;
 		min-width: 100%;
 	}

@@ -13053,7 +13053,7 @@ be a descendant of the grid when it is being dragged.
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .app {
     overflow-x: hidden;
   }
@@ -13090,7 +13090,7 @@ be a descendant of the grid when it is being dragged.
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .app-content {
     margin-top: 50px;
     min-width: 100%;
@@ -13190,7 +13190,7 @@ be a descendant of the grid when it is being dragged.
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .app-sidebar__toggle {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -13390,7 +13390,7 @@ be a descendant of the grid when it is being dragged.
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .app-sidebar__overlay {
     position: fixed;
     top: 0;

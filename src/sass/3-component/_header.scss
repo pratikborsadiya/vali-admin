@@ -47,7 +47,7 @@
 	color: #fff;
 	line-height: 2.4;
 	transition: background-color 0.3s ease;
-	@media(max-width: 768px) { order: -1; }
+	@media(max-width: 767px) { order: -1; }
 	&:before {
 		content: "\f0c9";
 		font-size: 21px;

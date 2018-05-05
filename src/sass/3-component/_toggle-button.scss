@@ -16,11 +16,11 @@
 			user-select: none;
 
 			&:before {
-				content: "";
-				font-family: "FontAwesome";
+				content: "\f204";
+				font-family: "Font Awesome 5 Free"; 
 				speak: none;
 				font-style: normal;
-				font-weight: normal;
+				font-weight: 900;
 				font-variant: normal;
 				text-transform: none;
 				line-height: 1;
@@ -33,7 +33,7 @@
 		}
 
 		&:checked + .button-indecator:before {
-			content: "";
+			content: "\f205";
 			color: $primary-color;
 			animation: toggleBtn 0.3s ease-in-out;
 		}

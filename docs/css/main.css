@@ -13602,7 +13602,8 @@ be a descendant of the grid when it is being dragged.
 
 .app-sidebar__toggle {
   padding: 0 15px;
-  font-family: fontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   color: #fff;
   line-height: 2.4;
   -webkit-transition: background-color 0.3s ease;
@@ -14260,8 +14261,8 @@ be a descendant of the grid when it is being dragged.
 }
 
 .animated-checkbox input[type="checkbox"] + .label-text:before {
-  content: "";
-  font-family: "FontAwesome";
+  content: "\f0c8";
+  font-family: "Font Awesome 5 Free";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -14305,8 +14306,8 @@ be a descendant of the grid when it is being dragged.
 }
 
 .animated-radio-button input[type="radio"] + .label-text:before {
-  content: "";
-  font-family: "FontAwesome";
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -14385,11 +14386,11 @@ be a descendant of the grid when it is being dragged.
 }
 
 .toggle input[type="checkbox"] + .button-indecator:before {
-  content: "";
-  font-family: "FontAwesome";
+  content: "\f204";
+  font-family: "Font Awesome 5 Free";
   speak: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
@@ -14401,7 +14402,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .toggle input[type="checkbox"]:checked + .button-indecator:before {
-  content: "";
+  content: "\f205";
   color: #009688;
   -webkit-animation: toggleBtn 0.3s ease-in-out;
           animation: toggleBtn 0.3s ease-in-out;

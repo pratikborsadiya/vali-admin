@@ -12,7 +12,8 @@
   },
   "scripts": {
     "dev": "grunt watch",
-    "build": "grunt build"
+    "build": "grunt build",
+    "start": "node node-dev-server.js"
   },
   "repository": {
     "type": "git",

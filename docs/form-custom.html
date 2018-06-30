@@ -18,8 +18,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Summernote BS4 CSS -->
+    <link rel="stylesheet" href="js/plugins/summernote/summernote-bs4.css">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Page specific Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   </head>
@@ -437,10 +441,45 @@
         <div class="col-md-6">
           <div class="tile">
             <div class="tile-title-w-btn">
+              <h3 class="title">Dropzone</h3>
+              <p>
+                <a class="btn btn-primary icon-btn" href="http://www.dropzonejs.com/#installation" target="_blank">
+                  <i class="fa fa-file"></i>Docs</a>
+              </p>
+            </div>
+            <div class="tile-body">
+              <p>DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.</p>
+              <h4>Demo</h4>
+              <form action="/file-upload" class="dropzone" id="dzForm">
+                <div class="fallback">
+                  <input class="form-control" type="file" name="file" multiple>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tile">
+            <div class="tile-title-w-btn">
+              <h3 class="title">Bootstrap Material DatePicker</h3>
+              <p>
+                <a class="btn btn-primary icon-btn" href="https://github.com/T00rk/bootstrap-material-datetimepicker" target="_blank">
+                  <i class="fa fa-file"></i>Docs</a>
+              </p>
+            </div>
+            <div class="tile-body">
+              <p>This plugin can be used to let the user select the date in a convinient way.</p>
+              <h4>Demo</h4>
+              <input class="form-control" id="mdbDate" type="text" placeholder="Select Date">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tile">
+            <div class="tile-title-w-btn">
               <h3 class="title">Date Picker</h3>
               <p>
-                <a class="btn btn-primary icon-btn" href="http://bootstrap-datepicker.readthedocs.org/en/stable/options.html"
-                  target="_blank">
+                <a class="btn btn-primary icon-btn" href="http://bootstrap-datepicker.readthedocs.org/en/stable/options.html" target="_blank">
                   <i class="fa fa-file"></i>Docs</a>
               </p>
             </div>
@@ -448,6 +487,59 @@
               <p>This plugin can be used to let the user select the date in a convinient way.</p>
               <h4>Demo</h4>
               <input class="form-control" id="demoDate" type="text" placeholder="Select Date">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-title-w-btn">
+              <h3 class="title">TinyMCE V4</h3>
+              <p>
+                <a class="btn btn-primary icon-btn" href="https://www.tinymce.com/docs/demo/" target="_blank">
+                  <i class="fa fa-file"></i>Docs</a>
+              </p>
+            </div>
+            <div class="tile-body">
+              <p>TinyMCE the most advanced WYSWIYG HTML editor designed to simplify website content creation.</p>
+              <h4>Demo</h4>
+              <textarea class="form-control" id="demoTiny" rows="8"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-title-w-btn">
+              <h3 class="title">CKEditor5</h3>
+              <p>
+                <a class="btn btn-primary icon-btn" href="https://docs.ckeditor.com/ckeditor5/latest/builds/guides/integration/configuration.html"
+                  target="_blank">
+                  <i class="fa fa-file"></i>Docs</a>
+              </p>
+            </div>
+            <div class="tile-body">
+              <p>A set of ready to use rich text editors created with a powerful framework.</p>
+              <p class="d-inline-block bg-light px-2 py-1">To change the
+                <code>textarea</code> height in the new CKEditor5 visit this
+                <a href="https://stackoverflow.com/questions/46559354/how-to-set-the-height-of-ckeditor-5-classic-editor" target="_blank">Link</a>.
+              </p>
+              <h4>Demo</h4>
+              <textarea class="form-control" id="demoCK"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-title-w-btn">
+              <h3 class="title">Summernote</h3>
+              <p>
+                <a class="btn btn-primary icon-btn" href="https://summernote.org/getting-started/#installation" target="_blank">
+                  <i class="fa fa-file"></i>Docs</a>
+              </p>
+            </div>
+            <div class="tile-body">
+              <p>Super simple WYSIWYG Editor on Bootstrap</p>
+              <h4>Demo</h4>
+              <textarea class="form-control" id="demoSummernote"></textarea>
             </div>
           </div>
         </div>
@@ -464,6 +556,18 @@
     <script type="text/javascript" src="js/plugins/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/plugins/select2.min.js"></script>
     <script type="text/javascript" src="js/plugins/bootstrap-datepicker.min.js"></script>
+    <!-- TinyMCE -->
+    <script src="js/plugins/tinymce/tinymce.min.js"></script>
+    <!-- CKEditor -->
+    <script src="js/plugins/ckeditor/ckeditor.js"></script>
+    <!-- Summernote -->
+    <script src="js/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- Dropzone -->
+    <script src="js/plugins/dropzone.js"></script>
+    <!-- MomentJS -->
+    <script src="js/plugins/moment.min.js"></script>
+    <!-- Bootstrap Material DatePicker -->
+    <script src="js/plugins/bootstrap-material-datetimepicker.js"></script>
     <script type="text/javascript">
       $('#sl').click(function () {
         $('#tl').loadingBtn();
@@ -482,15 +586,33 @@
       });
 
       $('#demoSelect').select2();
+      // TinyMCE Init
+      tinymce.init({
+        selector: '#demoTiny',
+        theme: 'modern'
+      });
+      // CKEditor5 Init
+      ClassicEditor
+        .create(document.querySelector('#demoCK'))
+        .catch(error => {
+          console.error(error);
+        });
+      // Summernote
+      $('#demoSummernote').summernote({
+        placeholder: 'Hello Summernote',
+        height: 200
+      });
+      // Bootstrap Material Design Datetime picker
+      $('#mdbDate').bootstrapMaterialDatePicker({ weekStart: 0, time: false });
     </script>
     <!-- Google analytics script-->
     <script type="text/javascript">
       if (document.location.hostname == 'pratikborsadiya.in') {
         (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-72504830-1', 'auto');
         ga('send', 'pageview');

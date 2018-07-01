@@ -23,11 +23,13 @@ For more information about customizing theme colors please follow the official [
 ## RTL Support
 Please follow the official [documentation](http://pratikborsadiya.in/blog/vali-admin/) to enable RTL support.
 
+## Contributing
+Please take a look at [contributing guidelines](CONTRIBUTING.md) if you are considering contributing to the repository.
+
 ## Contributors
 
 * **[Pratik Borsadiya](http://pratikborsadiya.in)** - *Project Author*
-
-List of [contributors](https://github.com/pratikborsadiya/vali-admin/graphs/contributors) who participated in this project.
+* **List of [contributors](https://github.com/pratikborsadiya/vali-admin/graphs/contributors)** who participated in this project.
 
 ## License
 

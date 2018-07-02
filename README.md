@@ -2,6 +2,8 @@
 
 ![vali-admin](http://pratikborsadiya.in/blog/vali-admin/vali-admin-banner.gif)
 
+[![npm version](https://badge.fury.io/js/vali-admin.svg)](https://badge.fury.io/js/vali-admin)
+
 Vali is a free, modular and easy to customize admin theme built using [Bootstrap 4](https://getbootstrap.com), [SASS](http://sass-lang.com) and [Pug.js](https://pugjs.org).
 
 ## Getting started

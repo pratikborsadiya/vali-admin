@@ -264,6 +264,21 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="tile">
+            <div class="tile-title-w-btn">
+              <h3 class="title">Dropzone</h3>
+              <p><a class="btn btn-primary icon-btn" href="https://gitlab.com/meno/dropzone" target="_blank"><i class="fa fa-file"></i>Docs</a></p>
+            </div>
+            <div class="tile-body">
+              <p>This plugin can be used to let the user Drag and Drop files for upload in a easy way.</p>
+              <h4>Demo</h4>
+              <form class="text-center dropzone" method="POST" enctype="multipart/form-data" action="/file-upload">
+                <div class="dz-message">Drop files here or click to upload<br><small class="text-info">(This is just a dropzone demo. Selected files are not actually uploaded.)</small></div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
@@ -277,13 +292,14 @@
     <script type="text/javascript" src="js/plugins/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/plugins/select2.min.js"></script>
     <script type="text/javascript" src="js/plugins/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/dropzone.js"></script>
     <script type="text/javascript">
-      $('#sl').click(function(){
+      $('#sl').on('click', function(){
       	$('#tl').loadingBtn();
       	$('#tb').loadingBtn({ text : "Signing In"});
       });
       
-      $('#el').click(function(){
+      $('#el').on('click', function(){
       	$('#tl').loadingBtnComplete();
       	$('#tb').loadingBtnComplete({ html : "Sign In"});
       });

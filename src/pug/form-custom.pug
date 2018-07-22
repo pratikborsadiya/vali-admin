@@ -144,19 +144,38 @@ block content
 				.tile-body
 					p This plugin can be used to let the user select the date in a convinient way.
 					h4 Demo
+
 					input.form-control#demoDate(type="text",placeholder="Select Date")
+
+		.col-md-6
+			.tile
+				.tile-title-w-btn
+						h3.title Dropzone
+						p
+							a.btn.btn-primary.icon-btn(href="https://gitlab.com/meno/dropzone",target="_blank")
+								i.fa.fa-file
+								| Docs
+
+				.tile-body
+					p This plugin can be used to let the user Drag and Drop files for upload in a easy way.
+					h4 Demo
+					form.text-center.dropzone(method="POST",enctype="multipart/form-data",action="/file-upload")
+						div.dz-message Drop files here or click to upload
+							br
+							small.text-info (This is just a dropzone demo. Selected files are not actually uploaded.)
 
 block specific-js
 	script(type='text/javascript', src="js/plugins/bootstrap-datepicker.min.js")
 	script(type='text/javascript', src="js/plugins/select2.min.js")
 	script(type='text/javascript', src="js/plugins/bootstrap-datepicker.min.js")
+	script(type='text/javascript', src="js/plugins/dropzone.js")
 	script(type="text/javascript").
-		$('#sl').click(function(){
+		$('#sl').on('click', function(){
 			$('#tl').loadingBtn();
 			$('#tb').loadingBtn({ text : "Signing In"});
 		});
 
-		$('#el').click(function(){
+		$('#el').on('click', function(){
 			$('#tl').loadingBtnComplete();
 			$('#tb').loadingBtnComplete({ html : "Sign In"});
 		});

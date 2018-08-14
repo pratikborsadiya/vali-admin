@@ -69,7 +69,7 @@ Please, go through these steps before you submit a pull request.
 1. Make sure that your pull request is not a duplicate.
 2. If not, then make sure that:
 
-	2.1. You have done your changes in a separate branch. Branches MUST have descriptive names that start with either the `fix/` or `feature/` prefixes. Good examples are: `fix/signin-issue` or `feature/issue-templates`.
+	2.1. You have done your changes in a separate branch. Branches MUST have descriptive names that start with either the `fix` or `feature` prefixes. Good examples are: `fix-signin-issue` or `feature-issue-templates`.
 
 	2.2. You have a descriptive commit message with a short title (first line).
 

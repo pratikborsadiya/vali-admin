@@ -36,7 +36,9 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					outputStyle: 'expanded',
-					sourceMap: false
+					sourceMap: false,
+					implementation : 'node-sass',
+					includePaths : ['node_modules']
 				},
 				files: [{
 					expand: true,

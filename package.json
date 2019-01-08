@@ -8,7 +8,8 @@
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^2.1.0"
+    "grunt-sass": "^2.1.0",
+    "node-sass": "^4.11.0"
   },
   "scripts": {
     "dev": "grunt watch",

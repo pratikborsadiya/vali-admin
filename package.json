@@ -1,19 +1,19 @@
 {
   "name": "vali-admin",
-  "version": "2.4.1",
+  "version": "3.0.0",
   "description": "An admin theme built with Bootstrap, sass and PugJs",
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
+    "autoprefixer": "^9.4.5",
     "grunt": "^1.0.3",
-    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-pug": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^3.0.1",
-    "node-sass": "^4.9.2"
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.11.0"
   },
   "scripts": {
     "dev": "grunt watch",
-    "build": "grunt build",
+    "build": "grunt build --verbose",
     "start": "node node-dev-server.js"
   },
   "repository": {

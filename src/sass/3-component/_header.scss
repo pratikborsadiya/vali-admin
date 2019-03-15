@@ -26,7 +26,7 @@
 	@media(min-width: 768px) {
 		flex: 0 0 auto;
 		display: block;
-		width: 230px;
+		width: $sidebar-width;
 		@if $sidebar-accent == dark {
 			background-color: darken( $primary-color, 5% );
 		}

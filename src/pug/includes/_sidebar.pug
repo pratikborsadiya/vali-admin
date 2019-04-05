@@ -9,7 +9,7 @@ aside.app-sidebar
 
 	ul.app-menu
 		li
-			a.app-menu__item(href='index.html' class={'active': activePage == 'dashboard'})
+			a.app-menu__item(href='dashboard.html' class={'active': activePage == 'dashboard'})
 				i.app-menu__icon.fa.fa-dashboard
 				span.app-menu__label Dashboard
 
@@ -117,3 +117,8 @@ aside.app-sidebar
 					a.treeview-item(href='page-error.html' class={'active': activePage == 'error-page'})
 						i.icon.fa.fa-circle-o
 						|  Error Page
+
+		li
+			a.app-menu__item(href='docs.html' class={'active': activePage == 'docs'})
+				i.app-menu__icon.fa.fa-file-code-o
+				span.app-menu__label Docs

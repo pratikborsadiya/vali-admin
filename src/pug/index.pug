@@ -25,6 +25,7 @@ html
 		link(rel='stylesheet', type='text/css', href='css/main.css')
 
 	body.landing-page
+		include includes/_landing-icons.pug
 		section.landing-hero
 			.landing-hero-overlay
 			.landing-hero-content
@@ -40,13 +41,32 @@ html
 		section.features
 			h1.features-title Features
 
-			ul.features-cards
-				li.features-card Free to use and open-source
-				li.features-card Beautiful and mobile responsive
-				li.features-card Built with Bootstrap 4, SASS and PUG.js
-				li.features-card Chart.js integration to display responsive charts
-				li.features-card Seven pre built pages including login, user profile and print friendly invoice page
-				li.features-card Data tables with sort, search and paginate functionality
+
+			.features-cards
+				.features-card
+					.feature-icon-backdrop
+						svg.feature-icon: use(xlink:href='#icon-globe')
+					p.feature-description Free to use and open-source
+				.features-card
+					.feature-icon-backdrop
+						svg.feature-icon: use(xlink:href='#icon-smartphone')
+					p.feature-description Beautiful and mobile responsive
+				.features-card
+					.feature-icon-backdrop
+						svg.feature-icon: use(xlink:href='#icon-zap')
+					p.feature-description Built with Bootstrap 4, SASS and PUG.js
+				.features-card
+					.feature-icon-backdrop
+						svg.feature-icon: use(xlink:href='#icon-chart')
+					p.feature-description Chart.js integration to display responsive charts
+				.features-card
+					.feature-icon-backdrop
+						svg.feature-icon: use(xlink:href='#icon-layout')
+					p.feature-description Seven pre built pages including login, user profile and print friendly invoice page
+				.features-card
+					.feature-icon-backdrop
+						svg.feature-icon: use(xlink:href='#icon-grid')
+					p.feature-description Data tables with sort, search and paginate functions
 
 		footer.landing-footer Created by #[b Pratik Borsadiya] & 
 			a(href="https://github.com/pratikborsadiya/vali-admin/graphs/contributors" target="_blank" rel="noopener") contributors

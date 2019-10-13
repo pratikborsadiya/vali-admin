@@ -65,10 +65,26 @@
 }
 
 .features-card {
-	border: 1px solid #ddd;
 	border-radius: 4px;
 	padding: 10px;
-	font-size: 15px;
+	font-size: 1.143em;
+	text-align: center;
+}
+
+.feature-icon-backdrop {
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 8px;
+	padding: 15px;
+	border-radius: 50%;
+	background-color: $primary-color;
+}
+
+.feature-icon {
+	width: 32px;
+	height: 32px;
+	stroke: #fff;
+	fill: transparent;
 }
 
 .landing-footer {

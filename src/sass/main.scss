@@ -12,16 +12,18 @@
 @import '1-tools/customize-bootstrap';
 @import '1-tools/bootstrap-source/bootstrap';
 
-// Vendor plugin files 
+// Vendor plugin files
 // Can be excluded based on your needs
 @import '1-tools/dataTables.bootstrap';
 @import '1-tools/bootstrap-datepicker';
 @import '1-tools/sweetalert';
 @import '1-tools/notify';
-@import '1-tools/select2';
+@import '1-tools/select2/select2';
 @import '1-tools/pace';
 @import '1-tools/jqvmap';
 @import '1-tools/fullcalendar';
+@import '1-tools/dropzone-basic';
+@import '1-tools/dropzone';
 
 // 2 - BASICS
 //---------------------------------------------------
@@ -59,6 +61,8 @@
 //---------------------------------------------------
 
 // This styles are optional based on your preferance
+@import '4-pages/landing-page';
+@import '4-pages/docs';
 @import '4-pages/login-material';
 @import '4-pages/lockscreen-material';
 @import '4-pages/error-page';

@@ -1,0 +1,10 @@
+.docs {
+	font-size: 16px;
+}
+
+.docs-title {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	font-size: 20px;
+	&:not(:first-of-type) { margin-top: 30px; }
+}

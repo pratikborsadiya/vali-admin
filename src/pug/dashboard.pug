@@ -1,0 +1,113 @@
+extends layouts/_layout.pug
+
+block variables
+	- var activePage = 'dashboard';
+	- var activeGroup = 'none';
+
+block content
+	.app-title
+		div
+			h1
+				i.fa.fa-dashboard
+				|  Dashboard
+			p A free and open source Bootstrap 4 admin template
+
+		ul.app-breadcrumb.breadcrumb
+			li.breadcrumb-item
+				i.fa.fa-home.fa-lg
+			li.breadcrumb-item
+				a(href='#') Dashboard
+
+	.row
+		.col-md-6.col-lg-3
+			.widget-small.primary.coloured-icon
+				i.icon.fa.fa-users.fa-3x
+				div.info
+					h4 Users
+					p
+						b 5
+
+		.col-md-6.col-lg-3
+			.widget-small.info.coloured-icon
+				i.icon.fa.fa-thumbs-o-up.fa-3x
+				div.info
+					h4 Likes
+					p
+						b 25
+
+		.col-md-6.col-lg-3
+			.widget-small.warning.coloured-icon
+				i.icon.fa.fa-files-o.fa-3x
+				div.info
+					h4 Uploades
+					p
+						b 10
+
+		.col-md-6.col-lg-3
+			.widget-small.danger.coloured-icon
+				i.icon.fa.fa-star.fa-3x
+				div.info
+					h4 Stars
+					p
+						b 500
+	.row
+		.col-md-6
+			.tile
+				h3.tile-title Monthly Sales
+				.embed-responsive.embed-responsive-16by9
+					canvas.embed-responsive-item(id="lineChartDemo")
+
+		.col-md-6
+			.tile
+				h3.tile-title Support Requests
+				.embed-responsive.embed-responsive-16by9
+					canvas.embed-responsive-item(id="pieChartDemo")
+
+block specific-js
+	script(type='text/javascript', src="js/plugins/chart.js")
+	script(type='text/javascript').
+		var data = {
+			labels: ["January", "February", "March", "April", "May"],
+			datasets: [
+				{
+					label: "My First dataset",
+					fillColor: "rgba(220,220,220,0.2)",
+					strokeColor: "rgba(220,220,220,1)",
+					pointColor: "rgba(220,220,220,1)",
+					pointStrokeColor: "#fff",
+					pointHighlightFill: "#fff",
+					pointHighlightStroke: "rgba(220,220,220,1)",
+					data: [65, 59, 80, 81, 56]
+				},
+				{
+					label: "My Second dataset",
+					fillColor: "rgba(151,187,205,0.2)",
+					strokeColor: "rgba(151,187,205,1)",
+					pointColor: "rgba(151,187,205,1)",
+					pointStrokeColor: "#fff",
+					pointHighlightFill: "#fff",
+					pointHighlightStroke: "rgba(151,187,205,1)",
+					data: [28, 48, 40, 19, 86]
+				}
+			]
+		};
+		var pdata = [
+			{
+				value: 300,
+				color: "#46BFBD",
+				highlight: "#5AD3D1",
+				label: "Complete"
+			},
+			{
+				value: 50,
+				color:"#F7464A",
+				highlight: "#FF5A5E",
+				label: "In-Progress"
+			}
+		]
+
+		var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+		var lineChart = new Chart(ctxl).Line(data);
+
+		var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+		var pieChart = new Chart(ctxp).Pie(pdata);

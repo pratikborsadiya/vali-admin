@@ -3,16 +3,16 @@
 	border: 0 !important;
 	max-width: 400px;
 	color: $white;
-	&.alert-success {
+	.alert-success {
 		background-color: theme-color("success");
 	}
-	&.alert-info {
+	.alert-info {
 		background-color: theme-color("info");
 	}
-	&.alert-warning {
+	.alert-warning {
 		background-color: lighten(theme-color("warning"), 10);
 	}
-	&.alert-danger {
+	.alert-danger {
 		background-color: lighten(theme-color("danger"), 5);
 	}
 	button[data-notify="dismiss"] {

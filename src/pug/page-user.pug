@@ -13,7 +13,7 @@ block content
 		.col-md-12
 			.profile
 				.info
-					img.user-img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg")
+					img.user-img(src="https://randomuser.me/api/portraits/men/1.jpg")
 					h4 John Doe
 					p FrontEnd Developer
 				.cover-image
@@ -22,9 +22,9 @@ block content
 			.tile.p-0
 				ul.nav.flex-column.nav-tabs.user-tabs
 					li.nav-item
-						a.nav-link.active(href='#user-timeline' data-toggle='tab') Timeline
+						a.nav-link.active(href='#user-timeline' data-bs-toggle='tab') Timeline
 					li.nav-item
-						a.nav-link(href='#user-settings' data-toggle='tab') Settings
+						a.nav-link(href='#user-settings' data-bs-toggle='tab') Settings
 
 		.col-md-9
 			.tab-content
@@ -32,7 +32,7 @@ block content
 					.timeline-post
 						.post-media
 							a(href="#")
-								img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+								img(src="https://randomuser.me/api/portraits/men/1.jpg")
 							.content
 								h5: a(href="#") John Doe
 								p.text-muted
@@ -43,22 +43,22 @@ block content
 						ul.post-utility
 							li.likes
 								a(href="#")
-									i.fa.fa-fw.fa-lg.fa-thumbs-o-up
+									i.bi.bi-heart.me-1
 									| Like
 
 							li.shares
 								a(href="#")
-									i.fa.fa-fw.fa-lg.fa-share
+									i.bi.bi-share.me-1
 									| Share
 
 							li.comments
-								i.fa.fa-fw.fa-lg.fa-comment-o
+								i.bi.bi-chat-square-text.me-1
 								|  5 Comments
 
 					.timeline-post
 						.post-media
 							a(href="#")
-								img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+								img(src="https://randomuser.me/api/portraits/men/1.jpg")
 							.content
 								h5: a(href="#") John Doe
 								p.text-muted
@@ -69,16 +69,16 @@ block content
 						ul.post-utility
 							li.likes
 								a(href="#")
-									i.fa.fa-fw.fa-lg.fa-thumbs-o-up
+									i.bi.bi-heart.me-1
 									| Like
 
 							li.shares
 								a(href="#")
-									i.fa.fa-fw.fa-lg.fa-share
+									i.bi.bi-share.me-1
 									| Share
 
 							li.comments
-								i.fa.fa-fw.fa-lg.fa-comment-o
+								i.bi.bi-chat-square-text.me-1
 								|  5 Comments
 
 				#user-settings.tab-pane.fade
@@ -121,7 +121,7 @@ block content
 							.row.mb-10
 								.col-md-12
 									button.btn.btn-primary(type="button")
-										i.fa.fa-fw.fa-lg.fa-check-circle
+										i.bi.bi-check-circle-fill.me-2
 										|  Save
 
 

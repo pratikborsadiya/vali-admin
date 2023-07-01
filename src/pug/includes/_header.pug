@@ -9,21 +9,19 @@ header.app-header
 
 		li.app-search
 			input.app-search__input(type="search", placeholder="Search")
-			button.app-search__button: i.fa.fa-search
+			button.app-search__button: i.bi.bi-search
 
 		//Notification Menu
 		li.dropdown
-			a.app-nav__item(href='#', data-toggle='dropdown' aria-label="Show notifications")
-				i.fa.fa-bell-o.fa-lg
+			a.app-nav__item(href='#', data-bs-toggle='dropdown' aria-label="Show notifications")
+				i.bi.bi-bell.fs-5
 			ul.app-notification.dropdown-menu.dropdown-menu-right
 				li.app-notification__title You have 4 new notifications.
 				.app-notification__content
 					li
 						a.app-notification__item(href='javascript:;')
 							span.app-notification__icon
-								span.fa-stack.fa-lg
-									i.fa.fa-circle.fa-stack-2x.text-primary
-									i.fa.fa-envelope.fa-stack-1x.fa-inverse
+								i.bi.bi-envelope.fs-4.text-primary
 							div
 								p.app-notification__message Lisa sent you a mail
 								p.app-notification__meta 2 min ago
@@ -31,9 +29,7 @@ header.app-header
 					li
 						a.app-notification__item(href='javascript:;')
 							span.app-notification__icon
-								span.fa-stack.fa-lg
-									i.fa.fa-circle.fa-stack-2x.text-danger
-									i.fa.fa-hdd-o.fa-stack-1x.fa-inverse
+								i.bi.bi-exclamation-triangle.fs-4.text-warning
 							div
 								p.app-notification__message Mail server not working
 								p.app-notification__meta 5 min ago
@@ -41,61 +37,52 @@ header.app-header
 					li
 						a.app-notification__item(href='javascript:;')
 							span.app-notification__icon
-								span.fa-stack.fa-lg
-									i.fa.fa-circle.fa-stack-2x.text-success
-									i.fa.fa-money.fa-stack-1x.fa-inverse
+								i.bi.bi-cash.fs-4.text-success
 							div
 								p.app-notification__message Transaction complete
 								p.app-notification__meta 2 days ago
 
-					.app-notification__content
-						li
-							a.app-notification__item(href='javascript:;')
-								span.app-notification__icon
-									span.fa-stack.fa-lg
-										i.fa.fa-circle.fa-stack-2x.text-primary
-										i.fa.fa-envelope.fa-stack-1x.fa-inverse
-								div
-									p.app-notification__message Lisa sent you a mail
-									p.app-notification__meta 2 min ago
+					li
+						a.app-notification__item(href='javascript:;')
+							span.app-notification__icon
+								i.bi.bi-envelope.fs-4.text-primary
+							div
+								p.app-notification__message Lisa sent you a mail
+								p.app-notification__meta 2 min ago
 
-						li
-							a.app-notification__item(href='javascript:;')
-								span.app-notification__icon
-									span.fa-stack.fa-lg
-										i.fa.fa-circle.fa-stack-2x.text-danger
-										i.fa.fa-hdd-o.fa-stack-1x.fa-inverse
-								div
-									p.app-notification__message Mail server not working
-									p.app-notification__meta 5 min ago
+					li
+						a.app-notification__item(href='javascript:;')
+							span.app-notification__icon
+								i.bi.bi-exclamation-triangle.fs-4.text-warning
+							div
+								p.app-notification__message Mail server not working
+								p.app-notification__meta 5 min ago
 
-						li
-							a.app-notification__item(href='javascript:;')
-								span.app-notification__icon
-									span.fa-stack.fa-lg
-										i.fa.fa-circle.fa-stack-2x.text-success
-										i.fa.fa-money.fa-stack-1x.fa-inverse
-								div
-									p.app-notification__message Transaction complete
-									p.app-notification__meta 2 days ago
+					li
+						a.app-notification__item(href='javascript:;')
+							span.app-notification__icon
+								i.bi.bi-cash.fs-4.text-success
+							div
+								p.app-notification__message Transaction complete
+								p.app-notification__meta 2 days ago
 
 				li.app-notification__footer
 					a(href='#') See all notifications.
 
 		// User Menu
 		li.dropdown
-			a.app-nav__item(href='#', data-toggle='dropdown' aria-label="Open Profile Menu")
-				i.fa.fa-user.fa-lg
+			a.app-nav__item(href='#', data-bs-toggle='dropdown' aria-label="Open Profile Menu")
+				i.bi.bi-person.fs-4
 			ul.dropdown-menu.settings-menu.dropdown-menu-right
 				li
 					a.dropdown-item(href='page-user.html')
-						i.fa.fa-cog.fa-lg
+						i.bi.bi-gear.me-2.fs-5
 						|  Settings
 				li
 					a.dropdown-item(href='page-user.html')
-						i.fa.fa-user.fa-lg
+						i.bi.bi-person.me-2.fs-5
 						|  Profile
 				li
 					a.dropdown-item(href='page-login.html')
-						i.fa.fa-sign-out.fa-lg
+						i.bi.bi-box-arrow-right.me-2.fs-5
 						|  Logout

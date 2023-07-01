@@ -20,7 +20,7 @@
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body class="app sidebar-mini">
     <!-- Navbar-->
@@ -30,55 +30,53 @@
       <ul class="app-nav">
         <li class="app-search">
           <input class="app-search__input" type="search" placeholder="Search">
-          <button class="app-search__button"><i class="fa fa-search"></i></button>
+          <button class="app-search__button"><i class="bi bi-search"></i></button>
         </li>
         <!--Notification Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
+        <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Show notifications"><i class="bi bi-bell fs-5"></i></a>
           <ul class="app-notification dropdown-menu dropdown-menu-right">
             <li class="app-notification__title">You have 4 new notifications.</li>
             <div class="app-notification__content">
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><i class="bi bi-envelope fs-4 text-primary"></i></span>
                   <div>
                     <p class="app-notification__message">Lisa sent you a mail</p>
                     <p class="app-notification__meta">2 min ago</p>
                   </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><i class="bi bi-exclamation-triangle fs-4 text-warning"></i></span>
                   <div>
                     <p class="app-notification__message">Mail server not working</p>
                     <p class="app-notification__meta">5 min ago</p>
                   </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><i class="bi bi-cash fs-4 text-success"></i></span>
                   <div>
                     <p class="app-notification__message">Transaction complete</p>
                     <p class="app-notification__meta">2 days ago</p>
                   </div></a></li>
-              <div class="app-notification__content">
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Lisa sent you a mail</p>
-                      <p class="app-notification__meta">2 min ago</p>
-                    </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Mail server not working</p>
-                      <p class="app-notification__meta">5 min ago</p>
-                    </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Transaction complete</p>
-                      <p class="app-notification__meta">2 days ago</p>
-                    </div></a></li>
-              </div>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><i class="bi bi-envelope fs-4 text-primary"></i></span>
+                  <div>
+                    <p class="app-notification__message">Lisa sent you a mail</p>
+                    <p class="app-notification__meta">2 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><i class="bi bi-exclamation-triangle fs-4 text-warning"></i></span>
+                  <div>
+                    <p class="app-notification__message">Mail server not working</p>
+                    <p class="app-notification__meta">5 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><i class="bi bi-cash fs-4 text-success"></i></span>
+                  <div>
+                    <p class="app-notification__message">Transaction complete</p>
+                    <p class="app-notification__meta">2 days ago</p>
+                  </div></a></li>
             </div>
             <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
           </ul>
         </li>
         <!-- User Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+        <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Open Profile Menu"><i class="bi bi-person fs-4"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="page-user.html"><i class="bi bi-gear me-2 fs-5"></i> Settings</a></li>
+            <li><a class="dropdown-item" href="page-user.html"><i class="bi bi-person me-2 fs-5"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="page-login.html"><i class="bi bi-box-arrow-right me-2 fs-5"></i> Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -86,60 +84,56 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Image">
         <div>
           <p class="app-sidebar__user-name">John Doe</p>
           <p class="app-sidebar__user-designation">Frontend Developer</p>
         </div>
       </div>
       <ul class="app-menu">
-        <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon bi bi-speedometer"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon bi bi-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item active" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
-            <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-            <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-            <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
+            <li><a class="treeview-item active" href="bootstrap-components.html"><i class="icon bi bi-circle-fill"></i> Bootstrap Elements</a></li>
+            <li><a class="treeview-item" href="https://icons.getbootstrap.com/" target="_blank" rel="noopener"><i class="icon bi bi-circle-fill"></i> Font Icons</a></li>
+            <li><a class="treeview-item" href="ui-cards.html"><i class="icon bi bi-circle-fill"></i> Cards</a></li>
+            <li><a class="treeview-item" href="widgets.html"><i class="icon bi bi-circle-fill"></i> Widgets</a></li>
           </ul>
         </li>
-        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon bi bi-ui-checks"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-            <li><a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-            <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-            <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
+            <li><a class="treeview-item" href="form-components.html"><i class="icon bi bi-circle-fill"></i> Form Components</a></li>
+            <li><a class="treeview-item" href="form-samples.html"><i class="icon bi bi-circle-fill"></i> Form Samples</a></li>
           </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon bi bi-table"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-            <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
+            <li><a class="treeview-item" href="table-basic.html"><i class="icon bi bi-circle-fill"></i> Basic Tables</a></li>
+            <li><a class="treeview-item" href="table-data-table.html"><i class="icon bi bi-circle-fill"></i> Data Tables</a></li>
           </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon bi bi-file-earmark"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a class="treeview-item" href="page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
-            <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-            <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
-            <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
-            <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
-            <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
-            <li><a class="treeview-item" href="page-error.html"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
+            <li><a class="treeview-item" href="blank-page.html"><i class="icon bi bi-circle-fill"></i> Blank Page</a></li>
+            <li><a class="treeview-item" href="page-login.html"><i class="icon bi bi-circle-fill"></i> Login Page</a></li>
+            <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon bi bi-circle-fill"></i> Lockscreen Page</a></li>
+            <li><a class="treeview-item" href="page-user.html"><i class="icon bi bi-circle-fill"></i> User Page</a></li>
+            <li><a class="treeview-item" href="page-invoice.html"><i class="icon bi bi-circle-fill"></i> Invoice Page</a></li>
+            <li><a class="treeview-item" href="page-mailbox.html"><i class="icon bi bi-circle-fill"></i> Mailbox</a></li>
+            <li><a class="treeview-item" href="page-error.html"><i class="icon bi bi-circle-fill"></i> Error Page</a></li>
           </ul>
         </li>
-        <li><a class="app-menu__item" href="docs.html"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a></li>
+        <li><a class="app-menu__item" href="docs.html"><i class="app-menu__icon bi bi-code-square"></i><span class="app-menu__label">Docs</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
       <div class="app-title">
         <div class="div">
-          <h1><i class="fa fa-laptop"></i> Bootstrap Elements</h1>
+          <h1><i class="bi bi-laptop"></i> Bootstrap Elements</h1>
           <p>Bootstrap Components</p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+          <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
           <li class="breadcrumb-item"><a href="#">Bootstrap Elements</a></li>
         </ul>
       </div>
@@ -184,28 +178,28 @@
               <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <button class="btn btn-primary" type="button">Primary</button>
                 <div class="btn-group" role="group">
-                  <button class="btn btn-primary dropdown-toggle" id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <button class="btn btn-primary dropdown-toggle" id="btnGroupDrop1" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                   <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
                 </div>
               </div>
               <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <button class="btn btn-success" type="button">Success</button>
                 <div class="btn-group" role="group">
-                  <button class="btn btn-success dropdown-toggle" id="btnGroupDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <button class="btn btn-success dropdown-toggle" id="btnGroupDrop2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                   <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
                 </div>
               </div>
               <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <button class="btn btn-info" type="button">Info</button>
                 <div class="btn-group" role="group">
-                  <button class="btn btn-info dropdown-toggle" id="btnGroupDrop3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <button class="btn btn-info dropdown-toggle" id="btnGroupDrop3" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                   <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
                 </div>
               </div>
               <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <button class="btn btn-danger" type="button">Danger</button>
                 <div class="btn-group" role="group">
-                  <button class="btn btn-danger dropdown-toggle" id="btnGroupDrop4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <button class="btn btn-danger dropdown-toggle" id="btnGroupDrop4" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                   <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
                 </div>
               </div>
@@ -217,37 +211,31 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <p class="bs-component">
+            <p class="bs-component d-grid">
               <button class="btn btn-primary btn-lg btn-block" type="button">Block level button</button>
             </p>
-            <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                  <input type="checkbox" checked="" autocomplete="off"> Active
-                </label>
-                <label class="btn btn-primary">
-                  <input type="checkbox" autocomplete="off"> Check
-                </label>
-                <label class="btn btn-primary">
-                  <input type="checkbox" autocomplete="off"> Check
-                </label>
+            <div class="bs-component mb-3">
+              <div class="btn-group">
+                <input class="btn-check" id="btnCheck1" type="checkbox" checked="" autocomplete="off">
+                <label class="btn btn-primary" for="btnCheck1">Active</label>
+                <input class="btn-check" id="btnCheck2" type="checkbox" autocomplete="off">
+                <label class="btn btn-primary" for="btnCheck2">Check</label>
+                <input class="btn-check" id="btnCheck3" type="checkbox" autocomplete="off">
+                <label class="btn btn-primary" for="btnCheck3">Check</label>
               </div>
             </div>
-            <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                  <input id="option1" type="radio" name="options" autocomplete="off" checked=""> Active
-                </label>
-                <label class="btn btn-primary">
-                  <input id="option2" type="radio" name="options" autocomplete="off"> Radio
-                </label>
-                <label class="btn btn-primary">
-                  <input id="option3" type="radio" name="options" autocomplete="off"> Radio
-                </label>
+            <div class="bs-component mb-3">
+              <div class="btn-group">
+                <input class="btn-check" id="option1" type="radio" name="options" autocomplete="off" checked="">
+                <label class="btn btn-primary" for="option1">Active</label>
+                <input class="btn-check" id="option2" type="radio" name="options" autocomplete="off">
+                <label class="btn btn-primary" for="option2">Radio</label>
+                <input class="btn-check" id="option3" type="radio" name="options" autocomplete="off">
+                <label class="btn btn-primary" for="option3">Radio</label>
               </div>
             </div>
-            <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group-vertical" data-toggle="buttons">
+            <div class="bs-component mb-3">
+              <div class="btn-group-vertical" data-bs-toggle="button">
                 <button class="btn btn-primary" type="button">Button</button>
                 <button class="btn btn-primary" type="button">Button</button>
                 <button class="btn btn-primary" type="button">Button</button>
@@ -256,22 +244,22 @@
                 <button class="btn btn-primary" type="button">Button</button>
               </div>
             </div>
-            <div class="bs-component" style="margin-bottom: 15px;">
+            <div class="bs-component mb-3">
               <div class="btn-group" role="group" aria-label="Basic example">
                 <button class="btn btn-secondary" type="button">Left</button>
                 <button class="btn btn-secondary" type="button">Middle</button>
                 <button class="btn btn-secondary" type="button">Right</button>
               </div>
             </div>
-            <div class="bs-component" style="margin-bottom: 15px;">
+            <div class="bs-component mb-3">
               <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group mr-2" role="group" aria-label="First group">
+                <div class="btn-group me-2" role="group" aria-label="First group">
                   <button class="btn btn-secondary" type="button">1</button>
                   <button class="btn btn-secondary" type="button">2</button>
                   <button class="btn btn-secondary" type="button">3</button>
                   <button class="btn btn-secondary" type="button">4</button>
                 </div>
-                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <div class="btn-group me-2" role="group" aria-label="Second group">
                   <button class="btn btn-secondary" type="button">5</button>
                   <button class="btn btn-secondary" type="button">6</button>
                   <button class="btn btn-secondary" type="button">7</button>
@@ -372,10 +360,10 @@
             <h3>Tabs</h3>
             <div class="bs-component">
               <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#profile">Profile</a></li>
                 <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                   <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                   </div>
@@ -402,7 +390,7 @@
             <div class="bs-component">
               <ul class="nav nav-pills">
                 <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                   <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                   </div>
@@ -414,7 +402,7 @@
             <div class="bs-component">
               <ul class="nav nav-pills nav-stacked">
                 <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                   <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                   </div>
@@ -497,7 +485,7 @@
             <h4>Alerts</h4>
             <div class="bs-component">
               <div class="alert alert-dismissible alert-warning">
-                <button class="close" type="button" data-dismiss="alert">×</button>
+                <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
                 <h4>Warning!</h4>
                 <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a class="alert-link" href="#">vel scelerisque nisl consectetur et</a>.</p>
               </div>
@@ -508,29 +496,29 @@
           <div class="col-lg-4">
             <div class="bs-component">
               <div class="alert alert-dismissible alert-danger">
-                <button class="close" type="button" data-dismiss="alert">×</button><strong>Oh snap!</strong><a class="alert-link" href="#">Change a few things up</a> and try submitting again.
+                <button class="btn-close" type="button" data-bs-dismiss="alert"></button><strong>Oh snap!</strong><a class="alert-link" href="#">Change a few things up</a> and try submitting again.
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="bs-component">
               <div class="alert alert-dismissible alert-success">
-                <button class="close" type="button" data-dismiss="alert">×</button><strong>Well done!</strong> You successfully read <a class="alert-link" href="#">this important alert message</a>.
+                <button class="btn-close" type="button" data-bs-dismiss="alert"></button><strong>Well done!</strong> You successfully read <a class="alert-link" href="#">this important alert message</a>.
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="bs-component">
               <div class="alert alert-dismissible alert-info">
-                <button class="close" type="button" data-dismiss="alert">×</button><strong>Heads up!</strong> This <a class="alert-link" href="#">alert needs your attention</a>, but it's not super important.
+                <button class="btn-close" type="button" data-bs-dismiss="alert"></button><strong>Heads up!</strong> This <a class="alert-link" href="#">alert needs your attention</a>, but it's not super important.
               </div>
             </div>
           </div>
         </div>
         <div>
           <h4>Badges</h4>
-          <div class="bs-component" style="margin-bottom: 40px;"><span class="badge badge-primary">Primary</span><span class="badge badge-secondary">Secondary</span><span class="badge badge-success">Success</span><span class="badge badge-danger">Danger</span><span class="badge badge-warning">Warning</span><span class="badge badge-info">Info</span><span class="badge badge-light">Light</span><span class="badge badge-dark">Dark</span></div>
-          <div class="bs-component"><span class="badge badge-pill badge-primary">Primary</span><span class="badge badge-pill badge-secondary">Secondary</span><span class="badge badge-pill badge-success">Success</span><span class="badge badge-pill badge-danger">Danger</span><span class="badge badge-pill badge-warning">Warning</span><span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-light">Light</span><span class="badge badge-pill badge-dark">Dark</span></div>
+          <div class="bs-component mb-40"><span class="me-1 badge bg-primary">Primary</span><span class="me-1 badge bg-secondary">Secondary</span><span class="me-1 badge bg-success">Success</span><span class="me-1 badge bg-danger">Danger</span><span class="me-1 badge bg-warning">Warning</span><span class="me-1 badge bg-info">Info</span><span class="me-1 badge bg-light">Light</span><span class="me-1 badge bg-dark">Dark</span></div>
+          <div class="bs-component"><span class="me-1 badge badge-pill bg-primary">Primary</span><span class="me-1 badge badge-pill bg-secondary">Secondary</span><span class="me-1 badge badge-pill bg-success">Success</span><span class="me-1 badge badge-pill bg-danger">Danger</span><span class="me-1 badge badge-pill bg-warning">Warning</span><span class="me-1 badge badge-pill bg-info">Info</span><span class="me-1 badge badge-pill bg-light">Light</span><span class="me-1 badge badge-pill bg-dark">Dark</span></div>
         </div>
       </div>
       <!-- Progress-->
@@ -603,13 +591,6 @@
             <div class="page-header">
               <h2 class="mb-3 line-head" id="containers">Containers</h2>
             </div>
-            <div class="bs-component">
-              <div class="jumbotron">
-                <h1 class="display-3">Jumbotron</h1>
-                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <p><a class="btn btn-primary btn-lg" href="#">Learn more</a></p>
-              </div>
-            </div>
           </div>
         </div>
         <div class="row">
@@ -621,9 +602,9 @@
           <div class="col-lg-4">
             <div class="bs-component">
               <ul class="list-group">
-                <li class="list-group-item"><span class="tag tag-default tag-pill float-xs-right">14</span>Cras justo odio</li>
-                <li class="list-group-item"><span class="tag tag-default tag-pill float-xs-right">2</span>Dapibus ac facilisis in</li>
-                <li class="list-group-item"><span class="tag tag-default tag-pill float-xs-right">1</span>Morbi leo risus</li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">Cras justo odio<span class="badge bg-primary rounded-pill">14</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">Dapibus ac facilisis in<span class="badge bg-primary rounded-pill">2</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">Morbi leo risus<span class="badge bg-primary rounded-pill">1</span></li>
               </ul>
             </div>
           </div>
@@ -831,14 +812,14 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title">Modal title</h5>
-                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
                     </div>
                     <div class="modal-body">
                       <p>Modal body text goes here.</p>
                     </div>
                     <div class="modal-footer">
                       <button class="btn btn-primary" type="button">Save changes</button>
-                      <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                      <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
@@ -848,33 +829,39 @@
           <div class="col-lg-6">
             <h4>Popovers</h4>
             <div class="bs-component" style="margin-bottom: 3em;">
-              <button class="btn btn-secondary" type="button" title="" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title">Left</button>
-              <button class="btn btn-secondary" type="button" title="" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title">Top</button>
-              <button class="btn btn-secondary" type="button" title="" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus					sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title">Bottom</button>
-              <button class="btn btn-secondary" type="button" title="" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title">Right</button>
+              <button class="btn btn-secondary" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-title="Popover Title">Left</button>
+              <button class="btn btn-secondary" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-title="Popover Title">Top</button>
+              <button class="btn btn-secondary" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus." data-bs-title="Popover Title">Bottom</button>
+              <button class="btn btn-secondary" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-title="Popover Title">Right</button>
             </div>
             <h4>Tooltips</h4>
             <div class="bs-component">
-              <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">Left</button>
-              <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">Top</button>
-              <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom">Bottom</button>
-              <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">Right</button>
+              <button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">Left</button>
+              <button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">Top</button>
+              <button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">Bottom</button>
+              <button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">Right</button>
             </div>
           </div>
         </div>
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
     <script>
-      $('.bs-component [data-toggle="popover"]').popover();
-      $('.bs-component [data-toggle="tooltip"]').tooltip();
+      // Enable all alerts on the page
+      const alertList = document.querySelectorAll('.alert');
+      const alerts = [...alertList].map(element => new bootstrap.Alert(element));
+      
+      // Enable all popovers on the page
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+      
+      // Enable all tooltips on the page
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
     </script>
     <!-- Google analytics script-->
     <script type="text/javascript">

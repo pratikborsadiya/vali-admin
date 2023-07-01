@@ -14,46 +14,46 @@ html
 			.login-box
 				form.login-form(action="index.html")
 					h3.login-head
-						i.fa.fa-lg.fa-fw.fa-user
+						i.bi.bi-person.me-2
 						| SIGN IN
-					.form-group
-						label.control-label USERNAME
+					.mb-3
+						label.form-label USERNAME
 						input.form-control(type="text", placeholder="Email", autofocus)
 
-					.form-group
-						label.control-label PASSWORD
+					.mb-3
+						label.form-label PASSWORD
 						input.form-control(type="password", placeholder="Password")
 
-					.form-group
+					.mb-3
 						.utility
-							.animated-checkbox
-								label
-									input(type="checkbox")
+							.form-check
+								label.form-check-label
+									input.form-check-input(type="checkbox")
 									span.label-text Stay Signed in
 							p.semibold-text.mb-2
 								a(href="#" data-toggle="flip") Forgot Password ?
 
-					.form-group.btn-container
+					.mb-3.btn-container.d-grid
 						button.btn.btn-primary.btn-block
-							i.fa.fa-sign-in.fa-lg.fa-fw
+							i.bi.bi-box-arrow-in-right.me-2.fs-5
 							| SIGN IN
 
 				form.forget-form(action="index.html")
 					h3.login-head
-						i.fa.fa-lg.fa-fw.fa-lock
+						i.bi.bi-person-lock.me-2
 						| Forgot Password ?
-					.form-group
-						label.control-label EMAIL
+					.mb-3
+						label.form-label EMAIL
 						input.form-control(type="text", placeholder="Email")
 
-					.form-group.btn-container
+					.mb-3.btn-container.d-grid
 						button.btn.btn-primary.btn-block
-							i.fa.fa-unlock.fa-lg.fa-fw
+							i.bi.bi-unlock.me-2.fs-5
 							| RESET
 
-					.form-group.mt-3
+					.mb-3.mt-3
 						p.semibold-text.mb-0
-							a(href="#" data-toggle="flip") <i class="fa fa-angle-left fa-fw"></i> Back to Login
+							a(href="#" data-toggle="flip") <i class="bi bi-chevron-left me-1"></i> Back to Login
 
 		include includes/_javascript.pug
 

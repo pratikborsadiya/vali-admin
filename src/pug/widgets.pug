@@ -11,13 +11,13 @@ block content
 	.app-title
 		div
 			h1
-				i.fa.fa-archive
+				i.bi.bi-archive
 				|  Widgets
 			p Widgets to interactively display data
 
 		ul.app-breadcrumb.breadcrumb
 			li.breadcrumb-item
-				i.fa.fa-home.fa-lg
+				i.bi.bi-house-door.fs-6
 			li.breadcrumb-item
 				| UI
 			li.breadcrumb-item
@@ -26,7 +26,7 @@ block content
 	.row
 		.col-md-3
 			.widget-small.primary
-				i.icon.fa.fa-users.fa-3x
+				i.icon.bi.bi-people.fs-1
 				div.info
 					h4 Users
 					p
@@ -34,7 +34,7 @@ block content
 
 		.col-md-3
 			.widget-small.info
-				i.icon.fa.fa-thumbs-o-up.fa-3x
+				i.icon.bi.bi-heart.fs-1
 				div.info
 					h4 Likes
 					p
@@ -42,7 +42,7 @@ block content
 
 		.col-md-3
 			.widget-small.warning
-				i.icon.fa.fa-files-o.fa-3x
+				i.icon.bi.bi-folder2.fs-1
 				div.info
 					h4 Uploades
 					p
@@ -50,7 +50,7 @@ block content
 
 		.col-md-3
 			.widget-small.danger
-				i.icon.fa.fa-star.fa-3x
+				i.icon.bi.bi-star.fs-1
 				div.info
 					h4 Stars
 					p
@@ -59,7 +59,7 @@ block content
 	.row
 		.col-md-3
 			.widget-small.primary.coloured-icon
-				i.icon.fa.fa-users.fa-3x
+				i.icon.bi.bi-people.fs-1
 				div.info
 					h4 Users
 					p
@@ -67,7 +67,7 @@ block content
 
 		.col-md-3
 			.widget-small.info.coloured-icon
-				i.icon.fa.fa-thumbs-o-up.fa-3x
+				i.icon.bi.bi-heart.fs-1
 				div.info
 					h4 Likes
 					p
@@ -75,7 +75,7 @@ block content
 
 		.col-md-3
 			.widget-small.warning.coloured-icon
-				i.icon.fa.fa-files-o.fa-3x
+				i.icon.bi.bi-folder2.fs-1
 				div.info
 					h4 Uploades
 					p
@@ -83,7 +83,7 @@ block content
 
 		.col-md-3
 			.widget-small.danger.coloured-icon
-				i.icon.fa.fa-star.fa-3x
+				i.icon.bi.bi-star.fs-1
 				div.info
 					h4 Stars
 					p
@@ -96,54 +96,27 @@ block content
 				.messanger
 					.messages
 						.message
-							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/tonypeterson/48.jpg")
+							img(src="https://randomuser.me/api/portraits/men/4.jpg")
 							p.info Hello there!
 								br
 								| Good Morning
 
 						.message.me
-							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+							img(src="https://randomuser.me/api/portraits/men/1.jpg")
 							p.info Hi
 								br
 								| Good Morning
 
 						.message
-							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/tonypeterson/48.jpg")
+							img(src="https://randomuser.me/api/portraits/men/4.jpg")
 							p.info How are you?
 
 						.message.me
-							img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg")
+							img(src="https://randomuser.me/api/portraits/men/1.jpg")
 							p.info I'm Fine.
 
 					.sender
 						input(type="text",placeholder="Send Message")
 						button.btn.btn-primary(type="button")
-							i.fa.fa-lg.fa-fw.fa-paper-plane
+							i.bi.bi-send.fs-5
 
-		.col-md-6
-			.tile
-				h3.tile-title Vector Map
-				.tile-body
-					#demo-map(style="height: 400px")
-
-block specific-js
-	script(type='text/javascript', src="js/plugins/jquery.vmap.min.js")
-	script(type='text/javascript', src="js/plugins/jquery.vmap.world.js")
-	script(type='text/javascript', src="js/plugins/jquery.vmap.sampledata.js")
-	script(type="text/javascript").
-		$(document).ready(function(){
-
-			var map = $('#demo-map');
-			map.vectorMap({
-				map: 'world_en',
-				backgroundColor: '#fff',
-				color: '#333',
-				hoverOpacity: 0.7,
-				selectedColor: '#666666',
-				enableZoom: true,
-				showTooltip: true,
-				scaleColors: ['#C8EEFF', '#006491'],
-				values: sample_data,
-				normalizeFunction: 'polynomial'
-			});
-		});

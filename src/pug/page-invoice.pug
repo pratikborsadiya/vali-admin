@@ -11,13 +11,13 @@ block content
 	.app-title
 		div
 			h1
-				i.fa.fa-file-text-o
+				i.bi.bi-receipt
 				|  Invoice
 			p A Printable Invoice Format
 
 		ul.app-breadcrumb.breadcrumb
 			li.breadcrumb-item
-				i.fa.fa-home.fa-lg
+				i.bi.bi-house-door.fs-6
 			li.breadcrumb-item
 				a(href='#') Invoice
 
@@ -29,10 +29,10 @@ block content
 					.row.mb-4
 						.col-6
 							h2.page-header
-								i.fa.fa-globe
+								i.bi.bi-globe
 								|  Vali Inc
 						.col-6
-							h5.text-right Date: 01/01/2016
+							h5.text-end Date: 01/01/2016
 
 					.row.invoice-info
 						.col-4
@@ -111,7 +111,7 @@ block content
 										td $03.44
 
 					.row.d-print-none.mt-2
-						.col-12.text-right
-							a.btn.btn-primary(href='javascript:window.print();', target='_blank')
-								i.fa.fa-print
+						.col-12.text-end
+							a.btn.btn-primary(href='javascript:window.print();')
+								i.bi.bi-printer.me-2
 								|  Print

@@ -47,7 +47,10 @@
 			align-items: center;
 		}
 
-		.btn-container { margin-bottom: 0; }
+		.btn-container {
+			text-align: center;
+			margin-bottom: 0;
+		}
 
 		.login-form, .forget-form {
 			position: absolute;

@@ -13,20 +13,20 @@ html
 				h1 Vali
 
 			.lock-box
-				img.rounded-circle.user-image(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg")
+				img.rounded-circle.user-image(src="https://randomuser.me/api/portraits/men/1.jpg")
 
 				h4.text-center.user-name John Doe
 
 				p.text-center.text-muted Account Locked
 
 				form.unlock-form(action="index.html")
-					.form-group
+					.mb-3
 						label.control-label PASSWORD
 						input.form-control(type="password", placeholder="Password", autofocus)
 
-					.form-group.btn-container
+					.mb-3.btn-container.d-grid
 							button.btn.btn-primary.btn-block(type="submit")
-								i.fa.fa-unlock.fa-lg
+								i.bi.bi-unlock.me-2.fs-5
 								| UNLOCK 
 
 				p

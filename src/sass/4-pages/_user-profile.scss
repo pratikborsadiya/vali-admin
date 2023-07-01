@@ -3,15 +3,19 @@
 .user {
 	.profile {
 		margin: -30px -30px 0 -30px;
-		display: flex;
+		position: relative;
 
 		.info {
 			padding: 30px 60px;
 			text-align: center;
 			background-color: #fff;
 			white-space: nowrap;
-			background-color: #404040;
+			background-color: rgba(100, 100, 100, 0.9);
 			color: #fff;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
 
 			img {
 				border-radius: 50%;
@@ -23,7 +27,7 @@
 
 		.cover-image {
 			flex: 1;
-			background-image: url(http://placeimg.com/1200/300/nature);
+			background-image: url(https://unsplash.com/photos/dH4JzW5h9Ng/download?w=1920);
 			background-size: cover;
 			background-position: center;
 			min-height: 300px;
@@ -66,7 +70,12 @@
 			align-items: flex-start;
 			margin-bottom: 15px;
 
-			img { margin-right: 10px; }
+			img {
+				margin-right: 10px;
+				max-width: 45px;
+				height: auto;
+				border-radius: 4px;
+			}
 
 			h5 {
 				margin-top: 0;

@@ -8,20 +8,20 @@ block content
 	.app-title
 		div
 			h1
-				i.fa.fa-dashboard
+				i.bi.bi-speedometer
 				|  Dashboard
 			p A free and open source Bootstrap 4 admin template
 
 		ul.app-breadcrumb.breadcrumb
 			li.breadcrumb-item
-				i.fa.fa-home.fa-lg
+				i.bi.bi-house-door.fs-6
 			li.breadcrumb-item
 				a(href='#') Dashboard
 
 	.row
 		.col-md-6.col-lg-3
 			.widget-small.primary.coloured-icon
-				i.icon.fa.fa-users.fa-3x
+				i.icon.bi.bi-people.fs-1
 				div.info
 					h4 Users
 					p
@@ -29,7 +29,7 @@ block content
 
 		.col-md-6.col-lg-3
 			.widget-small.info.coloured-icon
-				i.icon.fa.fa-thumbs-o-up.fa-3x
+				i.icon.bi.bi-heart.fs-1
 				div.info
 					h4 Likes
 					p
@@ -37,7 +37,7 @@ block content
 
 		.col-md-6.col-lg-3
 			.widget-small.warning.coloured-icon
-				i.icon.fa.fa-files-o.fa-3x
+				i.icon.bi.bi-folder2.fs-1
 				div.info
 					h4 Uploades
 					p
@@ -45,7 +45,7 @@ block content
 
 		.col-md-6.col-lg-3
 			.widget-small.danger.coloured-icon
-				i.icon.fa.fa-star.fa-3x
+				i.icon.bi.bi-star.fs-1
 				div.info
 					h4 Stars
 					p
@@ -54,60 +54,63 @@ block content
 		.col-md-6
 			.tile
 				h3.tile-title Monthly Sales
-				.embed-responsive.embed-responsive-16by9
-					canvas.embed-responsive-item(id="lineChartDemo")
+				.ratio.ratio-16x9
+					canvas(id="salesChart")
 
 		.col-md-6
 			.tile
 				h3.tile-title Support Requests
-				.embed-responsive.embed-responsive-16by9
-					canvas.embed-responsive-item(id="pieChartDemo")
+				.ratio.ratio-16x9.d-flex.justify-content-center
+					canvas(id="supportRequestChart")
 
 block specific-js
 	script(type='text/javascript', src="js/plugins/chart.js")
 	script(type='text/javascript').
-		var data = {
-			labels: ["January", "February", "March", "April", "May"],
-			datasets: [
-				{
-					label: "My First dataset",
-					fillColor: "rgba(220,220,220,0.2)",
-					strokeColor: "rgba(220,220,220,1)",
-					pointColor: "rgba(220,220,220,1)",
-					pointStrokeColor: "#fff",
-					pointHighlightFill: "#fff",
-					pointHighlightStroke: "rgba(220,220,220,1)",
-					data: [65, 59, 80, 81, 56]
-				},
-				{
-					label: "My Second dataset",
-					fillColor: "rgba(151,187,205,0.2)",
-					strokeColor: "rgba(151,187,205,1)",
-					pointColor: "rgba(151,187,205,1)",
-					pointStrokeColor: "#fff",
-					pointHighlightFill: "#fff",
-					pointHighlightStroke: "rgba(151,187,205,1)",
-					data: [28, 48, 40, 19, 86]
-				}
-			]
-		};
-		var pdata = [
-			{
-				value: 300,
-				color: "#46BFBD",
-				highlight: "#5AD3D1",
-				label: "Complete"
-			},
-			{
-				value: 50,
-				color:"#F7464A",
-				highlight: "#FF5A5E",
-				label: "In-Progress"
+		const salesData = {
+			type: "line",
+			data: {
+				labels: [
+					"Jan",
+					"Feb",
+					"March",
+					"April",
+					"May",
+					"June",
+				],
+				datasets: [{
+					label: 'Monthly Sales',
+					data: [65, 59, 80, 81, 56, 55, 40],
+					fill: false,
+					borderColor: 'rgb(75, 192, 192)',
+					tension: 0.1
+				}]
 			}
-		]
+		}
 
-		var ctxl = $("#lineChartDemo").get(0).getContext("2d");
-		var lineChart = new Chart(ctxl).Line(data);
+		const supportRequests = {
+			type: "doughnut",
+			data: {
+				labels: [
+					'In-Progress',
+					'Complete',
+					'Delayed'
+				],
+				datasets: [{
+					label: 'Support Requests',
+					data: [300, 50, 100],
+					backgroundColor: [
+						'#EFCC00',
+						'#5AD3D1',
+						'#FF5A5E'
+					],
+					hoverOffset: 4
+				}]
+			}
+		};
 
-		var ctxp = $("#pieChartDemo").get(0).getContext("2d");
-		var pieChart = new Chart(ctxp).Pie(pdata);
+		const salesChartCtx = document.getElementById('salesChart');
+		new Chart(salesChartCtx, salesData);
+
+		const supportChartCtx = document.getElementById('supportRequestChart');
+		new Chart(supportChartCtx, supportRequests);
+

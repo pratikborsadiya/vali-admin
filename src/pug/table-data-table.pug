@@ -11,13 +11,13 @@ block content
 	.app-title
 		div
 			h1
-				i.fa.fa-th-list
+				i.bi.bi-table
 				|  Data Table
 			p Table to display analytical data effectively
 
 		ul.app-breadcrumb.breadcrumb.side
 			li.breadcrumb-item
-				i.fa.fa-home.fa-lg
+				i.bi.bi-house-door.fs-6
 			li.breadcrumb-item
 				| Tables
 			li.breadcrumb-item.active
@@ -439,6 +439,8 @@ block content
 									td $112,000
 
 block specific-js
+	link(rel="stylesheet" href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css")
+	
 	// Data table plugin
 	script(type='text/javascript', src="js/plugins/jquery.dataTables.min.js")
 	script(type='text/javascript', src="js/plugins/dataTables.bootstrap.min.js")

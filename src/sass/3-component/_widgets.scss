@@ -1,5 +1,7 @@
 // Componant: Widget
 
+@use "sass:map";
+
 .widget-small {
 	display: flex;
 	border-radius: 4px;
@@ -52,42 +54,42 @@
 	}
 
 	&.info {
-		background-color: theme-color("info");
+		background-color: map.get($theme-colors, "info");
 
 		&.coloured-icon {
 			background-color: #fff;
 			color: #2a2a2a;
 
 			.icon {
-				background-color: theme-color("info");
+				background-color: map.get($theme-colors, "info");
 				color: #fff;
 			}
 		}
 	}
 
 	&.warning {
-		background-color: theme-color("warning");
+		background-color: map.get($theme-colors,"warning");
 
 		&.coloured-icon {
 			background-color: #fff;
 			color: #2a2a2a;
 
 			.icon {
-				background-color: theme-color("warning");
+				background-color: map.get($theme-colors,"warning");
 				color: #fff;
 			}
 		}
 	}
 
 	&.danger {
-		background-color: theme-color("danger");
+		background-color: map.get($theme-colors,"danger");
 
 		&.coloured-icon {
 			background-color: #fff;
 			color: #2a2a2a;
 
 			.icon {
-				background-color: theme-color("danger");
+				background-color: map.get($theme-colors,"danger");
 				color: #fff;
 			}
 		}

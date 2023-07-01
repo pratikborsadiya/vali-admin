@@ -23,6 +23,7 @@
 	font-size: 26px;
 	font-weight: 400;
 	line-height: 50px;
+	text-decoration: none;
 	@media(min-width: 768px) {
 		flex: 0 0 auto;
 		display: block;
@@ -43,13 +44,14 @@
 
 .app-sidebar__toggle {
 	padding: 0 15px;
-	font-family: fontAwesome;
+	font-family: bootstrap-icons !important;
 	color: #fff;
 	line-height: 2.4;
 	transition: background-color 0.3s ease;
+	text-decoration: none;
 	@media(max-width: 767px) { order: -1; }
 	&:before {
-		content: "\f0c9";
+		content: "\f479";
 		font-size: 21px;
 	}
 	&:focus,
@@ -122,6 +124,7 @@
 	padding: 8px 20px;
 	text-align: center;
     background-color: #eee;
+	> a { text-decoration: none; }
 }
 .app-notification__content {
 	max-height: 220px;
@@ -135,6 +138,7 @@
 	color: inherit;
 	border-bottom: 1px solid #ddd;
 	transition: background-color 0.3s ease;
+	text-decoration: none;
 	&:focus,
 	&:hover {
 		color: inherit;

@@ -11,13 +11,13 @@ block content
 	.app-title
 		div
 			h1
-				i.fa.fa-edit
+				i.bi.bi-ui-checks
 				|  Form Components
 			p Bootstrap default form components
 
 		ul.app-breadcrumb.breadcrumb
 			li.breadcrumb-item
-				i.fa.fa-home.fa-lg
+				i.bi.bi-house-door.fs-6
 			li.breadcrumb-item
 				| Forms
 			li.breadcrumb-item
@@ -29,38 +29,38 @@ block content
 				.row
 					.col-lg-6
 						form
-							.form-group
-								label(for='exampleInputEmail1') Email address
+							.mb-3
+								label.form-label(for='exampleInputEmail1') Email address
 								input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
 								small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
-							.form-group
-								label(for='exampleInputPassword1') Password
+							.mb-3
+								label.form-label(for='exampleInputPassword1') Password
 								input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-							.form-group
-								label(for='exampleSelect1') Example select
+							.mb-3
+								label.form-label(for='exampleSelect1') Example select
 								select#exampleSelect1.form-control
 									option 1
 									option 2
 									option 3
 									option 4
 									option 5
-							.form-group
-								label(for='exampleSelect2') Example multiple select
+							.mb-3
+								label.form-label(for='exampleSelect2') Example multiple select
 								select#exampleSelect2.form-control(multiple='')
 									option 1
 									option 2
 									option 3
 									option 4
 									option 5
-							.form-group
-								label(for='exampleTextarea') Example textarea
+							.mb-3
+								label.form-label(for='exampleTextarea') Example textarea
 								textarea#exampleTextarea.form-control(rows='3')
-							.form-group
-								label(for='exampleInputFile') File input
-								input#exampleInputFile.form-control-file(type='file', aria-describedby='fileHelp')
-								small#fileHelp.form-text.text-muted
+							.mb-3
+								label.form-label(for='exampleInputFile') File input
+								input#exampleInputFile.form-control(type='file', aria-describedby='fileHelp')
+								div.form-text.text-muted
 									| This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
-							fieldset.form-group
+							fieldset.mb-3
 								legend Radio buttons
 								.form-check
 									label.form-check-label
@@ -72,7 +72,7 @@ block content
 										| Option two can be something else and selecting it will deselect option one
 								.form-check.disabled
 									label.form-check-label
-										input#optionsRadios3.form-check-input(type='radio', name='optionsRadios', value='option3', disabled='')
+										input#optionsRadios3.form-check-input(type='radio', name='optionsRadios', value='option3', disabled)
 										| Option three is disabled
 							.form-check
 								label.form-check-label
@@ -81,34 +81,34 @@ block content
 
 					.col-lg-4.offset-lg-1
 						form
-							.form-group
+							.mb-3
 								fieldset(disabled='')
-									label.control-label(for='disabledInput') Disabled input
+									label.form-label(for='disabledInput') Disabled input
 									input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
-							.form-group
+							.mb-3
 								fieldset
-									label.control-label(for='readOnlyInput') Readonly input
+									label.form-label(for='readOnlyInput') Readonly input
 									input#readOnlyInput.form-control(type='text', placeholder='Readonly input here…', readonly='')
-							.form-group.has-success
-								label.form-control-label(for='inputSuccess1') Valid input
+							.mb-3.has-success
+								label.form-form-label(for='inputSuccess1') Valid input
 								input#inputValid.form-control.is-valid(type='text')
 								.form-control-feedback Success! You've done it.
-							.form-group.has-danger
-								label.form-control-label(for='inputDanger1') Invalid input
+							.mb-3.has-danger
+								label.form-form-label(for='inputDanger1') Invalid input
 								input#inputInvalid.form-control.is-invalid(type='text')
 								.form-control-feedback Sorry, that username's taken. Try another?
-							.form-group
+							.mb-3
 								label.col-form-label.col-form-label-lg(for='inputLarge') Large input
 								input#inputLarge.form-control.form-control-lg(type='text')
-							.form-group
+							.mb-3
 								label.col-form-label(for='inputDefault') Default input
 								input#inputDefault.form-control(type='text')
-							.form-group
+							.mb-3
 								label.col-form-label.col-form-label-sm(for='inputSmall') Small input
 								input#inputSmall.form-control.form-control-sm(type='text')
-							.form-group
-								label.control-label Input addons
-								.form-group
+							.mb-3
+								label.form-label Input addons
+								.mb-3
 									label.sr-only(for='exampleInputAmount') Amount (in dollars)
 									.input-group
 										.input-group-prepend

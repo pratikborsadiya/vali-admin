@@ -43,6 +43,8 @@
 	@extend .rounded-circle;
 	flex: 0 0 auto;
 	margin-right: 15px;
+	max-width: 45px;
+	height: auto;
 }
 
 .app-sidebar__user-name {
@@ -73,6 +75,7 @@
 	border-left: 3px solid transparent;
 	transition: border-left-color 0.3s ease,
 				background-color 0.3s ease;
+	text-decoration: none;
 	@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
 	@if $sidebar-accent == light { color: $sidebar-light-link-color }
 	&.active,
@@ -125,6 +128,7 @@
 	align-items: center;
 	padding: 5px 5px 5px 20px;
 	font-size: 1em;
+	text-decoration: none;
 	@if $sidebar-accent == dark { color: $sidebar-dark-link-color }
 	@if $sidebar-accent == light { color: $sidebar-light-link-color }
 	&.active,

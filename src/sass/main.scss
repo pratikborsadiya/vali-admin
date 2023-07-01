@@ -10,20 +10,7 @@
 @import '1-tools/fonts';
 @import '1-tools/vars';
 @import '1-tools/customize-bootstrap';
-@import '1-tools/bootstrap-source/bootstrap';
-
-// Vendor plugin files
-// Can be excluded based on your needs
-@import '1-tools/dataTables.bootstrap';
-@import '1-tools/bootstrap-datepicker';
-@import '1-tools/sweetalert';
-@import '1-tools/notify';
-@import '1-tools/select2/select2';
-@import '1-tools/pace';
-@import '1-tools/jqvmap';
-@import '1-tools/fullcalendar';
-@import '1-tools/dropzone-basic';
-@import '1-tools/dropzone';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // 2 - BASICS
 //---------------------------------------------------
@@ -44,8 +31,6 @@
 @import '3-component/button';
 @import '3-component/app-title';
 @import '3-component/tile';
-@import '3-component/custom-radio-n-checkbox';
-@import '3-component/toggle-button';
 @import '3-component/material-half-bg';
 @import '3-component/material-loader';
 @import '3-component/button-spinner';

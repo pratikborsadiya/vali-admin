@@ -1,15 +1,16 @@
 {
   "name": "vali-admin",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "An admin theme built with Bootstrap, sass and PugJs",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "grunt": "^1.0.4",
-    "grunt-contrib-pug": "^2.0.0",
+    "autoprefixer": "^9.8.8",
+    "grunt": "^1.6.1",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-contrib-pug": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^3.1.0",
-    "node-sass": "^4.13.1"
+    "sass": "^1.63.4"
   },
   "scripts": {
     "dev": "grunt watch",
@@ -30,5 +31,11 @@
   "bugs": {
     "url": "https://github.com/pratikborsadiya/vali-admin/issues"
   },
-  "homepage": "http://pratikborsadiya.in/blog/vali-admin"
+  "homepage": "http://pratikborsadiya.in/blog/vali-admin",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "files": [
+    "docs"
+  ]
 }

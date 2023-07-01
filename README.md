@@ -20,10 +20,10 @@ Use `npm run start` command to start a development server using NodeJs.
 > * The NodeJs server mentioned in `npm run start` command is for development purpose only. DONOT use it as a production server.
 
 ## Customization
-For more information about customizing theme colors please follow the official [documentation](http://pratikborsadiya.in/blog/vali-admin/).
+For more information about customizing theme colors please follow the official [documentation](https://pratikborsadiya.in/vali-admin/docs.html).
 
 ## RTL Support
-Please follow the official [documentation](http://pratikborsadiya.in/blog/vali-admin/) to enable RTL support.
+Please follow the official [documentation](https://pratikborsadiya.in/vali-admin/docs.html) to enable RTL support.
 
 ## Contributing
 Please take a look at [contributing guidelines](CONTRIBUTING.md) if you are considering contributing to the repository.

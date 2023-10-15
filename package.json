@@ -1,6 +1,6 @@
 {
   "name": "vali-admin",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "An admin theme built with Bootstrap, sass and PugJs",
   "devDependencies": {
     "autoprefixer": "^9.8.8",
@@ -10,7 +10,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^3.1.0",
-    "sass": "^1.63.4"
+    "sass": "^1.69.3"
   },
   "scripts": {
     "dev": "grunt watch",
@@ -33,7 +33,7 @@
   },
   "homepage": "http://pratikborsadiya.in/blog/vali-admin",
   "dependencies": {
-    "bootstrap": "^5.3.0"
+    "bootstrap": "^5.3.2"
   },
   "files": [
     "docs"

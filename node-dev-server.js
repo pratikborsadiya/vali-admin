@@ -8,7 +8,12 @@ const port = process.argv[2] || 8888;
 
 http.createServer(function (request, response) {
 	var uri = url.parse(request.url).pathname,
-		filename = path.join(process.cwd(), 'docs', uri);
+               filename = path.join(process.cwd(), 'docs', uri);  
+       if (uri.includes('..')) {  
+           response.writeHead(403, { 'Content-Type': 'text/plain' });  
+           response.end();  
+           return;  
+       }  
 
 	var extname = path.extname(filename);
 	var contentType = 'text/html';
